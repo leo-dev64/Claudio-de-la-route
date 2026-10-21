@@ -1,0 +1,1160 @@
+[
+  {
+    "id": "PC-001",
+    "theme": "M",
+    "q": "Le voyant rouge en forme de burette d'huile (à droite du compteur) s'allume pendant que je roule. Je dois :",
+    "a": [
+      "Rouler doucement jusqu'au prochain garage",
+      "M'arrêter dès que possible et couper le moteur",
+      "Compléter l'huile et repartir, même voyant allumé",
+      "Faire vérifier rapidement, comme pour un voyant orange"
+    ],
+    "ok": [
+      1
+    ],
+    "img": "photos/wc-voyants-demarrage-01.jpg",
+    "exp": "Burette rouge = pression d'huile insuffisante : le moteur risque de casser. Un voyant rouge impose de s'arrêter dès que possible, puis de vérifier le niveau d'huile ; s'il reste allumé après l'appoint, on ne repart pas. « Faire vérifier rapidement » correspond à un voyant orange."
+  },
+  {
+    "id": "PC-002",
+    "theme": "M",
+    "q": "Sur cette photo, plusieurs voyants sont de couleur orange (ABS, airbag, moteur…). Un voyant orange qui reste allumé en roulant signale :",
+    "a": [
+      "Une anomalie à faire vérifier rapidement",
+      "Une anomalie grave imposant l'arrêt immédiat",
+      "Un équipement qui fonctionne normalement"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/wc-voyants-demarrage-01.jpg",
+    "exp": "Code couleur : rouge = anomalie grave, s'arrêter dès que possible ; orange = anomalie à faire vérifier ; vert ou bleu = équipement en fonctionnement."
+  },
+  {
+    "id": "PC-003",
+    "theme": "S",
+    "q": "Le voyant orange représentant un passager avec un ballon devant lui (à gauche du compteur) reste allumé en roulant. Il m'indique :",
+    "a": [
+      "Que la ceinture du passager est mal bouclée",
+      "Que les airbags fonctionnent normalement",
+      "Un défaut de fonctionnement des airbags"
+    ],
+    "ok": [
+      2
+    ],
+    "img": "photos/wc-voyants-demarrage-01.jpg",
+    "exp": "Ce voyant signale une défaillance des airbags : ils risquent de ne pas se déclencher en cas de choc. Il faut faire vérifier le véhicule rapidement."
+  },
+  {
+    "id": "PC-004",
+    "theme": "S",
+    "q": "Le voyant rouge représentant un personnage avec une ceinture (en haut du compteur) m'indique :",
+    "a": [
+      "Que l'airbag frontal est désactivé",
+      "Qu'une ceinture n'est pas bouclée",
+      "Que le siège conducteur est mal réglé"
+    ],
+    "ok": [
+      1
+    ],
+    "img": "photos/wc-voyants-demarrage-01.jpg",
+    "exp": "C'est le témoin d'oubli de ceinture. Ne pas la boucler coûte 135 € et 3 points au conducteur ; chaque passager majeur est responsable de sa propre ceinture."
+  },
+  {
+    "id": "PC-005",
+    "theme": "M",
+    "q": "Ce voyant rouge s'allume au tableau de bord. Il m'indique :",
+    "a": [
+      "Que le stationnement est interdit ici",
+      "Que les feux de stationnement sont allumés",
+      "Que les plaquettes de frein sont usées",
+      "Que le frein de stationnement est serré"
+    ],
+    "ok": [
+      3
+    ],
+    "img": "photos/wc-voyant-frein-01.jpg",
+    "exp": "Le « P » dans un cercle entre parenthèses est le témoin du frein de stationnement (frein à main). Rouler frein serré fait chauffer et user les freins."
+  },
+  {
+    "id": "PC-006",
+    "theme": "M",
+    "q": "Je démarre et roule : ce voyant reste allumé.",
+    "sub": [
+      "Je vérifie que le frein de stationnement est bien desserré :",
+      "Si le voyant reste allumé une fois le frein desserré, je poursuis mon trajet normalement :"
+    ],
+    "a": [
+      "Oui",
+      "Non",
+      "Oui",
+      "Non"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/wc-voyant-frein-01.jpg",
+    "exp": "Je vérifie d'abord que le frein de stationnement est complètement desserré. Si le voyant reste allumé, c'est une anomalie de freinage (voyant rouge) : je m'arrête dès que possible et fais vérifier."
+  },
+  {
+    "id": "PC-007",
+    "theme": "M",
+    "q": "Ce voyant orange s'allume en roulant et reste fixe. Je dois :",
+    "a": [
+      "Ajouter de l'huile moteur à la prochaine pause",
+      "M'arrêter immédiatement et couper le moteur",
+      "Faire vérifier le véhicule rapidement",
+      "Attendre la fin du préchauffage du moteur"
+    ],
+    "ok": [
+      2
+    ],
+    "img": "photos/wc-voyant-moteur-01.jpg",
+    "exp": "C'est le voyant de gestion moteur / dépollution. Orange : la conduite reste possible avec prudence, mais il faut faire diagnostiquer le véhicule rapidement."
+  },
+  {
+    "id": "PC-008",
+    "theme": "E",
+    "q": "Ce voyant concerne notamment le système de dépollution du moteur. S'il reste allumé :",
+    "a": [
+      "Je risque une contre-visite au contrôle",
+      "Seule la puissance du moteur est concernée",
+      "Mon véhicule risque de polluer davantage"
+    ],
+    "ok": [
+      0,
+      2
+    ],
+    "img": "photos/wc-voyant-moteur-01.jpg",
+    "exp": "Un défaut d'injection ou de dépollution augmente les émissions polluantes. Un témoin de dysfonctionnement moteur allumé est relevé comme défaillance au contrôle technique."
+  },
+  {
+    "id": "PC-009",
+    "theme": "M",
+    "q": "Le voyant orange marqué « ABS » reste allumé en roulant. Cela signifie :",
+    "a": [
+      "Que le freinage reste assuré sans antiblocage",
+      "Que je dois faire vérifier le système ABS",
+      "Que le freinage ne fonctionne plus du tout",
+      "Que je dois freiner en pompant sur la pédale"
+    ],
+    "ok": [
+      0,
+      1
+    ],
+    "img": "photos/wc-voyants-02.jpg",
+    "exp": "Voyant ABS orange : le freinage classique est assuré mais les roues peuvent se bloquer en freinage d'urgence. Je garde plus de distance et je fais réparer."
+  },
+  {
+    "id": "PC-010",
+    "theme": "M",
+    "q": "Sur ce tableau de bord, le voyant rouge « BRAKE » (frein) s'allume en roulant alors que le frein de stationnement est desserré. Cela peut indiquer :",
+    "a": [
+      "Un défaut de l'ABS, sans danger pour le freinage",
+      "Une anomalie du circuit de freinage",
+      "Un niveau de liquide de frein insuffisant"
+    ],
+    "ok": [
+      1,
+      2
+    ],
+    "img": "photos/wc-voyants-02.jpg",
+    "exp": "Le témoin rouge de freinage signale un niveau de liquide trop bas ou une défaillance du circuit. Rouge = je m'arrête dès que possible en sécurité. Le défaut d'ABS est signalé par un voyant orange distinct."
+  },
+  {
+    "id": "PC-011",
+    "theme": "M",
+    "q": "Sur ce pneu, le petit triangle moulé au bord de la bande de roulement indique :",
+    "a": [
+      "Le sens de rotation du pneu",
+      "La pression de gonflage conseillée",
+      "La position d'un témoin d'usure",
+      "La saison d'utilisation du pneu"
+    ],
+    "ok": [
+      2
+    ],
+    "img": "photos/wc-pneu-temoin-usure-01.jpg",
+    "exp": "Le triangle (ou « TWI ») repère l'emplacement des témoins d'usure : de petits bossages au fond des rainures, à 1,6 mm de profondeur, la limite légale."
+  },
+  {
+    "id": "PC-012",
+    "theme": "M",
+    "q": "Je dois remplacer ce pneu. Sur le même essieu :",
+    "a": [
+      "Je monte un pneu de même diamètre que l'autre",
+      "Je monte un pneu plus large que l'autre",
+      "Je monte un pneu identique à l'autre"
+    ],
+    "ok": [
+      2
+    ],
+    "img": "photos/wc-pneu-temoin-usure-01.jpg",
+    "exp": "Sur un même essieu, les deux pneus doivent être identiques (dimensions, type, structure). L'idéal est de remplacer les deux en même temps."
+  },
+  {
+    "id": "PC-013",
+    "theme": "M",
+    "q": "Ce symbole moulé sur le flanc d'un pneu (montagne à trois pics avec un flocon) indique :",
+    "a": [
+      "Un pneu déconseillé sur routes enneigées",
+      "Un pneu hiver ou 4 saisons pour la neige",
+      "Un pneu réservé aux routes de montagne",
+      "Un pneu conçu pour les routes verglacées"
+    ],
+    "ok": [
+      1
+    ],
+    "img": "photos/wc-pneu-3pmsf-01.jpg",
+    "exp": "Le symbole alpin « 3PMSF » certifie, après un test normalisé, l'adhérence du pneu sur neige. C'est le marquage reconnu pour l'obligation d'équipement hivernal. Il figure sur les pneus hiver et 4 saisons."
+  },
+  {
+    "id": "PC-014",
+    "theme": "M",
+    "q": "Dans les communes soumises à l'obligation d'équipement hivernal (« loi Montagne »), du 1er novembre au 31 mars, je peux circuler avec :",
+    "a": [
+      "4 pneus hiver portant ce symbole",
+      "Des pneus été avec des chaînes dans le coffre",
+      "Des pneus été avec un spray antidérapant",
+      "Deux pneus hiver montés à l'avant"
+    ],
+    "ok": [
+      0,
+      1
+    ],
+    "img": "photos/wc-pneu-3pmsf-01.jpg",
+    "exp": "L'obligation impose soit 4 pneus hiver/4 saisons marqués 3PMSF, soit la détention de chaînes ou chaussettes à neige pour au moins deux roues motrices."
+  },
+  {
+    "id": "PC-015",
+    "theme": "M",
+    "q": "Ce pneu porte le marquage « M+S » et le symbole alpin (montagne et flocon). Depuis le 1er novembre 2024, pour respecter l'obligation d'équipement hivernal (loi Montagne), c'est :",
+    "a": [
+      "Le marquage M+S qui est exigé",
+      "Le symbole alpin qui est exigé",
+      "L'indice de charge qui est exigé"
+    ],
+    "ok": [
+      1
+    ],
+    "img": "photos/wc-pneu-3pmsf-02.jpg",
+    "exp": "Le marquage M+S est déclaratif (sans test). Depuis le 1er novembre 2024, seuls les pneus portant le symbole alpin 3PMSF répondent à l'obligation."
+  },
+  {
+    "id": "PC-016",
+    "theme": "M",
+    "q": "Cette personne installe des chaînes à neige. Elles se montent :",
+    "a": [
+      "Toujours sur les deux roues arrière",
+      "Toujours sur les roues motrices",
+      "Toujours sur les roues avant",
+      "Toujours sur une seule roue"
+    ],
+    "ok": [
+      1
+    ],
+    "img": "photos/wc-chaines-neige-01.jpg",
+    "exp": "Les chaînes se montent sur les roues motrices (avant sur une traction, arrière sur une propulsion), au moins sur deux roues. Il vaut mieux s'entraîner à les poser avant l'hiver."
+  },
+  {
+    "id": "PC-017",
+    "theme": "R",
+    "q": "Lorsque mon véhicule est équipé de chaînes à neige :",
+    "a": [
+      "Je les retire une fois la chaussée dégagée",
+      "Je les garde jusqu'à la fin de l'hiver",
+      "Je roule à une vitesse très réduite"
+    ],
+    "ok": [
+      0,
+      2
+    ],
+    "img": "photos/wc-chaines-neige-01.jpg",
+    "exp": "Les chaînes servent sur neige ou glace. Sur chaussée dégagée, elles abîment la route, les pneus et les chaînes : on les retire. Avec des chaînes, on roule lentement (les fabricants conseillent de ne pas dépasser 50 km/h)."
+  },
+  {
+    "id": "PC-018",
+    "theme": "M",
+    "q": "Pour contrôler le niveau d'huile moteur avec la jauge, comme sur cette photo :",
+    "a": [
+      "Le moteur est complètement arrêté",
+      "La jauge est essuyée avant lecture",
+      "Le véhicule est sur sol plat",
+      "Le moteur tourne au ralenti"
+    ],
+    "ok": [
+      0,
+      1,
+      2
+    ],
+    "img": "photos/wc-jauge-huile-02.jpg",
+    "exp": "Le niveau d'huile se contrôle moteur arrêté (de préférence froid), véhicule à plat, en essuyant la jauge avant la lecture. À vérifier régulièrement, par exemple une fois par mois."
+  },
+  {
+    "id": "PC-019",
+    "theme": "M",
+    "q": "Sur la jauge, le niveau d'huile doit se situer :",
+    "a": [
+      "Entre les repères mini et maxi",
+      "Juste au-dessous du repère mini",
+      "Un peu au-dessus du repère maxi"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/wc-jauge-huile-02.jpg",
+    "exp": "Le niveau doit être entre mini et maxi. Trop bas : risque de casse moteur ; trop haut : risque de fuite et d'usure. Je complète avec l'huile préconisée."
+  },
+  {
+    "id": "PC-020",
+    "theme": "S",
+    "q": "Ce bébé est installé à l'avant dans un siège dos à la route. Cette installation est autorisée si :",
+    "a": [
+      "L'airbag passager est désactivé",
+      "Le bébé est tenu par un adulte",
+      "Le trajet dure moins de dix minutes",
+      "La ceinture du siège est bien tendue"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/wc-siege-dos-route-01.jpg",
+    "exp": "Un siège bébé dos à la route peut être placé à l'avant uniquement si l'airbag frontal passager est désactivé : en se déclenchant, il frapperait violemment le siège."
+  },
+  {
+    "id": "PC-021",
+    "theme": "S",
+    "q": "Un siège bébé installé dos à la route :",
+    "a": [
+      "Protège mieux la nuque du bébé lors d'un choc",
+      "Doit être adapté au poids de l'enfant",
+      "Peut être placé face à un airbag actif"
+    ],
+    "ok": [
+      0,
+      1
+    ],
+    "img": "photos/wc-siege-dos-route-01.jpg",
+    "exp": "Dos à la route, les efforts d'un choc frontal se répartissent sur tout le dos du bébé. Le système de retenue doit être homologué et adapté à la morphologie de l'enfant (obligatoire jusqu'à 10 ans)."
+  },
+  {
+    "id": "PC-022",
+    "theme": "S",
+    "q": "Ce marquage « ISOFIX » sur la banquette repère :",
+    "a": [
+      "Des ancrages pour siège enfant",
+      "Le boîtier de l'airbag latéral",
+      "Des points d'attache pour bagages",
+      "Une prise de recharge électrique"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/wc-isofix-02.jpg",
+    "exp": "Les ancrages ISOFIX, reliés à la caisse du véhicule, permettent d'accrocher directement un siège enfant compatible, sans utiliser la ceinture du véhicule pour le fixer."
+  },
+  {
+    "id": "PC-023",
+    "theme": "S",
+    "q": "Fixer un siège enfant sur ces ancrages ISOFIX :",
+    "a": [
+      "Dispense d'attacher l'enfant dans son siège",
+      "Permet de se passer de siège avant 10 ans",
+      "Réduit les risques d'erreur de montage"
+    ],
+    "ok": [
+      2
+    ],
+    "img": "photos/wc-isofix-02.jpg",
+    "exp": "L'ISOFIX limite les erreurs de montage, fréquentes avec la ceinture. L'enfant doit toujours être attaché dans son siège (harnais, bouclier ou ceinture selon le siège)."
+  },
+  {
+    "id": "PC-024",
+    "theme": "U",
+    "q": "Cet autocollant, apposé sur les côtés et à l'arrière des véhicules lourds, signale :",
+    "a": [
+      "Un véhicule chargé de matières dangereuses",
+      "Les zones que le conducteur ne voit pas",
+      "Un véhicule d'un gabarit exceptionnel"
+    ],
+    "ok": [
+      1
+    ],
+    "img": "photos/wc-angles-morts-camion-01.jpg",
+    "exp": "Il matérialise les angles morts du poids lourd, très étendus à droite, devant la cabine et à l'arrière. Piétons, cyclistes et motards doivent éviter de s'y trouver."
+  },
+  {
+    "id": "PC-025",
+    "theme": "U",
+    "q": "Je suis à vélo, à côté d'un poids lourd arrêté au feu qui va tourner à droite. Je dois :",
+    "a": [
+      "Me méfier de son angle mort à droite",
+      "Rester derrière lui, à bonne distance",
+      "Passer à sa droite pour démarrer avant lui"
+    ],
+    "ok": [
+      0,
+      1
+    ],
+    "img": "photos/wc-angles-morts-camion-01.jpg",
+    "exp": "Le flanc droit d'un camion qui tourne est la zone la plus dangereuse (angle mort et balayage de la remorque). Règle simple : si je ne vois pas ses rétroviseurs, il ne me voit pas."
+  },
+  {
+    "id": "PC-026",
+    "theme": "U",
+    "q": "Ce pictogramme est collé sur un autocar. Depuis 2021, il est obligatoire sur :",
+    "a": [
+      "Les véhicules de plus de 3,5 tonnes",
+      "Toutes les voitures particulières",
+      "Les véhicules de moins de 3,5 tonnes"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/wc-angles-morts-bus-01.jpg",
+    "exp": "Depuis le 1er janvier 2021, la signalisation « Angles morts » est obligatoire sur les véhicules de plus de 3,5 t, transport de marchandises comme de personnes."
+  },
+  {
+    "id": "PC-027",
+    "theme": "E",
+    "q": "Cette vignette collée sur le pare-brise indique :",
+    "a": [
+      "La classe d'émission polluante du véhicule",
+      "La date limite du prochain contrôle technique",
+      "La validité de l'assurance du véhicule",
+      "La puissance fiscale du véhicule"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/wc-critair-01.jpg",
+    "exp": "La vignette Crit'Air classe les véhicules selon leurs émissions polluantes. La vignette 0 (verte) est réservée aux véhicules électriques et à hydrogène ; la 1 (violette) concerne notamment les véhicules au gaz, hybrides rechargeables et essence récents."
+  },
+  {
+    "id": "PC-028",
+    "theme": "E",
+    "q": "Sur les vignettes Crit'Air, plus le chiffre est élevé :",
+    "a": [
+      "Plus le véhicule est puissant",
+      "Plus le véhicule est polluant",
+      "Moins le véhicule est polluant"
+    ],
+    "ok": [
+      1
+    ],
+    "img": "photos/wc-critair-01.jpg",
+    "exp": "Les catégories vont de 0 (le moins polluant) à 5 (le plus polluant). Les véhicules les plus anciens n'y ont pas droit (non classés)."
+  },
+  {
+    "id": "PC-029",
+    "theme": "E",
+    "q": "Lors d'un épisode de pollution, le préfet peut instaurer une circulation différenciée. Elle s'appuie sur :",
+    "a": [
+      "Le nombre de passagers du véhicule",
+      "La date du contrôle technique",
+      "La vignette Crit'Air du véhicule"
+    ],
+    "ok": [
+      2
+    ],
+    "img": "photos/wc-critair-01.jpg",
+    "exp": "En cas de pic de pollution, seuls certains véhicules peuvent circuler selon leur vignette Crit'Air : les plus polluants sont interdits en premier."
+  },
+  {
+    "id": "PC-030",
+    "theme": "R",
+    "q": "La nuit tombe sur cette autoroute, chaussée sèche. J'ai mon permis depuis 10 ans.",
+    "sub": [
+      "La vitesse maximale autorisée est de 130 km/h :",
+      "Les feux de position suffisent :"
+    ],
+    "a": [
+      "Oui",
+      "Non",
+      "Oui",
+      "Non"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/wc-autoroute-nuit-01.jpg",
+    "exp": "La tombée de la nuit ne change pas la limitation : 130 km/h sur autoroute par temps sec (110 km/h en permis probatoire). Les feux de position ne suffisent pas : feux de croisement obligatoires."
+  },
+  {
+    "id": "PC-031",
+    "theme": "R",
+    "q": "Sur cette autoroute peu chargée, la voie de droite est libre. Je circule :",
+    "a": [
+      "Sur la voie du milieu, pour être plus visible",
+      "Sur la voie la plus à gauche",
+      "Sur la voie la plus à droite"
+    ],
+    "ok": [
+      2
+    ],
+    "img": "photos/wc-autoroute-nuit-01.jpg",
+    "exp": "Sur autoroute, on circule sur la voie la plus à droite ; les voies de gauche servent au dépassement. La fatigue se gère sur une aire de repos, jamais sur la BAU."
+  },
+  {
+    "id": "PC-032",
+    "theme": "R",
+    "q": "Sur la chaussée de droite de cette autoroute, des marquages jaunes ont été tracés. Ils signifient :",
+    "a": [
+      "Une signalisation temporaire de travaux",
+      "Que les marquages blancs sont prioritaires",
+      "Une voie réservée aux poids lourds",
+      "Que les marquages jaunes sont prioritaires"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/wc-autoroute-nuit-02.jpg",
+    "exp": "Les marquages jaunes sont temporaires (travaux, déviation). Ils annulent les marquages blancs : la signalisation temporaire prime sur la signalisation permanente."
+  },
+  {
+    "id": "PC-033",
+    "theme": "R",
+    "q": "Dans une zone de travaux sur autoroute, de nuit, comme ici :",
+    "a": [
+      "J'augmente ma vigilance et mes distances",
+      "Je peux chevaucher les marquages jaunes",
+      "Je respecte les limitations temporaires"
+    ],
+    "ok": [
+      0,
+      2
+    ],
+    "img": "photos/wc-autoroute-nuit-02.jpg",
+    "exp": "Les chantiers modifient le tracé et rétrécissent les voies : vitesse réduite, distances de sécurité et respect strict des marquages jaunes, qui ont la même valeur que des marquages blancs."
+  },
+  {
+    "id": "PC-034",
+    "theme": "R",
+    "q": "Je circule sur cette route dans le brouillard. J'allume :",
+    "a": [
+      "Les feux de croisement",
+      "Les feux de position",
+      "Les feux de route",
+      "Les antibrouillards avant"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/wc-brouillard-02.jpg",
+    "exp": "Par brouillard : feux de croisement, éventuellement complétés par les feux de brouillard avant. Les feux de route se réfléchissent sur le brouillard et éblouissent le conducteur."
+  },
+  {
+    "id": "PC-035",
+    "theme": "R",
+    "q": "Dans ce brouillard, si la visibilité devient inférieure à 50 m, ma vitesse maximale est de :",
+    "a": [
+      "30 km/h",
+      "50 km/h",
+      "70 km/h",
+      "80 km/h"
+    ],
+    "ok": [
+      1
+    ],
+    "img": "photos/wc-brouillard-02.jpg",
+    "exp": "Quand la visibilité est inférieure à 50 m, la vitesse est limitée à 50 km/h sur toutes les routes, autoroutes comprises."
+  },
+  {
+    "id": "PC-036",
+    "theme": "R",
+    "q": "Par brouillard, les feux de brouillard arrière :",
+    "a": [
+      "Sont autorisés par temps de brouillard",
+      "Sont à couper quand la visibilité revient",
+      "Sont interdits par temps de brouillard"
+    ],
+    "ok": [
+      0,
+      1
+    ],
+    "img": "photos/wc-brouillard-02.jpg",
+    "exp": "Les feux de brouillard arrière s'utilisent uniquement par brouillard ou chute de neige (jamais sous la pluie). Ils éblouissent ceux qui suivent : je les éteins dès que la visibilité revient."
+  },
+  {
+    "id": "PC-037",
+    "theme": "A",
+    "q": "Après une panne sur une route, ce triangle de présignalisation se place :",
+    "a": [
+      "À au moins 30 m en amont du véhicule",
+      "À environ 10 m en amont du véhicule",
+      "Juste derrière le pare-chocs du véhicule"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/wc-triangle-01.jpg",
+    "exp": "Le triangle se pose à 30 m au moins en amont, pour avertir les usagers qui arrivent, de jour comme de nuit, sauf si sa pose met en danger."
+  },
+  {
+    "id": "PC-038",
+    "theme": "A",
+    "q": "Avant de sortir de mon véhicule en panne pour poser ce triangle :",
+    "a": [
+      "J'enfile mon gilet haute visibilité",
+      "Je sors par la portière côté circulation",
+      "J'allume mes feux de détresse"
+    ],
+    "ok": [
+      0,
+      2
+    ],
+    "img": "photos/wc-triangle-01.jpg",
+    "exp": "Feux de détresse d'abord, gilet enfilé avant de sortir (il doit être accessible dans l'habitacle), passagers sortis côté opposé à la circulation et mis à l'abri."
+  },
+  {
+    "id": "PC-039",
+    "theme": "A",
+    "q": "Sur autoroute, après un arrêt sur la bande d'arrêt d'urgence, la pose du triangle :",
+    "a": [
+      "Est obligatoire, à 30 m en amont, comme sur route",
+      "Se fait en marchant sur la voie de droite",
+      "N'est pas obligatoire si c'est dangereux"
+    ],
+    "ok": [
+      2
+    ],
+    "img": "photos/wc-triangle-01.jpg",
+    "exp": "Sur autoroute, marcher jusqu'à 30 m en amont est dangereux : la pose du triangle n'est pas obligatoire. Priorité : se mettre à l'abri derrière la glissière et alerter (borne orange ou 112)."
+  },
+  {
+    "id": "PC-040",
+    "theme": "P",
+    "q": "Ce défibrillateur automatisé externe (DAE) s'utilise sur une victime :",
+    "a": [
+      "Inconsciente qui respire normalement",
+      "Consciente qui a mal à la poitrine",
+      "Qui a une hémorragie importante",
+      "Inconsciente qui ne respire pas"
+    ],
+    "ok": [
+      3
+    ],
+    "img": "photos/wc-dae-01.jpg",
+    "exp": "Le DAE est utilisé en cas d'arrêt cardiaque : victime inconsciente qui ne respire pas (ou respire anormalement). Il analyse le cœur et ne délivre un choc que si nécessaire."
+  },
+  {
+    "id": "PC-041",
+    "theme": "P",
+    "q": "Ce défibrillateur peut être utilisé :",
+    "a": [
+      "Par toute personne, pas seulement un médecin",
+      "Seulement par un médecin ou un infirmier",
+      "Seulement par un secouriste titulaire du PSC1"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/wc-dae-01.jpg",
+    "exp": "Depuis 2007, tout public peut utiliser un DAE : l'appareil guide l'utilisateur à la voix. Chaque minute compte en cas d'arrêt cardiaque."
+  },
+  {
+    "id": "PC-042",
+    "theme": "P",
+    "q": "Une victime ne respire pas. Après avoir alerté, et en attendant que quelqu'un m'apporte ce défibrillateur :",
+    "a": [
+      "Je pratique des compressions thoraciques",
+      "J'attends le défibrillateur sans la toucher",
+      "Je la mets en position latérale de sécurité"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/wc-dae-01.jpg",
+    "exp": "Arrêt cardiaque : alerter (15, 18 ou 112), masser (compressions thoraciques) sans interruption, et utiliser le DAE dès qu'il arrive. Attendre sans masser fait perdre des minutes vitales ; la PLS est réservée à la victime qui respire."
+  },
+  {
+    "id": "PC-043",
+    "theme": "P",
+    "q": "Ce secouriste place une victime en position latérale de sécurité (PLS). Ce geste concerne une victime :",
+    "a": [
+      "Inconsciente qui respire normalement",
+      "Consciente qui se plaint de douleurs au dos",
+      "Inconsciente qui ne respire pas"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/wc-pls-02.jpg",
+    "exp": "La PLS est réservée à la victime inconsciente qui respire. Si elle ne respire pas : massage cardiaque et défibrillateur."
+  },
+  {
+    "id": "PC-044",
+    "theme": "P",
+    "q": "La position latérale de sécurité permet :",
+    "a": [
+      "D'immobiliser une fracture de la colonne",
+      "De relancer le cœur d'une victime",
+      "De garder les voies respiratoires libres"
+    ],
+    "ok": [
+      2
+    ],
+    "img": "photos/wc-pls-02.jpg",
+    "exp": "Sur le côté, la tête basculée en arrière, la langue ne bloque plus la gorge et les liquides s'écoulent par la bouche. On surveille ensuite la respiration jusqu'à l'arrivée des secours."
+  },
+  {
+    "id": "PC-045",
+    "theme": "R",
+    "q": "J'arrive à l'arrière de cette longue file à l'arrêt sur autoroute. Pour avertir les conducteurs qui me suivent :",
+    "a": [
+      "J'allume mes feux de brouillard",
+      "J'allume mes feux de détresse",
+      "J'allume mes feux de route"
+    ],
+    "ok": [
+      1
+    ],
+    "img": "photos/wc-embouteillage-01.jpg",
+    "exp": "Les feux de détresse peuvent être utilisés pour signaler un ralentissement important ou un bouchon. Les feux de brouillard arrière sont réservés au brouillard et à la neige."
+  },
+  {
+    "id": "PC-046",
+    "theme": "R",
+    "q": "Dans ce bouchon, j'utilise la bande d'arrêt d'urgence pour rejoindre la prochaine sortie :",
+    "a": [
+      "C'est autorisé, sauf signalisation contraire",
+      "C'est interdit, sauf signalisation contraire"
+    ],
+    "ok": [
+      1
+    ],
+    "img": "photos/wc-embouteillage-01.jpg",
+    "exp": "La BAU est réservée à l'arrêt d'urgence et aux secours, qui l'empruntent pour atteindre un accident. Y circuler coûte 3 points, sauf panneau autorisant exceptionnellement son usage."
+  },
+  {
+    "id": "PC-047",
+    "theme": "U",
+    "q": "Sur cette autoroute chargée, je dépasse le poids lourd de la voie de droite. Je me rabats devant lui :",
+    "a": [
+      "Dès que je vois sa cabine dans mon rétro",
+      "Dès que mon pare-chocs dépasse sa cabine",
+      "Après avoir mis mon clignotant à droite"
+    ],
+    "ok": [
+      0,
+      2
+    ],
+    "img": "photos/wc-embouteillage-02.jpg",
+    "exp": "Se rabattre trop tôt place la voiture dans l'angle mort avant du camion et réduit sa distance de freinage. J'attends de voir toute sa cabine dans le rétroviseur intérieur et je signale ma manœuvre."
+  },
+  {
+    "id": "PC-048",
+    "theme": "C",
+    "q": "Sur cette autoroute au trafic dense mais roulant, je garde avec le véhicule qui me précède un intervalle d'au moins :",
+    "a": [
+      "1 seconde d'intervalle",
+      "2 secondes d'intervalle",
+      "2 traits de la ligne de rive",
+      "1 trait de la ligne de rive"
+    ],
+    "ok": [
+      1,
+      2
+    ],
+    "img": "photos/wc-embouteillage-02.jpg",
+    "exp": "La distance de sécurité minimale est de 2 secondes. Sur autoroute, elle correspond à 2 traits de la ligne de rive. Elle couvre au moins le temps de réaction (environ 1 s)."
+  },
+  {
+    "id": "PC-049",
+    "theme": "R",
+    "q": "Ce panneau rappelle que la circulation est interdite sur la bande d'arrêt d'urgence. Je peux m'y arrêter :",
+    "a": [
+      "En cas de besoin de téléphoner",
+      "En cas de fatigue au volant",
+      "En cas de panne du véhicule",
+      "En cas de malaise d'un occupant"
+    ],
+    "ok": [
+      2,
+      3
+    ],
+    "img": "photos/wc-bau-01.jpg",
+    "exp": "La BAU est réservée aux arrêts d'urgence (panne, malaise, accident). Pour téléphoner ou se reposer, on sort sur une aire de repos ou de service."
+  },
+  {
+    "id": "PC-050",
+    "theme": "R",
+    "q": "Circuler sur la bande d'arrêt d'urgence est sanctionné par un retrait de :",
+    "a": [
+      "1 point",
+      "3 points",
+      "6 points"
+    ],
+    "ok": [
+      1
+    ],
+    "img": "photos/wc-bau-01.jpg",
+    "exp": "Circuler sur la BAU est une infraction punie d'un retrait de 3 points, en plus de l'amende."
+  },
+  {
+    "id": "PC-051",
+    "theme": "R",
+    "q": "Je circule dans ce tunnel à double sens.",
+    "sub": [
+      "J'allume les feux de croisement :",
+      "Je peux faire demi-tour si je me suis trompé de route :"
+    ],
+    "a": [
+      "Oui",
+      "Non",
+      "Oui",
+      "Non"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/wc-tunnel-01.jpg",
+    "exp": "Dans un tunnel, les feux de croisement sont obligatoires, même s'il est éclairé. Le demi-tour et la marche arrière y sont interdits."
+  },
+  {
+    "id": "PC-052",
+    "theme": "R",
+    "q": "Je tombe en panne dans ce tunnel. Je dois :",
+    "a": [
+      "Couper le moteur du véhicule",
+      "Alerter depuis une niche de sécurité",
+      "Allumer mes feux de détresse",
+      "Faire marche arrière vers l'entrée"
+    ],
+    "ok": [
+      0,
+      1,
+      2
+    ],
+    "img": "photos/wc-tunnel-01.jpg",
+    "exp": "En panne dans un tunnel : feux de détresse, se ranger au plus à droite (ou dans un garage), couper le moteur, puis alerter depuis une niche de sécurité qui localise l'appel."
+  },
+  {
+    "id": "PC-053",
+    "theme": "U",
+    "q": "Ce véhicule de secours arrive derrière moi, gyrophares bleus et avertisseur deux-tons en marche (non visibles sur la photo). Je dois :",
+    "a": [
+      "Faciliter son passage en me rangeant",
+      "L'ignorer s'il n'est pas dans ma voie",
+      "Piler aussitôt au milieu de ma voie"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/wc-secours-01.jpg",
+    "exp": "Les véhicules d'intérêt général prioritaires (pompiers, SAMU, police) utilisant leurs avertisseurs spéciaux ont la priorité de passage : je facilite leur progression sans manœuvre dangereuse."
+  },
+  {
+    "id": "PC-054",
+    "theme": "P",
+    "q": "Le numéro « 18 » inscrit sur la portière de ce véhicule permet d'appeler :",
+    "a": [
+      "Le SAMU (urgences médicales)",
+      "La police ou la gendarmerie",
+      "Les sapeurs-pompiers du secteur",
+      "Le numéro d'urgence européen"
+    ],
+    "ok": [
+      2
+    ],
+    "img": "photos/wc-secours-01.jpg",
+    "exp": "18 = sapeurs-pompiers ; 15 = SAMU ; 17 = police/gendarmerie ; 112 = numéro d'urgence européen ; 114 = urgence par SMS pour les personnes sourdes ou malentendantes."
+  },
+  {
+    "id": "PC-055",
+    "theme": "P",
+    "q": "Je passe près de cet accident : les secours sont déjà sur place.",
+    "sub": [
+      "Je ralentis et reste attentif aux piétons et aux secouristes :",
+      "Je m'arrête pour prendre des photos :"
+    ],
+    "a": [
+      "Oui",
+      "Non",
+      "Oui",
+      "Non"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/wc-accident-01.jpg",
+    "exp": "Les secours étant présents, je ne m'arrête pas : je ralentis, je reste attentif aux personnes sur la chaussée et je ne gêne pas l'intervention. Ralentir pour regarder crée des sur-accidents."
+  },
+  {
+    "id": "PC-056",
+    "theme": "P",
+    "q": "Imaginons que la victime soit un motard casqué, conscient. En attendant les secours, je peux lui retirer son casque :",
+    "a": [
+      "Oui, car il respire mieux sans son casque",
+      "Non, car je risque d'aggraver sa blessure"
+    ],
+    "ok": [
+      1
+    ],
+    "img": "photos/wc-accident-01.jpg",
+    "exp": "On ne retire jamais le casque d'un motard : on risque d'aggraver une blessure de la colonne vertébrale. Les secours le feront avec le matériel adapté."
+  },
+  {
+    "id": "PC-057",
+    "theme": "U",
+    "q": "Sur cette route de montagne étroite, un tracteur arrive en face de moi. Je dois :",
+    "a": [
+      "Ralentir et serrer à droite au maximum",
+      "Lui faire un appel de phares insistant",
+      "M'arrêter si je ne peux pas croiser"
+    ],
+    "ok": [
+      0,
+      2
+    ],
+    "img": "photos/wc-tracteur-01.jpg",
+    "exp": "Les engins agricoles sont larges et lents. Sur route étroite, je réduis ma vitesse, je serre à droite et je m'arrête si besoin pour croiser en sécurité."
+  },
+  {
+    "id": "PC-058",
+    "theme": "U",
+    "q": "Plus loin, deux cyclistes roulent dans mon sens. Hors agglomération, quand je pourrai les dépasser, je laisserai un espace latéral d'au moins :",
+    "a": [
+      "0,50 m",
+      "1,00 m",
+      "1,50 m",
+      "2,00 m"
+    ],
+    "ok": [
+      2
+    ],
+    "img": "photos/wc-tracteur-01.jpg",
+    "exp": "Pour dépasser un cycliste, un piéton ou un cavalier : au moins 1 m en agglomération et 1,50 m hors agglomération. Ici, la ligne continue interdit pour l'instant de la franchir."
+  },
+  {
+    "id": "PC-059",
+    "theme": "R",
+    "q": "Il neige sur cette route et un tracteur arrive en face.",
+    "sub": [
+      "J'allume mes feux de croisement :",
+      "Je peux allumer mes feux de brouillard arrière :"
+    ],
+    "a": [
+      "Oui",
+      "Non",
+      "Oui",
+      "Non"
+    ],
+    "ok": [
+      0,
+      2
+    ],
+    "img": "photos/wc-tracteur-neige-01.jpg",
+    "exp": "Par chute de neige, les feux de croisement s'imposent pour voir et être vu, et les feux de brouillard arrière sont autorisés (brouillard ou neige uniquement)."
+  },
+  {
+    "id": "PC-060",
+    "theme": "R",
+    "q": "Sur cette chaussée enneigée par endroits, ma distance de freinage :",
+    "a": [
+      "Est fortement augmentée",
+      "Reste à peu près identique",
+      "Est multipliée par 1,5, comme sous la pluie"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/wc-tracteur-neige-01.jpg",
+    "exp": "Sur neige ou verglas, l'adhérence chute bien plus que sous la pluie (× 1,5 pour la distance d'arrêt sur chaussée mouillée) : la distance de freinage peut être multipliée par 3 à 10. Je réduis ma vitesse et j'augmente les distances."
+  },
+  {
+    "id": "PC-061",
+    "theme": "U",
+    "q": "Sur cette route, un panneau annonce la présence de chevaux. Hors agglomération, je rattrape un cavalier :",
+    "a": [
+      "Je le dépasse en laissant 1,50 m",
+      "Je laisse 1 m d'écart, comme en ville",
+      "Je ralentis à son approche"
+    ],
+    "ok": [
+      0,
+      2
+    ],
+    "img": "photos/wc-cavalier-01.jpg",
+    "exp": "Un cheval peut s'effrayer et faire un écart : je ralentis, j'évite le klaxon et les accélérations bruyantes, et je dépasse en laissant au moins 1,50 m hors agglomération."
+  },
+  {
+    "id": "PC-062",
+    "theme": "R",
+    "q": "Une forte averse arrive sur cette autoroute. J'ai mon permis depuis 10 ans. Dès qu'il pleut, la vitesse maximale autorisée devient :",
+    "a": [
+      "130 km/h",
+      "110 km/h",
+      "100 km/h",
+      "90 km/h"
+    ],
+    "ok": [
+      1
+    ],
+    "img": "photos/wc-autoroute-pluie-01.jpg",
+    "exp": "Par temps de pluie, la vitesse maximale sur autoroute passe de 130 à 110 km/h (100 km/h sur les 2×2 voies, 80 km/h sur les routes)."
+  },
+  {
+    "id": "PC-063",
+    "theme": "R",
+    "q": "Sous cette averse qui réduit la visibilité, j'utilise :",
+    "a": [
+      "Les feux de croisement",
+      "Les feux de brouillard arrière",
+      "Les essuie-glaces avant"
+    ],
+    "ok": [
+      0,
+      2
+    ],
+    "img": "photos/wc-autoroute-pluie-01.jpg",
+    "exp": "Sous la pluie : feux de croisement pour être vu, essuie-glaces, distances augmentées. Les feux de brouillard arrière sont interdits sous la pluie : ils éblouissent."
+  },
+  {
+    "id": "PC-064",
+    "theme": "L",
+    "q": "À cet emplacement équipé d'une borne de recharge, les panneaux m'indiquent que :",
+    "a": [
+      "Seuls les véhicules électriques peuvent s'y garer",
+      "Un véhicule non autorisé risque la fourrière",
+      "Tout véhicule peut s'y garer pendant 15 minutes"
+    ],
+    "ok": [
+      0,
+      1
+    ],
+    "img": "photos/wc-borne-recharge-01.jpg",
+    "exp": "Panneau « stationnement interdit » + panonceau « interdit sauf » (voiture électrique) + panonceau d'enlèvement : seuls les véhicules électriques peuvent s'y garer, les autres risquent la fourrière."
+  },
+  {
+    "id": "PC-065",
+    "theme": "U",
+    "q": "Ces trottinettes électriques sont garées sur un emplacement dédié. Pour conduire une trottinette électrique, il faut avoir au moins :",
+    "a": [
+      "12 ans",
+      "14 ans",
+      "16 ans",
+      "18 ans"
+    ],
+    "ok": [
+      1
+    ],
+    "img": "photos/wc-trottinette-01.jpg",
+    "exp": "Depuis 2023, l'âge minimum pour conduire une trottinette électrique est de 14 ans. Elle est limitée à 25 km/h par construction."
+  },
+  {
+    "id": "PC-066",
+    "theme": "U",
+    "q": "Une trottinette électrique :",
+    "a": [
+      "Est limitée à 25 km/h par construction",
+      "Peut transporter un passager à l'arrière",
+      "Peut emprunter l'autoroute en journée",
+      "Ne doit pas circuler sur le trottoir"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/wc-trottinette-01.jpg",
+    "exp": "La trottinette électrique est limitée à 25 km/h, réservée à une seule personne, et circule sur les pistes et bandes cyclables ou la chaussée ; le trottoir lui est interdit (sauf autorisation locale)."
+  },
+  {
+    "id": "PC-067",
+    "theme": "U",
+    "q": "À côté du passage pour piétons, ce marquage au sol avec un pictogramme de vélo indique :",
+    "a": [
+      "Une piste cyclable sur la chaussée",
+      "Un stationnement réservé aux vélos",
+      "Une traversée pour les cyclistes"
+    ],
+    "ok": [
+      2
+    ],
+    "img": "photos/wc-traversee-cycliste-01.jpg",
+    "exp": "Ce marquage matérialise une traversée de chaussée pour les cyclistes, souvent accolée au passage piéton. J'y redouble d'attention : cyclistes et piétons y traversent."
+  },
+  {
+    "id": "PC-068",
+    "theme": "U",
+    "q": "J'arrive en voiture sur ce passage pour piétons aménagé sur un plateau surélevé. Un piéton s'engage sur le passage :",
+    "a": [
+      "Je cède le passage au piéton engagé",
+      "Je passe avant lui s'il vient de s'engager",
+      "Je ralentis à l'approche du plateau"
+    ],
+    "ok": [
+      0,
+      2
+    ],
+    "img": "photos/wc-traversee-cycliste-01.jpg",
+    "exp": "Le plateau surélevé impose de ralentir. Un piéton engagé, ou manifestant clairement son intention de traverser, est prioritaire : refuser la priorité coûte 6 points."
+  },
+  {
+    "id": "PC-069",
+    "theme": "U",
+    "q": "Dans cette rue, un panneau « sens interdit » est implanté au bord de la voie du tramway. Avec ma voiture :",
+    "a": [
+      "Je peux y rouler si aucun tram n'arrive",
+      "Je peux m'y arrêter pour déposer quelqu'un",
+      "Je ne dois ni y rouler ni y stationner"
+    ],
+    "ok": [
+      2
+    ],
+    "img": "photos/wc-tramway-01.jpg",
+    "exp": "Les voies réservées au tramway sont interdites aux autres véhicules, ici rappelé par le sens interdit. On n'y circule pas et on n'y stationne pas."
+  },
+  {
+    "id": "PC-070",
+    "theme": "U",
+    "q": "Face à un tramway :",
+    "a": [
+      "Il a une longue distance de freinage",
+      "Il ne peut pas dévier de sa trajectoire",
+      "Il s'arrête plus vite qu'une voiture"
+    ],
+    "ok": [
+      0,
+      1
+    ],
+    "img": "photos/wc-tramway-01.jpg",
+    "exp": "Le tramway, guidé par ses rails et très lourd, ne peut ni dévier ni s'arrêter court. Je ne m'engage jamais sur ses voies si je ne peux pas les dégager."
+  },
+  {
+    "id": "PC-071",
+    "theme": "U",
+    "q": "Le panneau jaune visible derrière le pare-brise de cet autocar indique :",
+    "a": [
+      "Un car immobilisé en panne",
+      "Une école située à proximité",
+      "Un transport d'enfants"
+    ],
+    "ok": [
+      2
+    ],
+    "img": "photos/wc-car-scolaire-01.jpg",
+    "exp": "Ce signal (deux enfants sur fond jaune) signale un véhicule de transport en commun d'enfants : à l'arrêt, des enfants peuvent surgir devant ou derrière lui."
+  },
+  {
+    "id": "PC-072",
+    "theme": "U",
+    "q": "Ce car s'est arrêté pour faire descendre des enfants et a allumé ses feux de détresse. Je dois :",
+    "a": [
+      "Passer à allure normale en surveillant le car",
+      "Ralentir et me tenir prêt à m'arrêter",
+      "Le dépasser vite pour ne pas le gêner"
+    ],
+    "ok": [
+      1
+    ],
+    "img": "photos/wc-car-scolaire-01.jpg",
+    "exp": "Un car de transport d'enfants à l'arrêt avec feux de détresse impose de ralentir et d'être prêt à s'arrêter : un enfant peut traverser sans regarder."
+  }
+]

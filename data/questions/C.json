@@ -1,0 +1,299 @@
+[
+  {
+    "id": "C-001",
+    "theme": "C",
+    "q": "Je suis titulaire du permis depuis 10 ans et je conduis ma voiture personnelle. Le taux d'alcool maximal autorisé est de :",
+    "a": ["0,2 g/L de sang", "0,5 g/L de sang", "0,25 mg/L d'air expiré", "0,4 mg/L d'air expiré"],
+    "ok": [1, 2],
+    "exp": "Le taux maximal est de 0,5 g/L de sang, soit 0,25 mg/L d'air expiré : les deux valeurs désignent le même seuil. Le taux de 0,2 g/L concerne les permis probatoires et les conducteurs de transport en commun ; 0,8 g/L est le seuil du délit."
+  },
+  {
+    "id": "C-002",
+    "theme": "C",
+    "q": "Je suis en permis probatoire. Avant de prendre le volant, je peux boire :",
+    "a": ["Aucun verre d'alcool", "Un seul verre de vin", "Deux verres de bière"],
+    "ok": [0],
+    "exp": "En permis probatoire, le taux maximal est de 0,2 g/L de sang (0,1 mg/L d'air expiré). Un seul verre standard fait monter le taux d'environ 0,20 à 0,25 g/L : la règle pratique est donc « zéro verre »."
+  },
+  {
+    "id": "C-003",
+    "theme": "C",
+    "q": "Servies dans un bar (verre standard), ces boissons contiennent environ la même quantité d'alcool pur (environ 10 g) :",
+    "a": ["25 cl de bière à 5°", "10 cl de vin à 12°", "50 cl de bière à 8°", "3 cl de whisky à 40°"],
+    "ok": [0, 1, 3],
+    "exp": "Un verre standard (25 cl de bière, 10 cl de vin, 3 cl d'alcool fort, 7 cl d'apéritif) contient environ 10 g d'alcool pur et fait monter le taux d'environ 0,20 à 0,25 g/L. Une pinte de bière forte en contient plus de 3 fois plus."
+  },
+  {
+    "id": "C-004",
+    "theme": "C",
+    "q": "J'ai bu plusieurs verres pendant un repas. Pour faire baisser plus vite mon taux d'alcool avant de reprendre la route :",
+    "a": ["Je bois plusieurs cafés serrés", "Je bois beaucoup d'eau fraîche", "J'attends que l'alcool s'élimine", "Je prends une douche froide"],
+    "ok": [2],
+    "exp": "L'organisme élimine l'alcool à un rythme d'environ 0,10 à 0,15 g/L par heure, et rien ne l'accélère (café, eau, douche, nourriture). Il faut attendre, ou confier le volant à un conducteur sobre."
+  },
+  {
+    "id": "C-005",
+    "theme": "C",
+    "q": "L'alcool, même à faible dose, a pour effet :",
+    "a": ["D'allonger fortement mon temps de réaction", "De réduire mon champ visuel périphérique", "D'augmenter ma sensibilité à l'éblouissement", "De n'avoir aucun effet en dessous de 0,5 g/L"],
+    "ok": [0, 1, 2],
+    "exp": "L'alcool agit dès le premier verre : il allonge le temps de réaction, rétrécit le champ visuel, augmente la sensibilité à l'éblouissement et fausse l'appréciation des distances et des risques, tout en donnant une fausse impression d'assurance. Le seuil légal n'est pas un seuil sans effet."
+  },
+  {
+    "id": "C-006",
+    "theme": "C",
+    "q": "Je suis titulaire du permis depuis 8 ans. Lors d'un contrôle, mon taux d'alcool est de 0,6 g/L de sang.",
+    "sub": ["Je perds 6 points :", "Je commets un délit :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [0, 3],
+    "exp": "Entre 0,5 et 0,8 g/L de sang (0,25 à 0,4 mg/L d'air expiré), c'est une contravention : amende forfaitaire de 135 € et retrait de 6 points, avec une suspension du permis possible. Le délit commence à 0,8 g/L."
+  },
+  {
+    "id": "C-007",
+    "theme": "C",
+    "q": "Lors d'un contrôle, l'éthylomètre indique 0,45 mg/L d'air expiré. Je commets :",
+    "a": ["Un délit, puni de prison et d'amende", "Une contravention, avec un retrait de 6 points", "Une contravention, car le délit commence à 0,8 mg/L"],
+    "ok": [0],
+    "exp": "À partir de 0,4 mg/L d'air expiré (0,8 g/L de sang), la conduite sous l'empire d'un état alcoolique est un délit : jusqu'à 2 ans d'emprisonnement, 4 500 € d'amende et retrait de 6 points. Attention à ne pas confondre : 0,8 est le seuil du délit en g/L de sang, pas en mg/L d'air."
+  },
+  {
+    "id": "C-008",
+    "theme": "C",
+    "q": "J'ai mon permis depuis 6 mois (permis probatoire, 6 points). Contrôlé avec 0,3 g/L de sang, je perds :",
+    "a": ["Aucun point, car je suis sous 0,5 g/L", "3 points, car le taux reste faible", "6 points, soit la totalité du capital", "Aucun point, mais un rappel à la loi"],
+    "ok": [2],
+    "exp": "En permis probatoire, le taux maximal est de 0,2 g/L de sang. Entre 0,2 et 0,8 g/L : contravention de 135 € et retrait de 6 points. Avec un capital de 6 points, le permis risque l'invalidation pour solde nul."
+  },
+  {
+    "id": "C-009",
+    "theme": "C",
+    "q": "J'ai fumé du cannabis la veille au soir. Ce matin, je me sens en forme et je prends le volant. Lors d'un contrôle, le dépistage puis l'analyse révèlent la présence de cannabis :",
+    "a": ["Je ne risque rien : je n'ai plus d'effet", "Je commets un délit passible de prison", "Je risque un retrait de 6 points de permis", "Je suis en règle si la quantité est faible"],
+    "ok": [1, 2],
+    "exp": "Il n'existe aucun seuil de tolérance pour les stupéfiants : leur seule présence suffit, même si la consommation date de la veille. C'est un délit : jusqu'à 2 ans de prison, 4 500 € d'amende et retrait de 6 points."
+  },
+  {
+    "id": "C-010",
+    "theme": "C",
+    "q": "Un conducteur contrôlé à la fois avec un taux d'alcool supérieur au taux autorisé et après usage de stupéfiants risque au maximum :",
+    "a": ["1 an de prison et 3 000 € d'amende", "2 ans de prison et 4 500 € d'amende", "5 ans de prison et 75 000 € d'amende", "3 ans de prison et 9 000 € d'amende"],
+    "ok": [3],
+    "exp": "La conduite après usage de stupéfiants est punie de 2 ans et 4 500 € ; associée à l'alcool, les peines passent à 3 ans d'emprisonnement et 9 000 € d'amende, avec retrait de 6 points. Le mélange alcool-cannabis multiplie fortement le risque d'accident mortel."
+  },
+  {
+    "id": "C-011",
+    "theme": "C",
+    "q": "Sur la boîte d'un médicament qu'on vient de me prescrire figure un pictogramme rouge de niveau 3 (triangle avec une voiture). Je dois :",
+    "a": ["Conduire en restant très vigilant", "Lire la notice puis conduire normalement", "Conduire de jour et à vitesse réduite", "Ne pas conduire, et consulter un médecin"],
+    "ok": [3],
+    "exp": "Niveau 1 (jaune) : soyez prudent, lisez la notice. Niveau 2 (orange) : soyez très prudent, ne conduisez pas sans l'avis d'un professionnel de santé. Niveau 3 (rouge) : attention danger, ne conduisez pas ; la reprise de la conduite se fait sur avis médical."
+  },
+  {
+    "id": "C-012",
+    "theme": "C",
+    "q": "Le pictogramme orange (niveau 2) présent sur une boîte de médicament signifie :",
+    "a": ["Soyez prudent : lisez la notice avant de conduire", "Soyez très prudent : demandez conseil à un médecin", "Attention danger : ne prenez pas le volant", "Conduite interdite pendant toute la durée du traitement"],
+    "ok": [1],
+    "exp": "Le niveau 2 (orange) : « soyez très prudent, ne conduisez pas sans l'avis d'un professionnel de santé ». Il faut demander conseil à un médecin ou à un pharmacien avant de conduire. Quel que soit le niveau, il ne faut jamais associer médicaments et alcool : leurs effets s'additionnent."
+  },
+  {
+    "id": "C-013",
+    "theme": "C",
+    "q": "Parmi ces signes, lesquels annoncent la fatigue au volant ?",
+    "a": ["Des mains moites et un cœur qui s'accélère", "Des bâillements de plus en plus fréquents", "Des yeux qui piquent et des paupières lourdes", "Une trajectoire et une vitesse irrégulières"],
+    "ok": [1, 2, 3],
+    "exp": "Bâillements, picotements des yeux, paupières lourdes, raideur de la nuque, besoin de bouger, trajectoire et vitesse irrégulières : dès les premiers signes, il faut s'arrêter. Mains moites et cœur qui s'accélère traduisent plutôt le stress."
+  },
+  {
+    "id": "C-014",
+    "theme": "C",
+    "q": "De nuit, sur autoroute, je bâille sans arrêt et mes paupières deviennent lourdes.",
+    "sub": ["J'ouvre la fenêtre et je monte le son de la radio pour continuer :", "Je m'arrête sur la prochaine aire pour faire une sieste de 15 à 20 minutes :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [1, 2],
+    "scene": { "road": "autoroute", "time": "nuit" },
+    "exp": "Fenêtre ouverte, musique forte ou café ne masquent la fatigue que quelques minutes. Le seul remède efficace est de s'arrêter dans un lieu sûr (aire de repos, jamais la bande d'arrêt d'urgence) et de dormir 15 à 20 minutes."
+  },
+  {
+    "id": "C-015",
+    "theme": "C",
+    "q": "Pour un long trajet de 6 heures, je fais une pause :",
+    "a": ["Toutes les 30 minutes", "Toutes les 2 heures", "Toutes les 4 heures", "Quand je me sens fatigué"],
+    "ok": [1],
+    "exp": "Il faut s'arrêter au moins toutes les 2 heures, même sans se sentir fatigué : la vigilance baisse progressivement sans qu'on s'en rende compte. La pause sert à marcher, se détendre et boire."
+  },
+  {
+    "id": "C-016",
+    "theme": "C",
+    "q": "De nuit, sur autoroute à 130 km/h, je fais un micro-sommeil de 3 secondes. Pendant ce temps, mon véhicule parcourt sans contrôle :",
+    "a": ["Environ 40 m", "Environ 80 m", "Environ 110 m", "Environ 170 m"],
+    "ok": [2],
+    "scene": { "road": "autoroute", "time": "nuit", "signs": ["B14-130"] },
+    "exp": "À 130 km/h, on parcourt environ 36 à 39 m par seconde (règle : chiffre des dizaines × 3), soit plus de 100 m en 3 secondes. 40 m correspond à une seule seconde, 80 m à deux secondes, et 170 m (13 × 13) à la distance d'arrêt sur sol sec. Un micro-sommeil survient sans prévenir chez un conducteur fatigué."
+  },
+  {
+    "id": "C-017",
+    "theme": "C",
+    "q": "En ville, je suis arrêté à un feu rouge. Je prends mon téléphone en main pour lire un message. Je commets une infraction :",
+    "a": ["Oui", "Non"],
+    "ok": [0],
+    "scene": { "road": "agglo" },
+    "exp": "Arrêté à un feu rouge ou dans un embouteillage, le véhicule est toujours « en circulation » : tenir son téléphone en main est interdit (135 €, retrait de 3 points). Pour l'utiliser, il faut s'arrêter dans un endroit autorisé."
+  },
+  {
+    "id": "C-018",
+    "theme": "C",
+    "q": "En conduisant, il m'est interdit d'utiliser :",
+    "a": ["Une oreillette Bluetooth sans fil", "Mon téléphone tenu à la main", "Le kit mains libres de la voiture", "Un casque audio sur les oreilles"],
+    "ok": [0, 1, 3],
+    "exp": "Le téléphone tenu en main (même en mode haut-parleur) et tout dispositif porté à l'oreille (écouteurs, oreillette, casque) sont interdits : 135 € et 3 points. Le système mains libres intégré au véhicule reste autorisé, mais toute conversation détourne l'attention : mieux vaut s'arrêter."
+  },
+  {
+    "id": "C-019",
+    "theme": "C",
+    "q": "Pendant que je conduis, un écran en fonctionnement placé dans mon champ de vision peut afficher :",
+    "a": ["Le trajet affiché par mon GPS", "Une vidéo, si le son est coupé", "L'image de ma caméra de recul", "Mes SMS, s'ils s'affichent en haut d'écran"],
+    "ok": [0, 2],
+    "exp": "Seuls les écrans d'aide à la conduite ou à la navigation sont autorisés dans le champ de vision du conducteur. Tout autre écran en fonctionnement (vidéo, messages…) est puni d'une amende pouvant aller jusqu'à 1 500 € et d'un retrait de 3 points."
+  },
+  {
+    "id": "C-020",
+    "theme": "C",
+    "q": "Sur une route limitée à 90 km/h, je quitte la route des yeux pendant 2 secondes pour régler mon GPS. Pendant ce temps, je parcours environ :",
+    "a": ["81 m", "25 m", "50 m", "100 m"],
+    "ok": [2],
+    "scene": { "road": "route", "signs": ["B14-90"] },
+    "exp": "À 90 km/h, on parcourt environ 25 m par seconde (règle : 9 × 3 = 27 m) : 2 secondes d'inattention représentent environ 50 m parcourus « à l'aveugle ». 25 m correspond à une seule seconde ; 81 m (9 × 9) est la distance d'arrêt sur sol sec. Le GPS se règle avant de partir ou à l'arrêt."
+  },
+  {
+    "id": "C-021",
+    "theme": "C",
+    "q": "Chez un conducteur en forme et attentif, le temps de réaction est d'environ :",
+    "a": ["0,5 seconde", "1 seconde", "2 secondes", "3 secondes"],
+    "ok": [1],
+    "exp": "Le temps de réaction (percevoir, décider, agir) est d'environ 1 seconde. Il ne faut pas le confondre avec les 2 secondes de la distance de sécurité. Il s'allonge avec l'alcool, la fatigue, les médicaments, les stupéfiants ou une conversation téléphonique. À 50 km/h, on parcourt environ 15 m pendant cette seconde."
+  },
+  {
+    "id": "C-022",
+    "theme": "C",
+    "q": "Par temps sec, je roule à 90 km/h. Ma distance d'arrêt est d'environ :",
+    "a": ["27 m", "54 m", "81 m", "120 m"],
+    "ok": [2],
+    "scene": { "road": "route", "weather": "sec", "signs": ["B14-90"] },
+    "exp": "Sur sol sec, la distance d'arrêt s'estime en multipliant le chiffre des dizaines par lui-même : 9 × 9 = 81 m. Elle comprend la distance parcourue pendant le temps de réaction (environ 9 × 3 = 27 m) et la distance de freinage (environ 54 m). Sur sol mouillé, elle passerait à environ 81 × 1,5 ≈ 120 m."
+  },
+  {
+    "id": "C-023",
+    "theme": "C",
+    "q": "En ville, sous la pluie, je roule à 50 km/h. Ma distance d'arrêt est d'environ :",
+    "a": ["15 m", "25 m", "37 m", "50 m"],
+    "ok": [2],
+    "scene": { "road": "agglo", "weather": "pluie" },
+    "exp": "Sur sol sec, la distance d'arrêt à 50 km/h est d'environ 5 × 5 = 25 m. Sur chaussée mouillée, elle est environ 1,5 fois plus longue : 25 × 1,5 ≈ 37 m. 15 m (5 × 3) n'est que la distance parcourue pendant le temps de réaction, et 50 m correspondrait à un doublement, pas à × 1,5."
+  },
+  {
+    "id": "C-024",
+    "theme": "C",
+    "q": "Si je double ma vitesse, ma distance de freinage est environ :",
+    "a": ["Multipliée par 4", "Multipliée par 2", "Multipliée par 3", "Multipliée par 6"],
+    "ok": [0],
+    "exp": "La distance de freinage augmente comme le carré de la vitesse : à vitesse doublée, elle est multipliée par 4 (à vitesse triplée, par 9)."
+  },
+  {
+    "id": "C-025",
+    "theme": "C",
+    "q": "Sur autoroute, je roule derrière un poids lourd. Pour respecter la distance de sécurité, je laisse au minimum :",
+    "a": ["Un intervalle de 2 secondes", "Deux longueurs de voiture", "Deux traits de la ligne de rive", "Une distance de 10 mètres"],
+    "ok": [0, 2],
+    "scene": { "road": "autoroute", "ahead": "camion" },
+    "exp": "La distance de sécurité correspond à au moins 2 secondes de parcours. Sur autoroute, 2 traits de la ligne de rive (marquage discontinu à droite) matérialisent cette distance minimale. Derrière un poids lourd, garder plus de distance permet aussi de voir plus loin."
+  },
+  {
+    "id": "C-026",
+    "theme": "C",
+    "q": "Sur une route à 2×2 voies limitée à 110 km/h, je roule à 110 km/h à 1 seconde de la voiture qui me précède.",
+    "sub": ["Je respecte la distance de sécurité :", "Je risque un retrait de 3 points :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [1, 2],
+    "scene": { "road": "2x2", "ahead": "voiture", "signs": ["B14-110"] },
+    "exp": "La distance de sécurité minimale est de 2 secondes, soit environ 60 m à 110 km/h. Ne pas la respecter est sanctionné d'une amende et d'un retrait de 3 points."
+  },
+  {
+    "id": "C-027",
+    "theme": "C",
+    "q": "Sur autoroute à 130 km/h, mon champ visuel est réduit à environ :",
+    "a": ["100°", "75°", "45°", "30°"],
+    "ok": [3],
+    "scene": { "road": "autoroute", "signs": ["B14-130"] },
+    "exp": "Plus la vitesse augmente, plus le champ visuel se rétrécit : environ 100° à 40 km/h, 75° à 70 km/h, 45° à 100 km/h et 30° à 130 km/h. Les dangers venant des côtés sont alors perçus plus tard."
+  },
+  {
+    "id": "C-028",
+    "theme": "C",
+    "q": "Plus ma vitesse augmente :",
+    "a": ["Plus mon champ visuel se rétrécit", "Plus mon temps de réaction diminue", "Plus ma distance d'arrêt s'allonge", "Moins je perçois les côtés de la route"],
+    "ok": [0, 2, 3],
+    "exp": "Le temps de réaction reste d'environ 1 seconde quelle que soit la vitesse, mais la distance parcourue pendant ce temps augmente. La vitesse rétrécit le champ visuel et allonge fortement la distance d'arrêt."
+  },
+  {
+    "id": "C-029",
+    "theme": "C",
+    "q": "De nuit, sur une route sans éclairage, le conducteur qui arrive en face m'éblouit.",
+    "sub": ["Je regarde vers le bord droit de la chaussée :", "J'allume mes feux de route pour lui répondre :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [0, 3],
+    "scene": { "road": "route", "time": "nuit", "oncoming": "voiture" },
+    "exp": "En cas d'éblouissement, je ralentis et je porte le regard vers le bord droit de la chaussée pour garder ma trajectoire. Éblouir l'autre conducteur en retour mettrait tout le monde en danger."
+  },
+  {
+    "id": "C-030",
+    "theme": "C",
+    "q": "La nuit, par rapport au jour :",
+    "a": ["J'apprécie moins bien distances et vitesses", "Je perçois moins bien couleurs et reliefs", "Mon champ visuel s'élargit grâce aux phares", "Un éblouissement me gêne plusieurs secondes"],
+    "ok": [0, 1, 3],
+    "exp": "De nuit, la vision baisse : distances, vitesses, couleurs et reliefs sont moins bien perçus, et la récupération après un éblouissement prend plusieurs secondes (davantage avec l'âge ou la fatigue). J'adapte ma vitesse à la portée de mes feux."
+  },
+  {
+    "id": "C-031",
+    "theme": "C",
+    "q": "Sur une route à 2×2 voies, un conducteur se rabat brutalement juste devant moi (queue de poisson).",
+    "a": ["Je le colle pour lui montrer mon mécontentement", "Je reste calme et je reprends de la distance", "Je garde ma vitesse : c'est à lui de reprendre ses distances", "Je relève sa plaque et j'appelle le 17 en roulant"],
+    "ok": [1],
+    "scene": { "road": "2x2", "ahead": "voiture" },
+    "exp": "Répondre à l'agressivité par l'agressivité crée un danger. Je lève le pied pour retrouver au moins 2 secondes d'intervalle et je reste calme : même si l'autre est en tort, c'est à moi de recréer la distance. Téléphoner en conduisant est interdit."
+  },
+  {
+    "id": "C-032",
+    "theme": "C",
+    "q": "De nuit, en ville, je ramène des amis après une soirée :",
+    "a": ["Le conducteur désigné est celui qui ne boit pas", "S'ils me distraient, je leur demande de se calmer", "S'ils me poussent à accélérer, j'accélère un peu", "Si l'ambiance devient dangereuse, je m'arrête"],
+    "ok": [0, 1, 3],
+    "scene": { "road": "agglo", "time": "nuit" },
+    "exp": "En groupe, le bruit et la pression des passagers détournent l'attention et poussent à prendre des risques. Le conducteur reste seul responsable : il ne boit pas, il demande le calme et peut s'arrêter si nécessaire."
+  },
+  {
+    "id": "C-033",
+    "theme": "C",
+    "q": "Je suis atteint d'une maladie qui peut être incompatible avec la conduite (par exemple une épilepsie). Concernant mon permis :",
+    "a": ["Je consulte un médecin agréé par le préfet", "J'attends d'être convoqué par la préfecture", "Je consulte mon médecin traitant habituel", "Je ne fais aucune démarche particulière"],
+    "ok": [0],
+    "exp": "C'est au conducteur de faire la démarche auprès d'un médecin agréé par le préfet, qui ne peut pas être son médecin traitant. Sans ce contrôle médical, en cas d'accident lié à sa maladie, il risque de ne pas être couvert par son assurance."
+  },
+  {
+    "id": "C-034",
+    "theme": "C",
+    "q": "Pour bien anticiper les dangers, mon regard doit :",
+    "a": ["Rester fixé sur le véhicule qui me précède", "Porter loin devant et balayer les côtés", "Porter le plus loin possible, sans quitter l'axe de la route"],
+    "ok": [1],
+    "exp": "Un regard qui porte loin et balaie toute la scène (devant, côtés, rétroviseurs) permet de détecter les dangers tôt et d'agir en douceur. Fixer un seul point, même lointain, réduit la perception de l'environnement."
+  },
+  {
+    "id": "C-035",
+    "theme": "C",
+    "q": "Sur une route à 2×2 voies, je veux dépasser la voiture qui me précède. Mes rétroviseurs ne montrent personne. Avant de me déporter :",
+    "a": ["Je me déporte tout de suite, la voie est libre", "Je mets mon clignotant et je me déporte aussitôt", "Je mets mon clignotant et je contrôle l'angle mort"],
+    "ok": [2],
+    "scene": { "road": "2x2", "ahead": "voiture" },
+    "exp": "Les rétroviseurs laissent des zones invisibles, les angles morts, où une moto ou une voiture peut se trouver. Avant tout changement de voie : rétroviseurs, clignotant et coup d'œil rapide par-dessus l'épaule en tournant brièvement la tête."
+  }
+]

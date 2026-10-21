@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "PP-001",
+    "theme": "L",
+    "q": "Hors agglomération, j'arrive à cette intersection en T. À cette intersection, je dois :",
+    "a": [
+      "Marquer un arrêt complet à la ligne blanche, même voie libre",
+      "Ralentir fortement et passer sans m'arrêter si la voie est libre",
+      "Céder le passage aux seuls véhicules venant de ma droite",
+      "Laisser passer les véhicules venant de gauche comme de droite"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/pp-stop-01.jpg",
+    "exp": "Au panneau STOP, l'arrêt est absolu à la limite de la chaussée abordée (ligne blanche continue), puis je cède le passage à tous les usagers. Ne pas marquer l'arrêt coûte 4 points."
+  },
+  {
+    "id": "PP-002",
+    "theme": "L",
+    "q": "Personne n'arrive, ni à gauche ni à droite.",
+    "sub": [
+      "Je peux franchir la ligne blanche sans m'arrêter :",
+      "Après l'arrêt, je repars une fois la visibilité vérifiée des deux côtés :"
+    ],
+    "a": [
+      "Oui",
+      "Non",
+      "Oui",
+      "Non"
+    ],
+    "ok": [
+      1,
+      2
+    ],
+    "img": "photos/pp-stop-01.jpg",
+    "exp": "Même sans aucun trafic, l'arrêt au STOP est obligatoire. Je repars seulement après avoir regardé des deux côtés."
+  },
+  {
+    "id": "PP-003",
+    "theme": "L",
+    "q": "Dans cette rue étroite, les bordures de trottoir sont marquées d'une ligne jaune discontinue. Cette ligne m'indique que :",
+    "a": [
+      "Le stationnement est interdit",
+      "L'arrêt et le stationnement sont interdits",
+      "Le stationnement est réservé aux livraisons",
+      "Le stationnement est payant"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-stop-02.jpg",
+    "exp": "Ligne jaune discontinue sur la bordure : stationnement interdit (l'arrêt reste possible). Ligne jaune continue : arrêt et stationnement interdits."
+  },
+  {
+    "id": "PP-004",
+    "theme": "L",
+    "q": "Au bout de cette rue, après le passage pour piétons, je dois :",
+    "a": [
+      "M'arrêter au STOP avant de m'engager",
+      "Céder le passage aux véhicules de droite, sans m'arrêter",
+      "M'arrêter si un véhicule arrive sur la route abordée",
+      "Laisser passer un piéton engagé sur le passage"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/pp-stop-02.jpg",
+    "exp": "Le panneau STOP impose un arrêt obligatoire, puis de céder le passage à tous. Le piéton engagé ou qui manifeste l'intention de traverser est prioritaire."
+  },
+  {
+    "id": "PP-005",
+    "theme": "L",
+    "q": "Pour entrer dans ce carrefour à sens giratoire, je dois céder le passage :",
+    "a": [
+      "Aux véhicules qui circulent déjà sur l'anneau",
+      "Aux véhicules qui arrivent à ma droite pour entrer",
+      "Aux piétons engagés sur le passage avant l'anneau",
+      "À personne : la priorité à droite me favorise ici"
+    ],
+    "ok": [
+      0,
+      2
+    ],
+    "img": "photos/pp-giratoire-01.jpg",
+    "exp": "Le panneau cédez-le-passage et la ligne discontinue imposent de laisser passer les véhicules déjà engagés sur l'anneau. Avant cela, le piéton engagé sur le passage est prioritaire."
+  },
+  {
+    "id": "PP-006",
+    "theme": "L",
+    "q": "Sur l'anneau de ce giratoire, je circule :",
+    "a": [
+      "En laissant l'îlot central à ma gauche",
+      "En laissant l'îlot central à ma droite",
+      "Par la gauche de l'îlot si je sors à la première à gauche"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-giratoire-01.jpg",
+    "exp": "On tourne autour d'un giratoire par la droite, l'îlot central à gauche (sens inverse des aiguilles d'une montre)."
+  },
+  {
+    "id": "PP-007",
+    "theme": "U",
+    "q": "Je suis ce poids lourd à l'approche du giratoire.",
+    "sub": [
+      "Je garde une distance plus grande que derrière une voiture :",
+      "Je le dépasse avant le giratoire pour ne pas être gêné :"
+    ],
+    "a": [
+      "Oui",
+      "Non",
+      "Oui",
+      "Non"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/pp-giratoire-02.jpg",
+    "exp": "Derrière un poids lourd, je garde une distance plus importante : il masque la vue et peut freiner brusquement pour céder le passage. Le dépasser juste avant le giratoire serait dangereux."
+  },
+  {
+    "id": "PP-008",
+    "theme": "U",
+    "q": "En entrant dans le giratoire, ce poids lourd peut :",
+    "a": [
+      "Empiéter sur l'îlot ou la chaussée pour tourner",
+      "S'arrêter brusquement pour céder le passage",
+      "Avoir des angles morts qui l'empêchent de me voir",
+      "Accélérer plus vite qu'une voiture en sortie de giratoire"
+    ],
+    "ok": [
+      0,
+      1,
+      2
+    ],
+    "img": "photos/pp-giratoire-02.jpg",
+    "exp": "Un poids lourd a besoin de beaucoup de place pour tourner, freine pour céder le passage et possède de grands angles morts : je reste en retrait, là où le conducteur peut me voir dans ses rétroviseurs."
+  },
+  {
+    "id": "PP-009",
+    "theme": "L",
+    "q": "La voiture grise circule déjà sur l'anneau de ce giratoire. Je dois :",
+    "a": [
+      "La laisser passer avant d'entrer",
+      "Entrer en même temps puisqu'elle arrive de ma gauche",
+      "Entrer si elle n'a pas mis son clignotant",
+      "M'arrêter à la ligne de cédez-le-passage si elle approche"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/pp-giratoire-03.jpg",
+    "exp": "À l'entrée de ce giratoire, le cédez-le-passage s'applique : les véhicules sur l'anneau sont prioritaires, qu'ils sortent ou non. Sans clignotant, la voiture grise continue sur l'anneau, devant moi. Je m'arrête à la ligne discontinue si nécessaire."
+  },
+  {
+    "id": "PP-010",
+    "theme": "L",
+    "q": "Une fois entré dans ce giratoire.",
+    "sub": [
+      "Je mets le clignotant droit juste avant la sortie que je prends :",
+      "Je m'arrête sur l'anneau pour laisser entrer les véhicules en attente :"
+    ],
+    "a": [
+      "Oui",
+      "Non",
+      "Oui",
+      "Non"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/pp-giratoire-03.jpg",
+    "exp": "Je signale ma sortie avec le clignotant droit juste avant de la prendre. Sur l'anneau je suis prioritaire sur les véhicules qui entrent : m'arrêter sans raison surprendrait ceux qui me suivent."
+  },
+  {
+    "id": "PP-011",
+    "theme": "L",
+    "q": "À l'intersection annoncée par le panneau à droite, je devrai :",
+    "a": [
+      "Céder le passage aux véhicules venant de ma droite",
+      "Céder le passage aux véhicules venant de ma gauche",
+      "Marquer un arrêt obligatoire à l'intersection",
+      "Passer en priorité sur la route transversale"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-priorite-droite-01.jpg",
+    "exp": "Le triangle à croix noire annonce une intersection où s'applique la priorité à droite. Hors agglomération, il est placé à environ 150 m de l'intersection."
+  },
+  {
+    "id": "PP-012",
+    "theme": "C",
+    "q": "Sur cette route étroite sans marquage, une voiture arrive en face.",
+    "sub": [
+      "Je ralentis et je serre à droite :",
+      "Je reste au milieu de la chaussée tant qu'elle est loin :"
+    ],
+    "a": [
+      "Oui",
+      "Non",
+      "Oui",
+      "Non"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/pp-priorite-droite-01.jpg",
+    "exp": "Sur une route étroite, je ralentis et serre à droite pour croiser. Rouler au milieu tant que l'autre est loin, c'est risquer de mal estimer la distance."
+  },
+  {
+    "id": "PP-013",
+    "theme": "L",
+    "q": "Le panneau en forme de losange jaune à droite m'indique :",
+    "a": [
+      "Que je circule sur une route à caractère prioritaire",
+      "Que je dois céder le passage à la prochaine intersection",
+      "Que la route prioritaire prend fin au prochain carrefour",
+      "Que je suis prioritaire jusqu'au panneau de fin"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/pp-route-prioritaire-01.jpg",
+    "exp": "Le losange jaune (AB6) indique une route à caractère prioritaire : je suis prioritaire aux intersections jusqu'au panneau de fin (losange barré, AB7)."
+  },
+  {
+    "id": "PP-014",
+    "theme": "L",
+    "q": "À gauche de ma voie, une zone hachurée est bordée d'une ligne continue. Cette zone :",
+    "a": [
+      "Ne doit être ni franchie ni utilisée pour circuler",
+      "Peut servir à dépasser le camion qui arrive en face",
+      "Peut servir à m'arrêter en cas de besoin",
+      "Est une voie réservée aux cyclistes et aux bus"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-route-prioritaire-01.jpg",
+    "exp": "Une zone hachurée (zébras) bordée d'une ligne continue ne se franchit pas : on ne roule pas dessus, on ne s'y arrête pas."
+  },
+  {
+    "id": "PP-015",
+    "theme": "L",
+    "q": "Le feu est rouge. Je m'arrête :",
+    "a": [
+      "Avant le passage pour piétons",
+      "Au pied du feu, sur le passage pour piétons",
+      "Seulement si des véhicules arrivent de la route transversale"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-feux-01.jpg",
+    "exp": "Au feu rouge, je m'arrête à la ligne d'effet des feux ou, à défaut, avant le passage pour piétons sans l'encombrer. Griller un feu rouge coûte 4 points."
+  },
+  {
+    "id": "PP-016",
+    "theme": "L",
+    "q": "Sous le feu se trouve un losange jaune. Si le feu passe à l'orange clignotant :",
+    "sub": [
+      "Je dois m'arrêter obligatoirement :",
+      "Je suis prioritaire à l'intersection grâce au panneau sous le feu :"
+    ],
+    "a": [
+      "Oui",
+      "Non",
+      "Oui",
+      "Non"
+    ],
+    "ok": [
+      1,
+      2
+    ],
+    "img": "photos/pp-feux-01.jpg",
+    "exp": "Feu orange clignotant : prudence, on applique les autres règles. Ici, le panneau losange jaune placé sous le feu me rend alors prioritaire."
+  },
+  {
+    "id": "PP-017",
+    "theme": "L",
+    "q": "Le panneau triangulaire à droite porte un panonceau « 150 m ». Il m'indique :",
+    "a": [
+      "Un cédez-le-passage à l'intersection située à 150 m",
+      "Que je dois céder le passage dès ce panneau",
+      "Une intersection avec priorité à droite à 150 m",
+      "Un STOP obligatoire à l'intersection située à 150 m"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-cedez-02.jpg",
+    "exp": "Le cédez-le-passage accompagné d'un panonceau de distance annonce l'intersection où je devrai céder le passage, ici à 150 m."
+  },
+  {
+    "id": "PP-018",
+    "theme": "L",
+    "q": "Arrivé à l'intersection annoncée, je dois :",
+    "a": [
+      "Céder le passage à gauche comme à droite",
+      "Marquer un arrêt, même si la voie est libre",
+      "Ne m'arrêter que si c'est nécessaire",
+      "Céder le passage aux seuls véhicules de droite"
+    ],
+    "ok": [
+      0,
+      2
+    ],
+    "img": "photos/pp-cedez-02.jpg",
+    "exp": "Au cédez-le-passage, je laisse passer les usagers de la route abordée, des deux côtés. L'arrêt n'est obligatoire que si quelqu'un arrive ou si la visibilité est insuffisante."
+  },
+  {
+    "id": "PP-019",
+    "theme": "L",
+    "q": "À la prochaine intersection, signalée par le triangle à droite :",
+    "sub": [
+      "Je suis prioritaire sur les usagers de la route transversale :",
+      "Je reste prêt à réagir si un véhicule ne respecte pas ma priorité :"
+    ],
+    "a": [
+      "Oui",
+      "Non",
+      "Oui",
+      "Non"
+    ],
+    "ok": [
+      0,
+      2
+    ],
+    "img": "photos/pp-prioritaire-ab2-01.jpg",
+    "exp": "Le triangle à flèche noire épaisse traversée d'un trait annonce une intersection où je suis prioritaire. Je reste vigilant : un autre conducteur peut ne pas respecter la priorité."
+  },
+  {
+    "id": "PP-020",
+    "theme": "L",
+    "q": "Je passe ces panneaux à l'entrée de Paluel. La vitesse maximale autorisée devient :",
+    "a": [
+      "30 km/h",
+      "50 km/h",
+      "70 km/h",
+      "80 km/h"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-agglo-entree-01.jpg",
+    "exp": "Le panneau d'entrée d'agglomération fixe en principe 50 km/h, mais le panneau rond « 30 » placé dessous impose ici 30 km/h."
+  },
+  {
+    "id": "PP-021",
+    "theme": "L",
+    "q": "Le panneau rectangulaire blanc bordé de rouge portant le nom « PALUEL » marque :",
+    "a": [
+      "L'entrée d'une agglomération",
+      "Un simple lieu-dit, sans effet sur la réglementation",
+      "Le début d'une zone de rencontre"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-agglo-entree-01.jpg",
+    "exp": "Ce panneau (EB10) marque l'entrée de l'agglomération : les règles de circulation en agglomération s'appliquent (50 km/h par défaut, avertisseur sonore réservé au danger immédiat)."
+  },
+  {
+    "id": "PP-022",
+    "theme": "L",
+    "q": "J'entre dans l'agglomération d'Arzano, un passage pour piétons est en vue.",
+    "sub": [
+      "Je klaxonne pour prévenir de mon arrivée au passage piéton :",
+      "Sauf panneau contraire, je ne dépasse pas 50 km/h :"
+    ],
+    "a": [
+      "Oui",
+      "Non",
+      "Oui",
+      "Non"
+    ],
+    "ok": [
+      1,
+      2
+    ],
+    "img": "photos/pp-agglo-entree-02.jpg",
+    "exp": "En agglomération, l'avertisseur sonore n'est permis qu'en cas de danger immédiat. Sauf panneau contraire, la vitesse y est limitée à 50 km/h."
+  },
+  {
+    "id": "PP-023",
+    "theme": "L",
+    "q": "J'entre dans cette agglomération par une zone 30. Je sais que :",
+    "a": [
+      "La vitesse est limitée à 30 km/h dans toute la zone",
+      "La limitation cesse après la prochaine intersection",
+      "Les piétons y sont prioritaires sur la chaussée, même hors des passages",
+      "Elle s'applique jusqu'au panneau de sortie de zone"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/pp-agglo-zone30-01.jpg",
+    "exp": "La limitation à 30 km/h vaut pour toute la zone, jusqu'au panneau de sortie de zone 30. La priorité des piétons sur toute la chaussée, c'est la zone de rencontre, pas la zone 30."
+  },
+  {
+    "id": "PP-024",
+    "theme": "U",
+    "q": "Ce piéton traverse devant moi, juste après le passage pour piétons. Je dois :",
+    "a": [
+      "Le laisser terminer sa traversée",
+      "Passer derrière lui sans ralentir",
+      "Passer devant lui : il est hors du passage",
+      "M'arrêter pour le laisser passer"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/pp-pieton-01.jpg",
+    "exp": "Un piéton déjà engagé sur la chaussée ne doit jamais être mis en danger, même s'il traverse hors du passage : je ralentis et m'arrête si besoin. Ne pas céder le passage à un piéton coûte 6 points."
+  },
+  {
+    "id": "PP-025",
+    "theme": "L",
+    "q": "Le piéton est passé. À l'intersection qui suit, signalée par le panneau triangulaire pointe en bas, je dois :",
+    "a": [
+      "Céder le passage aux véhicules circulant sur la route que j'aborde",
+      "Marquer un arrêt obligatoire à la ligne, même voie libre",
+      "Passer en priorité, la route abordée étant secondaire"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-pieton-01.jpg",
+    "exp": "Le panneau cédez-le-passage impose de laisser passer les usagers de la route abordée. L'arrêt n'est obligatoire que si c'est nécessaire."
+  },
+  {
+    "id": "PP-026",
+    "theme": "R",
+    "q": "À l'approche de ce passage à niveau, les demi-barrières sont levées :",
+    "a": [
+      "Je ralentis et je regarde des deux côtés",
+      "Je ne m'engage que si je peux dégager les voies",
+      "Je peux m'arrêter sur les voies si la circulation est bloquée devant",
+      "Je m'arrête toujours avant les voies, même feux éteints"
+    ],
+    "ok": [
+      0,
+      1
+    ],
+    "img": "photos/pp-passage-niveau-01.jpg",
+    "exp": "Je ne m'engage sur un passage à niveau que si je peux le franchir sans m'arrêter. S'arrêter sur les voies est extrêmement dangereux. Barrières levées et feux éteints, aucun arrêt n'est imposé : je ralentis et je regarde."
+  },
+  {
+    "id": "PP-027",
+    "theme": "R",
+    "q": "Les feux rouges clignotants de ce passage à niveau s'allument et les demi-barrières commencent à descendre. Je dois :",
+    "a": [
+      "M'arrêter avant le passage à niveau",
+      "Accélérer pour passer avant la fermeture",
+      "Passer tant que les demi-barrières ne sont pas baissées"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-passage-niveau-01.jpg",
+    "exp": "Le feu rouge clignotant d'un passage à niveau impose un arrêt absolu, dès qu'il s'allume et avant même que les barrières soient baissées. Le panonceau le rappelle : un train peut en cacher un autre."
+  },
+  {
+    "id": "PP-028",
+    "theme": "L",
+    "q": "Je quitte Saint-Paulien sur cette route bidirectionnelle sans séparateur central, par temps sec. En l'absence d'autre panneau, la vitesse maximale autorisée devient :",
+    "a": [
+      "50 km/h",
+      "70 km/h",
+      "80 km/h",
+      "90 km/h"
+    ],
+    "ok": [
+      2
+    ],
+    "img": "photos/pp-agglo-sortie-01.jpg",
+    "exp": "Hors agglomération, sur une route à double sens sans séparateur central, la vitesse est limitée à 80 km/h, sauf panneau autorisant 90 km/h."
+  },
+  {
+    "id": "PP-029",
+    "theme": "L",
+    "q": "La ligne axiale de cette route est discontinue. Pour dépasser, je dois :",
+    "a": [
+      "Vérifier que la voie de gauche est libre assez loin",
+      "Mettre mon clignotant gauche avant de déboîter",
+      "Laisser au moins 1,50 m si je dépasse un cycliste",
+      "Rester le plus longtemps possible sur la voie de gauche"
+    ],
+    "ok": [
+      0,
+      1,
+      2
+    ],
+    "img": "photos/pp-agglo-sortie-01.jpg",
+    "exp": "La ligne discontinue autorise le dépassement si la visibilité et la distance le permettent. Je signale ma manœuvre et laisse 1,50 m hors agglomération avec un cycliste, puis je me rabats sans gêner."
+  },
+  {
+    "id": "PP-030",
+    "theme": "R",
+    "q": "La route tourne à gauche, la visibilité est réduite et des véhicules arrivent en face. Je dois :",
+    "a": [
+      "Serrer à droite dans le virage",
+      "Adapter ma vitesse avant le virage",
+      "Couper le virage pour garder de l'élan",
+      "Freiner fortement au milieu du virage"
+    ],
+    "ok": [
+      0,
+      1
+    ],
+    "img": "photos/pp-virage-01.jpg",
+    "exp": "Je ralentis avant le virage, pas dedans, et je garde ma droite pour croiser sans risque. Couper un virage expose au choc frontal."
+  },
+  {
+    "id": "PP-031",
+    "theme": "L",
+    "q": "Sous ce pont, je passe les panneaux de fin de zone 30 et de sortie d'agglomération. Sur cette route à double sens, sans autre indication, je peux rouler jusqu'à :",
+    "a": [
+      "30 km/h",
+      "50 km/h",
+      "80 km/h",
+      "90 km/h"
+    ],
+    "ok": [
+      2
+    ],
+    "img": "photos/pp-pont-01.jpg",
+    "exp": "À la sortie de l'agglomération, la limitation générale hors agglomération s'applique : 80 km/h sur une route à double sens sans séparateur central."
+  },
+  {
+    "id": "PP-032",
+    "theme": "R",
+    "q": "À l'approche de cette barrière de péage, je dois :",
+    "a": [
+      "Ralentir et respecter la vitesse affichée au-dessus des voies (30 km/h)",
+      "Choisir ma voie assez tôt selon mon moyen de paiement",
+      "Changer de voie au dernier moment si une file est plus courte",
+      "Éviter les voies réservées au télépéage si je n'ai pas de badge"
+    ],
+    "ok": [
+      0,
+      1,
+      3
+    ],
+    "img": "photos/pp-peage-01.jpg",
+    "exp": "Au péage, je ralentis tôt, je repère les voies selon mon moyen de paiement (symbole orange « t » = télépéage) et je m'y place sans changement brusque."
+  },
+  {
+    "id": "PP-033",
+    "theme": "R",
+    "q": "Au-dessus d'une voie de péage, une flèche verte signifie :",
+    "a": [
+      "Que la voie est ouverte",
+      "Que la voie est fermée",
+      "Que la voie est réservée aux poids lourds"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-peage-02.jpg",
+    "exp": "Flèche verte : voie ouverte. Croix rouge : voie fermée. Je choisis une voie ouverte qui accepte mon moyen de paiement."
+  },
+  {
+    "id": "PP-034",
+    "theme": "R",
+    "q": "Sur cette route à chaussées séparées, je veux prendre la sortie « Condrieu - Ampuis ». Je dois :",
+    "a": [
+      "Mettre mon clignotant droit et m'engager sur la voie de sortie",
+      "Ralentir une fois sur la voie de sortie",
+      "Ralentir nettement sur la voie principale avant la bifurcation",
+      "Mettre mon clignotant au dernier moment, à la bifurcation"
+    ],
+    "ok": [
+      0,
+      1
+    ],
+    "img": "photos/pp-autoroute-sortie-01.jpg",
+    "exp": "Je signale ma sortie, je m'engage sur la voie de décélération et j'y ralentis. Freiner fort sur la voie principale surprend ceux qui suivent. Si je rate la sortie, je prends la suivante."
+  },
+  {
+    "id": "PP-035",
+    "theme": "L",
+    "q": "Le panneau « 90 » accompagné d'une flèche oblique vers la droite s'applique :",
+    "a": [
+      "À la bretelle de sortie",
+      "À toutes les voies de la route principale",
+      "Aux poids lourds et aux autocars"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-autoroute-sortie-01.jpg",
+    "exp": "La flèche du panonceau indique la voie concernée : ici, la limitation à 90 km/h s'applique à la bretelle de sortie."
+  },
+  {
+    "id": "PP-036",
+    "theme": "C",
+    "q": "La circulation est dense sur cette voie rapide. Je dois :",
+    "a": [
+      "Garder au moins 2 secondes avec le véhicule qui me précède",
+      "Regarder loin devant pour anticiper les ralentissements",
+      "Rouler sur la zone hachurée de droite pour gagner du temps",
+      "Changer de voie dès qu'une file avance plus vite"
+    ],
+    "ok": [
+      0,
+      1
+    ],
+    "img": "photos/pp-autoroute-02.jpg",
+    "exp": "Même en circulation dense, je garde au moins 2 secondes d'intervalle et j'anticipe en regardant loin. Ne pas respecter la distance de sécurité coûte 3 points."
+  },
+  {
+    "id": "PP-037",
+    "theme": "L",
+    "q": "Je peux circuler ou m'arrêter sur la zone hachurée (zébras) à droite :",
+    "a": [
+      "Oui",
+      "Non"
+    ],
+    "ok": [
+      1
+    ],
+    "img": "photos/pp-autoroute-02.jpg",
+    "exp": "Les zébras séparent les flux de circulation : on ne roule pas dessus et on ne s'y arrête pas."
+  },
+  {
+    "id": "PP-038",
+    "theme": "R",
+    "q": "Sur cette autoroute, je peux utiliser la bande d'arrêt d'urgence à droite :",
+    "a": [
+      "Pour m'arrêter en cas de panne ou de malaise",
+      "Pour téléphoner, à condition d'allumer mes feux de détresse",
+      "Pour dépasser par la droite un véhicule très lent",
+      "Pour faire une courte pause en cas de fatigue"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-autoroute-03.jpg",
+    "exp": "La bande d'arrêt d'urgence est réservée à l'arrêt en cas d'urgence. Pour une pause, je vais sur une aire. Y circuler coûte 3 points."
+  },
+  {
+    "id": "PP-039",
+    "theme": "R",
+    "q": "Je tombe en panne sur cette autoroute et je m'arrête sur la bande d'arrêt d'urgence.",
+    "sub": [
+      "J'enfile mon gilet haute visibilité avant de sortir du véhicule :",
+      "Les passagers restent assis dans la voiture en attendant les secours :"
+    ],
+    "a": [
+      "Oui",
+      "Non",
+      "Oui",
+      "Non"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/pp-autoroute-03.jpg",
+    "exp": "J'allume les feux de détresse, j'enfile le gilet avant de sortir, puis tout le monde sort côté droit et va derrière la glissière. Rester dans la voiture expose au sur-accident."
+  },
+  {
+    "id": "PP-040",
+    "theme": "L",
+    "q": "Le panneau carré bleu à flèche blanche verticale, en haut à gauche, m'indique :",
+    "a": [
+      "Une rue à sens unique",
+      "Une obligation d'aller tout droit",
+      "Une voie réservée aux bus"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-sens-unique-01.jpg",
+    "exp": "Le panneau carré bleu à flèche blanche (C12) indique une circulation à sens unique. Une obligation de direction se signale par un panneau rond bleu."
+  },
+  {
+    "id": "PP-041",
+    "theme": "L",
+    "q": "Sous le panneau de stationnement interdit à gauche, le panonceau « DES 2 CÔTÉS » signifie :",
+    "a": [
+      "Que le stationnement est interdit des deux côtés de la rue",
+      "Que le stationnement est autorisé alternativement d'un côté puis de l'autre",
+      "Que l'arrêt est interdit seulement du côté du panneau"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-sens-unique-01.jpg",
+    "exp": "Le panonceau étend l'interdiction de stationner aux deux côtés de la chaussée."
+  },
+  {
+    "id": "PP-042",
+    "theme": "L",
+    "q": "Le panneau carré bleu à droite marque l'entrée d'une zone de rencontre. Dans cette zone :",
+    "a": [
+      "La vitesse est limitée à 20 km/h",
+      "Les piétons sont prioritaires, même sur la chaussée",
+      "Les piétons doivent rester sur les trottoirs",
+      "La vitesse est limitée à 30 km/h"
+    ],
+    "ok": [
+      0,
+      1
+    ],
+    "img": "photos/pp-zone-rencontre-01.jpg",
+    "exp": "En zone de rencontre, la vitesse est limitée à 20 km/h et les piétons, prioritaires, peuvent marcher sur la chaussée. Le stationnement n'y est permis que sur les emplacements prévus."
+  },
+  {
+    "id": "PP-043",
+    "theme": "R",
+    "q": "Dans ce tunnel à double sens, je dois :",
+    "a": [
+      "Allumer au moins les feux de croisement",
+      "Ne pas franchir la ligne continue",
+      "Rester à bonne distance du véhicule qui me précède",
+      "Faire demi-tour si la circulation ralentit"
+    ],
+    "ok": [
+      0,
+      1,
+      2
+    ],
+    "img": "photos/pp-tunnel-01.jpg",
+    "exp": "En tunnel : feux de croisement allumés, ni dépassement ni franchissement de la ligne continue, distances de sécurité respectées. Le demi-tour est interdit."
+  },
+  {
+    "id": "PP-044",
+    "theme": "R",
+    "q": "Un incendie se déclare plus loin dans ce tunnel.",
+    "sub": [
+      "Je fais demi-tour pour sortir au plus vite :",
+      "Je coupe le moteur et je rejoins à pied une issue de secours :"
+    ],
+    "a": [
+      "Oui",
+      "Non",
+      "Oui",
+      "Non"
+    ],
+    "ok": [
+      1,
+      2
+    ],
+    "img": "photos/pp-tunnel-01.jpg",
+    "exp": "Pas de demi-tour en tunnel. Je m'arrête, j'allume les feux de détresse, je coupe le moteur en laissant la clé et je rejoins à pied l'issue de secours la plus proche."
+  },
+  {
+    "id": "PP-045",
+    "theme": "R",
+    "q": "Ce passage sous un ouvrage est étroit et une voiture arrive en face. Je dois :",
+    "a": [
+      "Ralentir et serrer à droite",
+      "M'arrêter si nous ne pouvons pas nous croiser",
+      "Accélérer pour passer avant elle",
+      "Garder ma vitesse, car je suis prioritaire"
+    ],
+    "ok": [
+      0,
+      1
+    ],
+    "img": "photos/pp-passage-etroit-01.jpg",
+    "exp": "Dans un passage étroit sans panneau de priorité, aucun des deux n'est prioritaire : je ralentis, je serre à droite et je m'arrête si le croisement est impossible."
+  },
+  {
+    "id": "PP-046",
+    "theme": "R",
+    "q": "Les triangles blancs peints en travers de la chaussée devant moi signalent :",
+    "a": [
+      "Un ralentisseur (surélévation de chaussée)",
+      "Une obligation de céder le passage",
+      "Un emplacement réservé au stationnement"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-ralentisseur-01.jpg",
+    "exp": "Les « dents de requin » peintes sur la chaussée signalent la rampe d'un ralentisseur : je ralentis avant de l'aborder."
+  },
+  {
+    "id": "PP-047",
+    "theme": "U",
+    "q": "Juste après le ralentisseur se trouve un passage pour piétons. Je dois :",
+    "a": [
+      "Ralentir avant le ralentisseur",
+      "Être prêt à céder le passage à un piéton",
+      "Accélérer après la bosse pour reprendre vite de la vitesse"
+    ],
+    "ok": [
+      0,
+      1
+    ],
+    "img": "photos/pp-ralentisseur-01.jpg",
+    "exp": "Le ralentisseur protège la traversée des piétons : je l'aborde lentement et je reste prêt à m'arrêter pour un piéton qui s'engage."
+  },
+  {
+    "id": "PP-048",
+    "theme": "U",
+    "q": "À droite de ma voie, une bande marquée d'un vélo est séparée par une ligne discontinue. Je peux :",
+    "a": [
+      "Y circuler pour dépasser par la droite la voiture rouge",
+      "M'y arrêter quelques instants pour déposer un passager",
+      "La franchir pour tourner à droite, après les cyclistes",
+      "Y stationner un court instant si aucun cycliste n'arrive"
+    ],
+    "ok": [
+      2
+    ],
+    "img": "photos/pp-bande-cyclable-01.jpg",
+    "exp": "La bande cyclable est réservée aux cycles : on n'y circule pas, on ne s'y arrête pas et on n'y stationne pas. Je peux franchir la ligne discontinue pour tourner, après avoir laissé passer les cyclistes."
+  },
+  {
+    "id": "PP-049",
+    "theme": "U",
+    "q": "Je veux tourner à droite plus loin, en traversant cette bande cyclable.",
+    "sub": [
+      "Avant de tourner, je contrôle le rétroviseur droit et l'angle mort :",
+      "Le cycliste qui roule sur la bande doit me laisser passer :"
+    ],
+    "a": [
+      "Oui",
+      "Non",
+      "Oui",
+      "Non"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/pp-bande-cyclable-01.jpg",
+    "exp": "Le cycliste qui roule tout droit sur la bande est prioritaire sur moi quand je tourne. Je contrôle le rétroviseur et l'angle mort droit avant de tourner."
+  },
+  {
+    "id": "PP-050",
+    "theme": "U",
+    "q": "Dans cette rue bordée de voitures en stationnement, je redoute :",
+    "a": [
+      "L'ouverture d'une portière",
+      "Un piéton qui surgit entre deux voitures",
+      "Un véhicule qui quitte sa place",
+      "Aucun danger particulier si je respecte la limitation"
+    ],
+    "ok": [
+      0,
+      1,
+      2
+    ],
+    "img": "photos/pp-stationnement-01.jpg",
+    "exp": "Les véhicules stationnés masquent les piétons et peuvent s'ouvrir ou démarrer : je modère ma vitesse et garde une distance latérale suffisante."
+  },
+  {
+    "id": "PP-051",
+    "theme": "L",
+    "q": "Je veux stationner dans cette rue à double sens. Je peux le faire :",
+    "a": [
+      "Sur un emplacement autorisé, dans le sens de la circulation",
+      "Sur le passage pour piétons pour quelques minutes",
+      "Sur le trottoir si je laisse de la place aux piétons"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-stationnement-01.jpg",
+    "exp": "Je stationne sur un emplacement autorisé, dans le sens de la circulation. Le stationnement sur un passage pour piétons ou sur un trottoir est très gênant et sanctionné."
+  },
+  {
+    "id": "PP-052",
+    "theme": "R",
+    "q": "Le panneau triangulaire à fond jaune, à droite, annonce un chantier. Je dois :",
+    "a": [
+      "Ralentir et être prêt à m'arrêter",
+      "Faire attention aux ouvriers et aux engins",
+      "Respecter la signalisation temporaire avant les marquages blancs",
+      "Suivre les marquages blancs, qui priment sur les jaunes"
+    ],
+    "ok": [
+      0,
+      1,
+      2
+    ],
+    "img": "photos/pp-travaux-01.jpg",
+    "exp": "La signalisation de chantier à fond jaune est temporaire et prime sur la signalisation permanente. Je ralentis et je surveille les ouvriers, les engins et les gravillons."
+  },
+  {
+    "id": "PP-053",
+    "theme": "L",
+    "q": "La rue en face est fermée par des barrières de chantier portant un panneau de sens interdit. Je dois :",
+    "a": [
+      "Suivre la déviation ou prendre une autre direction",
+      "Contourner les barrières si aucun ouvrier n'est présent",
+      "Passer lentement entre les barrières, sans gêner"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-travaux-02.jpg",
+    "exp": "La signalisation temporaire s'impose : la rue est fermée, je prends un autre itinéraire ou la déviation indiquée."
+  },
+  {
+    "id": "PP-054",
+    "theme": "L",
+    "q": "En cas de contradiction, la signalisation temporaire de chantier l'emporte sur :",
+    "a": [
+      "Les panneaux permanents",
+      "Les marquages au sol permanents",
+      "Les feux tricolores",
+      "Les ordres d'un agent de circulation"
+    ],
+    "ok": [
+      0,
+      1,
+      2
+    ],
+    "img": "photos/pp-travaux-02.jpg",
+    "exp": "Ordre de priorité : agent, puis signalisation temporaire, puis feux, puis panneaux, puis marquages."
+  },
+  {
+    "id": "PP-055",
+    "theme": "U",
+    "q": "La voie de droite, séparée par une ligne continue et signalée par le panneau rond bleu, est réservée aux transports en commun. Avec ma voiture :",
+    "a": [
+      "Je peux l'emprunter pour dépasser un véhicule lent",
+      "Je peux m'y arrêter quelques instants",
+      "Je reste sur la voie de gauche"
+    ],
+    "ok": [
+      2
+    ],
+    "img": "photos/pp-voie-bus-02.jpg",
+    "exp": "Une voie réservée aux transports en commun est interdite aux voitures particulières, même pour s'y arrêter. La ligne continue interdit en plus de la franchir."
+  },
+  {
+    "id": "PP-056",
+    "theme": "L",
+    "q": "Sur cette route, la ligne axiale est continue :",
+    "a": [
+      "Je ne dois ni la franchir ni la chevaucher",
+      "Je peux la franchir pour dépasser un véhicule lent",
+      "Je peux la chevaucher si la route paraît dégagée"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-ligne-continue-01.jpg",
+    "exp": "La ligne continue ne se franchit pas et ne se chevauche pas : la franchir coûte 3 points, la chevaucher 1 point."
+  },
+  {
+    "id": "PP-057",
+    "theme": "R",
+    "q": "Le panneau à droite annonce un virage à droite.",
+    "sub": [
+      "Je ralentis avant d'entrer dans le virage :",
+      "Je peux couper le virage s'il n'y a personne en face :"
+    ],
+    "a": [
+      "Oui",
+      "Non",
+      "Oui",
+      "Non"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/pp-ligne-continue-01.jpg",
+    "exp": "Je ralentis avant d'aborder le virage et je garde ma droite. Couper le virage, c'est franchir la ligne continue et risquer un choc frontal."
+  },
+  {
+    "id": "PP-058",
+    "theme": "L",
+    "q": "Je suis la voiture bleue. Le panneau rond à droite interdit le dépassement.",
+    "sub": [
+      "Je peux dépasser la voiture bleue devant moi :",
+      "Je surveille le piéton qui marche sur le bord droit :"
+    ],
+    "a": [
+      "Oui",
+      "Non",
+      "Oui",
+      "Non"
+    ],
+    "ok": [
+      1,
+      2
+    ],
+    "img": "photos/pp-depassement-interdit-01.jpg",
+    "exp": "Ce panneau interdit de dépasser les véhicules à moteur autres que les deux-roues sans side-car. Un piéton marche sur l'accotement : je le surveille."
+  },
+  {
+    "id": "PP-059",
+    "theme": "R",
+    "q": "Le panneau triangulaire placé sous le panneau rond annonce :",
+    "a": [
+      "Un rétrécissement de la chaussée",
+      "Une route à deux voies de circulation",
+      "Un pont mobile (levant ou tournant)"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-depassement-interdit-01.jpg",
+    "exp": "Ce triangle à deux bords qui se rapprochent annonce une chaussée rétrécie : je ralentis et je reste dans ma voie."
+  },
+  {
+    "id": "PP-060",
+    "theme": "L",
+    "q": "J'entre dans La Cassière. Le panneau rond placé au-dessus du nom m'interdit :",
+    "a": [
+      "De dépasser les véhicules à moteur, sauf les deux-roues",
+      "De dépasser tout véhicule, cyclistes compris",
+      "De dépasser les cyclomoteurs et les motocyclettes",
+      "De stationner sur la chaussée dans le village"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-virage-02.jpg",
+    "exp": "Le panneau « interdiction de dépasser » (voiture rouge et voiture noire) vise les véhicules à moteur, sauf les deux-roues sans side-car. Dépasser un cycliste, un cyclomoteur ou une moto reste possible si c'est sans danger."
+  },
+  {
+    "id": "PP-061",
+    "theme": "L",
+    "q": "Sauf panneau contraire, dans cette agglomération la vitesse maximale autorisée est de :",
+    "a": [
+      "30 km/h",
+      "50 km/h",
+      "70 km/h",
+      "80 km/h"
+    ],
+    "ok": [
+      1
+    ],
+    "img": "photos/pp-virage-02.jpg",
+    "exp": "En agglomération, la vitesse est limitée à 50 km/h sauf panneau contraire, dès le panneau d'entrée."
+  },
+  {
+    "id": "PP-062",
+    "theme": "L",
+    "q": "Je circule dans cette zone 30, marquée sur la chaussée et par le panneau.",
+    "sub": [
+      "Je respecte 30 km/h jusqu'au panneau de sortie de la zone :",
+      "Je peux reprendre 50 km/h après la première intersection :"
+    ],
+    "a": [
+      "Oui",
+      "Non",
+      "Oui",
+      "Non"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/pp-zone30-01.jpg",
+    "exp": "La limitation à 30 km/h s'applique dans toute la zone, jusqu'au panneau de sortie de zone 30."
+  },
+  {
+    "id": "PP-063",
+    "theme": "U",
+    "q": "Dans une zone 30, dans une rue à sens unique, un cycliste peut arriver en face :",
+    "a": [
+      "Oui, sauf panneau contraire",
+      "Non, le sens unique s'impose à tous"
+    ],
+    "ok": [
+      0
+    ],
+    "img": "photos/pp-zone30-01.jpg",
+    "exp": "En zone 30, les rues à sens unique sont à double sens pour les cyclistes, sauf décision contraire signalée."
+  },
+  {
+    "id": "PP-064",
+    "theme": "L",
+    "q": "Ces panneaux, à droite de la route, m'annoncent :",
+    "a": [
+      "Un giratoire où je n'aurai pas la priorité",
+      "Un passage pour piétons situé à 50 m",
+      "Un carrefour où je serai prioritaire",
+      "Une sortie d'école située à 50 m"
+    ],
+    "ok": [
+      0,
+      1
+    ],
+    "img": "photos/pp-giratoire-annonce-01.jpg",
+    "exp": "Le triangle aux flèches tournantes annonce un giratoire, et le panonceau « Vous n'avez pas la priorité » précise que je devrai céder le passage. Le triangle au piéton avec « 50 m » annonce un passage pour piétons."
+  },
+  {
+    "id": "PP-065",
+    "theme": "U",
+    "q": "Un piéton attend au bord du passage annoncé, prêt à traverser.",
+    "sub": [
+      "Je m'arrête pour le laisser traverser :",
+      "Je passe puisqu'il n'est pas encore engagé :"
+    ],
+    "a": [
+      "Oui",
+      "Non",
+      "Oui",
+      "Non"
+    ],
+    "ok": [
+      0,
+      3
+    ],
+    "img": "photos/pp-giratoire-annonce-01.jpg",
+    "exp": "Le piéton qui manifeste clairement l'intention de traverser est prioritaire : je m'arrête pour le laisser passer."
+  }
+]

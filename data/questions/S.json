@@ -1,0 +1,232 @@
+[
+  {
+    "id": "S-001",
+    "theme": "S",
+    "q": "Dans une voiture, le port de la ceinture de sécurité est obligatoire :",
+    "a": ["à l'avant, et à l'arrière seulement hors agglomération", "à l'avant comme à l'arrière, sauf trajet de moins de 1 km", "à l'avant comme à l'arrière, même en ville", "aux places avant, sauf en marche arrière"],
+    "ok": [2],
+    "exp": "La ceinture est obligatoire pour tous les occupants, à l'avant comme à l'arrière, en ville comme sur route et quelle que soit la distance. Pour le conducteur non attaché : 135 € et 3 points retirés."
+  },
+  {
+    "id": "S-002",
+    "theme": "S",
+    "q": "Pour être efficace, la ceinture de sécurité doit être portée :",
+    "a": ["la sangle diagonale au milieu de l'épaule", "la sangle diagonale passée sous le bras", "avec du jeu pour bouger librement", "la sangle abdominale basse sur le bassin"],
+    "ok": [0, 3],
+    "exp": "La ceinture doit être tendue, sans jeu ni vêtement épais : sangle diagonale sur l'épaule et la poitrine, sangle abdominale sur les os du bassin. Mal placée, elle peut blesser gravement en cas de choc."
+  },
+  {
+    "id": "S-003",
+    "theme": "S",
+    "q": "Une passagère est enceinte de sept mois. Concernant la ceinture de sécurité, elle doit :",
+    "a": ["la porter, sangle abdominale sous le ventre", "ne pas la porter, la grossesse en dispense", "la porter, sangle abdominale sur le ventre", "la porter, sangle diagonale dans le dos"],
+    "ok": [0],
+    "exp": "La grossesse ne dispense pas de la ceinture (seul un certificat médical peut le faire). La sangle abdominale passe sous le ventre, sur le haut des cuisses et le bassin ; la sangle diagonale passe entre les seins, sur le côté du ventre."
+  },
+  {
+    "id": "S-004",
+    "theme": "S",
+    "q": "Je conduis avec, à l'arrière, mon neveu de 15 ans qui n'a pas attaché sa ceinture. Je suis contrôlé par les forces de l'ordre.",
+    "sub": ["C'est moi, le conducteur, qui suis sanctionné :", "Je perds 3 points sur mon permis pour cette infraction du passager :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [0, 3],
+    "exp": "Le conducteur doit s'assurer que les passagers de moins de 18 ans sont attachés : c'est lui qui paie l'amende (135 €), sans retrait de points. Le retrait de 3 points ne concerne que le conducteur qui ne porte pas lui-même sa ceinture ; un passager majeur paie sa propre amende."
+  },
+  {
+    "id": "S-005",
+    "theme": "S",
+    "q": "Je transporte une enfant de 8 ans. Elle doit voyager :",
+    "a": ["à l'avant, attachée avec la ceinture de sécurité", "à l'arrière, attachée avec la ceinture seule", "à l'arrière, avec un système de retenue homologué", "à l'avant, installée sur un rehausseur homologué"],
+    "ok": [2],
+    "exp": "Jusqu'à 10 ans, l'enfant voyage à l'arrière dans un siège auto ou un rehausseur homologué, adapté à sa taille et à sa corpulence, quelle que soit la distance. Le rehausseur ne l'autorise pas à voyager à l'avant, sauf exceptions (bébé dos à la route, véhicule sans places arrière disponibles)."
+  },
+  {
+    "id": "S-006",
+    "theme": "S",
+    "q": "Un enfant de moins de 10 ans peut voyager à une place avant :",
+    "a": ["s'il s'agit d'un bébé installé dos à la route dans son siège", "si le véhicule n'a aucun siège à l'arrière, ni banquette", "si le trajet est très court, de moins de 5 km, en ville", "si l'arrière est occupé par des enfants de moins de 10 ans"],
+    "ok": [0, 1, 3],
+    "exp": "Les exceptions sont limitées : bébé dos à la route (airbag frontal passager désactivé), véhicule sans sièges arrière, sièges arrière sans ceinture ou déjà occupés par des enfants de moins de 10 ans. La durée du trajet n'entre jamais en compte."
+  },
+  {
+    "id": "S-007",
+    "theme": "S",
+    "q": "J'installe le siège de mon bébé de 6 mois dos à la route, sur le siège passager avant.",
+    "sub": ["Je désactive l'airbag frontal passager :", "Je peux laisser l'airbag activé si je recule le siège au maximum :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [0, 3],
+    "exp": "Un airbag qui se déclenche face à un siège dos à la route le projette violemment contre le dossier, avec un risque mortel pour le bébé. La désactivation de l'airbag frontal passager est impérative, même siège reculé."
+  },
+  {
+    "id": "S-008",
+    "theme": "S",
+    "q": "Avec un siège auto homologué selon la norme R129 (i-Size), le bébé doit être installé dos à la route au moins jusqu'à l'âge de :",
+    "a": ["3 mois", "15 mois", "3 ans", "6 ans"],
+    "ok": [1],
+    "exp": "La norme R129 impose la position dos à la route jusqu'à 15 mois au moins. Cette position protège mieux la tête et la nuque du bébé en cas de choc frontal ; il est conseillé de la garder le plus longtemps possible."
+  },
+  {
+    "id": "S-009",
+    "theme": "S",
+    "q": "Un rehausseur (de préférence avec dossier) sert à :",
+    "a": ["remplacer la ceinture de sécurité de l'enfant", "installer un bébé de moins de 1 an dos à la route", "permettre à un enfant de voyager à l'avant dès 5 ans", "bien placer la ceinture sur l'épaule et le bassin"],
+    "ok": [3],
+    "exp": "Au-delà d'environ 1 m et jusqu'à 10 ans, le rehausseur surélève l'enfant pour que la ceinture du véhicule passe sur l'épaule (et non sur le cou) et sur le bassin (et non sur le ventre)."
+  },
+  {
+    "id": "S-010",
+    "theme": "S",
+    "q": "Le système de fixation ISOFIX :",
+    "a": ["fixe le siège enfant à des ancrages du véhicule", "limite les erreurs d'installation du siège enfant", "dispense d'attacher l'enfant avec un harnais", "équipe tous les véhicules neufs depuis 2011"],
+    "ok": [0, 1, 3],
+    "exp": "L'ISOFIX fixe le siège auto à des ancrages solidaires de la caisse du véhicule, ce qui facilite et sécurise l'installation. L'enfant doit toujours être attaché dans son siège (harnais ou ceinture)."
+  },
+  {
+    "id": "S-011",
+    "theme": "S",
+    "q": "Les airbags (coussins gonflables de sécurité) :",
+    "a": ["se déclenchent à chaque freinage d'urgence", "complètent la ceinture de sécurité sans la remplacer", "se déploient en quelques millisecondes lors d'un choc", "protègent un bébé installé dos à la route à l'avant"],
+    "ok": [1, 2],
+    "exp": "L'airbag se gonfle très violemment en quelques millisecondes, lors d'un choc et non d'un simple freinage : il n'est efficace qu'avec la ceinture, qui maintient le corps en place. Face à un siège bébé dos à la route, il est mortel : l'airbag passager doit être désactivé."
+  },
+  {
+    "id": "S-012",
+    "theme": "S",
+    "q": "Pour bien me protéger en cas de choc, je règle mon siège de conducteur :",
+    "a": ["le plus près possible du volant, pour mieux le tenir", "le dossier très incliné, pour mieux me détendre", "à bonne distance du volant, bras légèrement fléchis", "le plus bas possible, pour me sentir bien calé"],
+    "ok": [2],
+    "exp": "Bien assis au fond du siège, dossier peu incliné, bras et jambes légèrement fléchis : je contrôle mieux le véhicule et je garde la distance nécessaire au déploiement de l'airbag du volant."
+  },
+  {
+    "id": "S-013",
+    "theme": "S",
+    "q": "L'appuie-tête est bien réglé lorsque :",
+    "a": ["son bord supérieur est au niveau de la nuque", "il est placé dans sa position la plus basse", "il est à une vingtaine de centimètres de la tête", "son bord supérieur est au niveau du sommet du crâne"],
+    "ok": [3],
+    "exp": "Bien réglé (haut de l'appuie-tête au niveau du sommet du crâne, tête proche), il limite le « coup du lapin » lors d'un choc arrière. Placé au niveau de la nuque, il peut au contraire aggraver les blessures cervicales."
+  },
+  {
+    "id": "S-014",
+    "theme": "S",
+    "q": "Sur autoroute, je m'apprête à déboîter pour dépasser le camion qui me précède. Pour contrôler l'angle mort :",
+    "a": ["je tourne brièvement la tête du côté du dépassement", "je regarde longuement dans le rétroviseur intérieur", "je me fie au rétroviseur extérieur, qui couvre tout", "je déboîte lentement pour laisser aux autres le temps de me voir"],
+    "ok": [0],
+    "scene": {"road": "autoroute", "time": "jour", "weather": "sec", "ahead": "camion"},
+    "exp": "Les rétroviseurs laissent une zone invisible sur les côtés arrière : l'angle mort. Avant tout déplacement latéral : rétroviseurs, clignotant, puis coup d'œil rapide par-dessus l'épaule."
+  },
+  {
+    "id": "S-015",
+    "theme": "S",
+    "q": "Ma voiture tombe en panne sur l'accotement d'une route de campagne, de jour. J'ai deux passagers.",
+    "sub": ["J'enfile mon gilet de haute visibilité avant de sortir du véhicule :", "Chaque passager doit obligatoirement disposer de son propre gilet :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [0, 3],
+    "exp": "Un gilet de haute visibilité est obligatoire pour le conducteur, rangé à portée de main dans l'habitacle, et doit être enfilé avant de sortir après un arrêt d'urgence. Un gilet par passager n'est pas obligatoire, mais fortement conseillé."
+  },
+  {
+    "id": "S-016",
+    "theme": "S",
+    "q": "Mon véhicule en panne se trouve sur la chaussée d'une route. Je place le triangle de présignalisation :",
+    "a": ["juste derrière le véhicule, à environ 1 m", "devant le véhicule, dans le sens de la marche", "à au moins 30 m en arrière du véhicule", "à 300 m en arrière, en marchant sur la chaussée"],
+    "ok": [2],
+    "exp": "Le triangle se pose à au moins 30 m du véhicule, en amont, pour avertir les usagers qui arrivent, en complément des feux de détresse. On ne le pose pas si cela met en danger (sur autoroute, sa pose n'est pas obligatoire)."
+  },
+  {
+    "id": "S-017",
+    "theme": "S",
+    "q": "Je n'ai pas d'éthylotest dans ma voiture. Lors d'un contrôle routier :",
+    "a": ["je reçois une amende forfaitaire de 11 €", "je perds 1 point sur mon permis de conduire", "mon véhicule est immobilisé jusqu'à régularisation", "je ne risque rien : ce n'est plus obligatoire"],
+    "ok": [3],
+    "exp": "L'obligation d'avoir un éthylotest à bord a été supprimée en 2020 (la sanction avait déjà été abandonnée en 2013). L'éthylotest reste utile pour vérifier son alcoolémie avant de prendre le volant."
+  },
+  {
+    "id": "S-018",
+    "theme": "S",
+    "q": "J'utilise les feux de détresse :",
+    "a": ["quand mon véhicule est immobilisé par une panne", "pour signaler un bouchon aux usagers qui me suivent", "pour stationner quelques minutes en double file", "à la place des feux de croisement par brouillard"],
+    "ok": [0, 1],
+    "exp": "Les feux de détresse signalent un danger : véhicule immobilisé, ralentissement brutal ou bouchon ou circulation à allure très réduite. Ils n'autorisent jamais un arrêt ou un stationnement interdit."
+  },
+  {
+    "id": "S-019",
+    "theme": "S",
+    "q": "De nuit, sur cette route non éclairée, un véhicule arrive en face. J'utilise :",
+    "a": ["les feux de position", "les feux de croisement", "les feux de route", "les feux de brouillard"],
+    "ok": [1],
+    "scene": {"road": "route", "time": "nuit", "weather": "sec", "oncoming": "voiture"},
+    "exp": "Les feux de route éblouissent : on passe en feux de croisement dès qu'un usager arrive en face ou qu'on suit un véhicule de près. Les feux de position ne suffisent pas pour circuler de nuit."
+  },
+  {
+    "id": "S-020",
+    "theme": "S",
+    "q": "Mon véhicule est équipé de feux diurnes (feux de jour) qui s'allument automatiquement.",
+    "a": ["Ils me rendent plus visible des autres usagers de jour", "Ils remplacent les feux de croisement en ville la nuit", "Ils ne suffisent pas dans un tunnel ou par forte pluie", "Ils éclairent suffisamment la route par brouillard"],
+    "ok": [0, 2],
+    "exp": "Les feux diurnes servent à être vu de jour ; ils n'éclairent pas la route et souvent rien n'est allumé à l'arrière. La nuit, dans un tunnel ou par mauvaise visibilité, il faut allumer les feux de croisement."
+  },
+  {
+    "id": "S-021",
+    "theme": "S",
+    "q": "Par brouillard épais, je peux allumer :",
+    "a": ["les feux de croisement", "les feux de brouillard avant", "les feux de brouillard arrière", "les feux de route (pleins phares)"],
+    "ok": [0, 1, 2],
+    "scene": {"road": "route", "time": "jour", "weather": "brouillard"},
+    "exp": "Par brouillard, feux de croisement et feux de brouillard avant améliorent la visibilité ; les feux de brouillard arrière sont autorisés par brouillard ou neige (jamais par simple pluie). Les feux de route sont renvoyés par le brouillard et éblouissent."
+  },
+  {
+    "id": "S-022",
+    "theme": "S",
+    "q": "En agglomération, l'usage de l'avertisseur sonore est autorisé :",
+    "a": ["pour avertir un cycliste avant de le dépasser", "pour signaler un dépassement à un autre véhicule", "en cas de danger immédiat pour les usagers", "librement en journée, mais pas la nuit"],
+    "ok": [2],
+    "exp": "En agglomération, le klaxon n'est autorisé qu'en cas de danger immédiat : pas pour annoncer un dépassement, même d'un cycliste. Hors agglomération, il sert à donner les avertissements nécessaires aux autres usagers."
+  },
+  {
+    "id": "S-023",
+    "theme": "S",
+    "q": "De nuit, hors agglomération, je veux avertir un usager de ma présence (par exemple avant de le dépasser). J'utilise de préférence :",
+    "a": ["l'avertisseur sonore", "les feux de détresse", "de brefs appels lumineux", "les feux de brouillard"],
+    "ok": [2],
+    "exp": "La nuit, les avertissements se font par appels lumineux ; l'avertisseur sonore n'est utilisé qu'en cas d'absolue nécessité, pour ne pas gêner les riverains."
+  },
+  {
+    "id": "S-024",
+    "theme": "S",
+    "q": "Par temps froid et humide, mon pare-brise se couvre de buée à l'intérieur. Pour la faire disparaître rapidement :",
+    "a": ["j'allume la climatisation, air dirigé vers le pare-brise", "je mets le chauffage fort en recyclage d'air intérieur", "j'essuie régulièrement la vitre avec la main en roulant", "j'utilise le désembuage avec l'air pris à l'extérieur"],
+    "ok": [0, 3],
+    "exp": "La climatisation assèche l'air et la ventilation sur l'air extérieur évacue l'humidité. Le recyclage de l'air garde l'humidité dans l'habitacle et entretient la buée. Essuyer avec la main laisse des traces et détourne l'attention."
+  },
+  {
+    "id": "S-025",
+    "theme": "S",
+    "q": "Un matin d'hiver, toutes les vitres de ma voiture sont givrées. Avant de partir :",
+    "a": ["je gratte un petit cercle sur le pare-brise", "je verse de l'eau bouillante sur le pare-brise", "je pars doucement, le givre fondra en roulant", "je dégivre toutes les vitres et les rétroviseurs"],
+    "ok": [3],
+    "exp": "Il faut voir dans toutes les directions avant de démarrer : pare-brise, vitres latérales, lunette arrière et rétroviseurs. L'eau bouillante risque de fissurer le pare-brise et regèle aussitôt."
+  },
+  {
+    "id": "S-026",
+    "theme": "S",
+    "q": "Lors d'un choc à 50 km/h, un objet non arrimé dans l'habitacle :",
+    "a": ["reste en place s'il est léger et posé sur un siège", "est projeté avec un poids multiplié par plusieurs dizaines", "est sans danger s'il est posé sur la plage arrière", "ne présente de risque que pour les passagers avant"],
+    "ok": [1],
+    "exp": "Lors d'un choc, tout ce qui n'est pas attaché continue sa course et devient un projectile très lourd (force équivalente à plusieurs dizaines de fois son poids) (un enfant non attaché équivaut à plus d'une tonne à 50 km/h). Les objets se rangent dans le coffre, jamais sur la plage arrière."
+  },
+  {
+    "id": "S-027",
+    "theme": "S",
+    "q": "Je transporte mon chien en voiture.",
+    "a": ["Je l'installe dans une caisse arrimée ou avec un harnais", "Je le laisse libre à l'arrière, il ne risque rien", "Dans le coffre, j'installe une grille de séparation", "Je le garde sur mes genoux pour le rassurer en route"],
+    "ok": [0, 2],
+    "exp": "Un animal libre peut gêner le conducteur et devenir un projectile en cas de choc. Caisse arrimée, harnais relié à la ceinture ou grille de séparation protègent l'animal et les passagers ; le conducteur doit toujours garder sa liberté de mouvement."
+  },
+  {
+    "id": "S-028",
+    "theme": "S",
+    "q": "Ma voiture est homologuée pour 5 places. Je peux transporter :",
+    "a": ["5 personnes, chacune attachée à sa propre place", "6 personnes si l'une est un enfant sur les genoux", "6 personnes, si le trajet est court et en ville", "autant de personnes que l'on peut en asseoir"],
+    "ok": [0],
+    "exp": "Une personne = une place = une ceinture. Chaque occupant doit être attaché à sa propre place (ou dans un siège auto adapté pour un enfant de moins de 10 ans) : on ne peut pas transporter plus de personnes que de places, quelle que soit la durée du trajet."
+  }
+]

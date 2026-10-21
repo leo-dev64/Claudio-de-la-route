@@ -1,0 +1,288 @@
+[
+  {
+    "id": "D-001",
+    "theme": "D",
+    "q": "Je viens d'obtenir mon premier permis B après une formation traditionnelle, sans suivre de formation complémentaire. Pendant ma période probatoire :",
+    "a": ["mon capital augmente de 4 points par an", "mon permis compte 6 points au départ", "la période probatoire dure 3 ans", "je dois apposer le disque « A » à l'arrière"],
+    "ok": [1, 2, 3],
+    "exp": "Le permis probatoire démarre avec 6 points et dure 3 ans après une formation traditionnelle. Sans infraction entraînant un retrait de points, il gagne 2 points par an jusqu'à 12. Le disque « A » est obligatoire à l'arrière du véhicule pendant toute la période probatoire."
+  },
+  {
+    "id": "D-002",
+    "theme": "D",
+    "q": "J'ai obtenu mon permis après un apprentissage anticipé de la conduite (AAC), sans formation complémentaire. Si je ne commets aucune infraction entraînant un retrait de points, mon permis atteint 12 points au bout de :",
+    "a": ["1 an", "2 ans", "3 ans", "4 ans"],
+    "ok": [1],
+    "exp": "Après l'AAC, la période probatoire dure 2 ans et le capital augmente de 3 points par an : 6, puis 9, puis 12 points. Après une formation traditionnelle, c'est 3 ans à raison de 2 points par an."
+  },
+  {
+    "id": "D-003",
+    "theme": "D",
+    "q": "Entre le 6e et le 12e mois après l'obtention de mon permis, je suis la formation complémentaire d'une journée (7 heures) pour jeunes conducteurs. Si je ne commets pas d'infraction entraînant un retrait de points, cette formation me permet :",
+    "a": ["de récupérer immédiatement 4 points", "de retirer le disque « A » de mon véhicule", "de raccourcir ma période probatoire", "de passer directement à 12 points"],
+    "ok": [2],
+    "exp": "La formation complémentaire réduit la période probatoire : de 3 ans à 2 ans après une formation traditionnelle, de 2 ans à 1 an et demi après l'AAC. Elle doit être suivie entre le 6e et le 12e mois après l'obtention du permis."
+  },
+  {
+    "id": "D-004",
+    "theme": "D",
+    "q": "Je suis en permis probatoire. Je commets une infraction qui me fait perdre 3 points.",
+    "a": ["Mon permis est invalidé dès cette infraction.", "Je dois suivre un stage de sensibilisation sous 4 mois.", "Je dois repasser l'épreuve du code sous 4 mois.", "Ce stage me permet de récupérer jusqu'à 4 points."],
+    "ok": [1, 3],
+    "exp": "En période probatoire, une perte d'au moins 3 points en une fois oblige à suivre un stage de sensibilisation dans les 4 mois suivant la réception de la lettre 48N. Le stage rend jusqu'à 4 points. Le permis n'est invalidé que si le solde tombe à zéro."
+  },
+  {
+    "id": "D-005",
+    "theme": "D",
+    "q": "Un stage volontaire de sensibilisation à la sécurité routière permet de récupérer :",
+    "a": ["2 points, une fois par an", "4 points, une fois tous les 2 ans", "6 points, une fois par an", "4 points, une fois par an"],
+    "ok": [3],
+    "exp": "Le stage volontaire (2 jours, à vos frais) rend jusqu'à 4 points, dans la limite du capital maximal, et ne peut être suivi qu'une fois par an. Il n'est plus possible une fois le solde de points tombé à zéro."
+  },
+  {
+    "id": "D-006",
+    "theme": "D",
+    "q": "J'ai perdu 1 seul point pour une infraction. Je le récupère automatiquement si je ne commets aucune nouvelle infraction entraînant un retrait de points pendant :",
+    "a": ["6 mois", "1 an", "2 ans", "3 ans"],
+    "ok": [0],
+    "exp": "Un point retiré seul est rendu au bout de 6 mois sans nouvelle infraction entraînant un retrait de points. Le délai court à partir du moment où l'infraction est établie (par exemple le paiement de l'amende)."
+  },
+  {
+    "id": "D-007",
+    "theme": "D",
+    "q": "Ma dernière infraction était une contravention de 4e classe (téléphone tenu en main, 3 points). Je retrouve automatiquement mes 12 points si je ne commets aucune nouvelle infraction entraînant un retrait de points pendant :",
+    "a": ["6 mois", "2 ans", "3 ans", "10 ans"],
+    "ok": [2],
+    "exp": "Le capital de 12 points est rétabli après 2 ans sans infraction si la dernière était une contravention de 2e ou 3e classe. Le délai passe à 3 ans pour un délit ou une contravention de 4e ou 5e classe."
+  },
+  {
+    "id": "D-008",
+    "theme": "D",
+    "q": "Mon solde de points est tombé à zéro et je reçois la lettre 48SI. Je dois :",
+    "a": ["restituer mon permis à la préfecture sous 10 jours", "suivre un stage pour récupérer 4 points et garder mon permis", "attendre 6 mois avant de demander un nouveau permis", "passer un examen médical et des tests psychotechniques"],
+    "ok": [0, 2, 3],
+    "exp": "Un solde nul invalide le permis : il faut le rendre à la préfecture dans les 10 jours, et un stage ne peut plus rien sauver. Un nouveau permis ne peut être demandé qu'après 6 mois (1 an en cas de nouvelle invalidation dans les 5 ans), après un examen médical et des tests psychotechniques."
+  },
+  {
+    "id": "D-009",
+    "theme": "D",
+    "q": "J'avais mon permis depuis moins de 3 ans quand il a été invalidé pour solde de points nul. Pour obtenir un nouveau permis, je dois repasser :",
+    "a": ["l'épreuve théorique du code", "le code et l'épreuve pratique", "l'épreuve pratique de conduite", "le code seul, si je m'inscris dans les 9 mois"],
+    "ok": [1],
+    "exp": "Avec moins de 3 ans de permis, il faut repasser le code et la conduite après une invalidation. Avec 3 ans ou plus, le code seul peut suffire, sous conditions (notamment s'inscrire à l'examen dans les 9 mois)."
+  },
+  {
+    "id": "D-010",
+    "theme": "D",
+    "q": "Le juge supprime mon permis de conduire et m'interdit d'en demander un nouveau pendant une durée qu'il fixe. Il s'agit :",
+    "a": ["d'une suspension", "d'une invalidation", "d'une rétention", "d'une annulation"],
+    "ok": [3],
+    "exp": "L'annulation est prononcée par le juge : le permis n'existe plus et il faudra le repasser à la fin du délai fixé. L'invalidation résulte d'un solde de points nul ; la suspension n'est qu'une interdiction temporaire de conduire."
+  },
+  {
+    "id": "D-011",
+    "theme": "D",
+    "q": "Mon permis de conduire est suspendu pour plusieurs mois. Pendant cette suspension :",
+    "a": ["je peux conduire avec un accompagnateur", "je dois repasser les épreuves à la fin", "je n'ai pas le droit de conduire", "je perds la moitié de mes points"],
+    "ok": [2],
+    "exp": "La suspension, décidée par le préfet ou par le juge, interdit de conduire pendant une durée limitée. À la fin, le permis est rendu sans repasser les épreuves, même si un contrôle médical est parfois exigé. Conduire pendant une suspension est un délit."
+  },
+  {
+    "id": "D-012",
+    "theme": "D",
+    "q": "Après un contrôle positif à l'alcool à un taux délictuel, les forces de l'ordre procèdent à la rétention de mon permis. Il s'agit de :",
+    "a": ["la conservation de mon permis par les forces de l'ordre", "l'annulation définitive de mon permis par le juge", "la perte immédiate de tous mes points de permis", "une interdiction de conduire de 6 mois décidée par le juge"],
+    "ok": [0],
+    "exp": "La rétention est une mesure immédiate : le permis est conservé jusqu'à 72 heures (120 heures quand des analyses sont nécessaires pour l'alcool ou les stupéfiants). Pendant ce temps, le préfet peut décider une suspension. Elle concerne notamment l'alcool délictuel, les stupéfiants et les excès de vitesse de 40 km/h ou plus."
+  },
+  {
+    "id": "D-013",
+    "theme": "D",
+    "q": "En agglomération, en manœuvrant, j'accroche une voiture en stationnement. Personne n'a rien vu et je repars sans laisser mes coordonnées. Je commets :",
+    "a": ["une simple contravention, car l'accident est matériel", "un délit de fuite seulement s'il y a un blessé", "un délit de fuite, même sans témoin", "une infraction sans conséquence sur mes points"],
+    "ok": [2],
+    "exp": "Quitter les lieux d'un accident, même purement matériel et sans témoin, pour échapper à sa responsabilité est un délit de fuite : jusqu'à 3 ans d'emprisonnement, 75 000 € d'amende et 6 points retirés. Je dois laisser mes coordonnées ou prévenir les forces de l'ordre.",
+    "scene": { "road": "agglo", "time": "jour" }
+  },
+  {
+    "id": "D-014",
+    "theme": "D",
+    "q": "Parmi ces infractions, lesquelles sont des délits ?",
+    "a": ["Conduire avec 0,9 g/L d'alcool dans le sang", "Dépasser en franchissant une ligne continue", "Conduire sans être titulaire du permis", "Conduire après avoir fait usage de stupéfiants"],
+    "ok": [0, 2, 3],
+    "exp": "L'alcool à partir de 0,8 g/L de sang, les stupéfiants et la conduite sans permis sont des délits jugés par le tribunal correctionnel. Franchir une ligne continue est une contravention (135 €, 3 points)."
+  },
+  {
+    "id": "D-015",
+    "theme": "D",
+    "q": "Contrôlé avec mon téléphone tenu en main, je reçois une amende forfaitaire de 4e classe (135 €).",
+    "sub": ["Si je la paie immédiatement ou dans les 15 jours, son montant est minoré à 90 € :", "Une fois l'amende payée, je peux encore contester l'infraction :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [0, 3],
+    "exp": "Une amende de 4e classe vaut 90 € si elle est payée immédiatement ou dans les 15 jours, 135 € dans les 45 jours, puis 375 € (majorée). Payer revient à reconnaître l'infraction : on ne peut plus la contester et les points sont retirés."
+  },
+  {
+    "id": "D-016",
+    "theme": "D",
+    "q": "Lors d'un même contrôle, je suis verbalisé pour plusieurs infractions commises en même temps. Le nombre maximal de points qui peut m'être retiré est de :",
+    "a": ["6 points", "8 points", "10 points", "12 points"],
+    "ok": [1],
+    "exp": "Quand plusieurs infractions sont commises simultanément, le retrait est plafonné à 8 points, même si leur total est plus élevé."
+  },
+  {
+    "id": "D-017",
+    "theme": "D",
+    "q": "Lors d'un contrôle routier, en 2026, je dois pouvoir présenter :",
+    "a": ["le justificatif d'achat du véhicule", "mon permis de conduire, en carte ou numérique", "l'attestation d'assurance (carte verte)", "le certificat d'immatriculation du véhicule"],
+    "ok": [1, 3],
+    "exp": "Il faut présenter le permis (carte ou France Identité) et le certificat d'immatriculation, même si le véhicule ne m'appartient pas. Depuis le 1er avril 2024, la carte verte et la vignette d'assurance sont supprimées : les forces de l'ordre vérifient l'assurance dans le Fichier des véhicules assurés (FVA)."
+  },
+  {
+    "id": "D-018",
+    "theme": "D",
+    "q": "L'assurance de responsabilité civile, obligatoire pour mon véhicule, couvre :",
+    "a": ["les dégâts de ma voiture si je suis responsable", "les dommages que je cause aux autres usagers", "les blessures des passagers de mon véhicule", "mes propres blessures si je suis responsable"],
+    "ok": [1, 2],
+    "exp": "La responsabilité civile (assurance « au tiers ») est le minimum obligatoire : elle indemnise les dommages causés aux autres, y compris aux passagers transportés. Les dégâts de mon véhicule et mes propres blessures quand je suis responsable relèvent de garanties facultatives (dommages tous accidents, garantie du conducteur)."
+  },
+  {
+    "id": "D-019",
+    "theme": "D",
+    "q": "Conduire un véhicule qui n'est pas assuré :",
+    "a": ["est toléré pendant 1 mois après l'achat du véhicule", "est un délit pouvant mener à la mise en fourrière", "n'est sanctionné qu'en cas d'accident corporel", "est une simple contravention sans conséquence"],
+    "ok": [1],
+    "exp": "Le défaut d'assurance est un délit (jusqu'à 3 750 € d'amende), et le véhicule peut être immobilisé et mis en fourrière. Tout véhicule à moteur doit être assuré dès sa mise en circulation. Les victimes d'un conducteur non assuré sont indemnisées par le FGAO, qui se retourne ensuite contre le responsable."
+  },
+  {
+    "id": "D-020",
+    "theme": "D",
+    "q": "Après un accrochage sans blessé, nous remplissons un constat amiable. Je dois :",
+    "a": ["le faire signer par les deux conducteurs", "attendre que la police vienne le valider", "l'envoyer à mon assureur sous 5 jours ouvrés", "conserver l'un des deux exemplaires"],
+    "ok": [0, 2, 3],
+    "exp": "Le constat amiable se remplit et se signe entre conducteurs, sans intervention de la police. Chacun garde un exemplaire et l'envoie à son assureur dans les 5 jours ouvrés. L'application e-constat permet aussi de le faire."
+  },
+  {
+    "id": "D-021",
+    "theme": "D",
+    "q": "Après un accrochage, nous avons rempli et signé tous les deux le constat amiable.",
+    "sub": ["Je peux encore modifier ou compléter mon exemplaire avant de l'envoyer :", "Les assureurs s'appuieront sur ce constat pour déterminer les responsabilités :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [1, 2],
+    "exp": "Une fois signé, le constat ne doit plus être modifié : les deux exemplaires doivent rester identiques, sinon c'est une fausse déclaration. Le constat décrit les faits (cases cochées, croquis, observations), et ce sont les assureurs qui en déduisent les responsabilités."
+  },
+  {
+    "id": "D-022",
+    "theme": "D",
+    "q": "Ma voiture a été mise en circulation pour la première fois le 15 mars 2023. Je dois faire son premier contrôle technique :",
+    "a": ["dans les 6 mois qui précèdent le 15 mars 2025", "au moment de la revente de la voiture", "dans les 6 mois avant le 15 mars 2027", "dans les 6 mois qui précèdent le 15 mars 2029"],
+    "ok": [2],
+    "exp": "Le premier contrôle technique d'une voiture se fait dans les 6 mois qui précèdent le 4e anniversaire de sa première mise en circulation, puis tous les 2 ans. En cas de défaillance majeure ou critique, la contre-visite doit avoir lieu dans les 2 mois."
+  },
+  {
+    "id": "D-023",
+    "theme": "D",
+    "q": "Au contrôle technique, ma voiture présente une défaillance critique. Je peux encore la conduire :",
+    "a": ["jusqu'à minuit, le jour du contrôle", "pendant 2 mois, jusqu'à la contre-visite", "jusqu'au prochain contrôle technique", "pendant 1 mois, à vitesse réduite"],
+    "ok": [0],
+    "exp": "Avec une défaillance critique, le véhicule ne peut circuler que le jour du contrôle (jusqu'à minuit) ; il faut ensuite le réparer et passer la contre-visite dans les 2 mois. Avec une défaillance majeure, on peut circuler pendant les 2 mois laissés pour la contre-visite."
+  },
+  {
+    "id": "D-024",
+    "theme": "D",
+    "q": "Avec le permis B, je peux conduire :",
+    "a": ["un camping-car dont le PTAC est de 3,5 t", "un minibus de 12 places, conducteur compris", "une voiture tractant une remorque de 500 kg", "un camion de livraison dont le PTAC est de 7,5 t"],
+    "ok": [0, 2],
+    "exp": "Le permis B autorise les véhicules de 3,5 t de PTAC au plus, avec 9 places assises au maximum, conducteur compris (donc 8 passagers). Il permet de tracter une remorque de 750 kg de PTAC au plus, ou plus lourde si l'ensemble ne dépasse pas 3,5 t."
+  },
+  {
+    "id": "D-025",
+    "theme": "D",
+    "q": "Ma voiture a un PTAC de 2 000 kg. Je veux tracter une caravane dont le PTAC est de 1 800 kg (ensemble : 3 800 kg).",
+    "sub": ["Le permis B seul suffit :", "Le permis B avec la mention 96 (formation de 7 heures) suffit :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [1, 2],
+    "exp": "Avec une remorque de plus de 750 kg, le permis B seul suffit tant que l'ensemble ne dépasse pas 3 500 kg. Entre 3 500 et 4 250 kg, il faut la mention B96 (formation de 7 heures, sans examen) ; au-delà, le permis BE."
+  },
+  {
+    "id": "D-026",
+    "theme": "D",
+    "q": "J'ai 17 ans et je viens d'obtenir mon permis B.",
+    "sub": ["Je peux conduire seul en France :", "Je suis dispensé de période probatoire :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [0, 3],
+    "exp": "Depuis le 1er janvier 2024, le permis B peut être obtenu dès 17 ans et permet de conduire seul. Comme tout premier permis, il est probatoire : 6 points au départ, disque « A » et limitations de vitesse spécifiques."
+  },
+  {
+    "id": "D-027",
+    "theme": "D",
+    "q": "Conduite accompagnée (apprentissage anticipé de la conduite, AAC) :",
+    "a": ["je peux débuter la formation dès l'âge de 15 ans", "je peux conduire à l'étranger avec mon accompagnateur", "je dois rouler au moins 1 an et parcourir 3 000 km", "mon accompagnateur a son permis B depuis au moins 5 ans"],
+    "ok": [0, 2, 3],
+    "exp": "L'AAC est possible dès 15 ans. La conduite accompagnée dure au moins 1 an et 3 000 km, uniquement en France, avec deux rendez-vous pédagogiques. L'accompagnateur doit avoir le permis B depuis au moins 5 ans et l'accord de son assureur."
+  },
+  {
+    "id": "D-028",
+    "theme": "D",
+    "q": "En conduite supervisée (possible à partir de 18 ans), la distance minimale à parcourir avec mon accompagnateur est de :",
+    "a": ["au moins 1 000 km", "au moins 3 000 km", "au moins 5 000 km", "pas de minimum imposé"],
+    "ok": [3],
+    "exp": "La conduite supervisée n'impose ni durée ni distance minimale, contrairement à l'AAC (1 an et 3 000 km). Elle ne réduit pas, à elle seule, la période probatoire (3 ans), et un signe distinctif doit être apposé à l'arrière du véhicule."
+  },
+  {
+    "id": "D-029",
+    "theme": "D",
+    "q": "L'âge minimal pour conduire une trottinette électrique sur la voie publique est de :",
+    "a": ["12 ans", "14 ans", "16 ans", "18 ans"],
+    "ok": [1],
+    "exp": "Depuis septembre 2023, il faut avoir au moins 14 ans pour conduire un engin de déplacement personnel motorisé (EDPM) comme une trottinette électrique. Ces engins sont bridés à 25 km/h et réservés à une seule personne."
+  },
+  {
+    "id": "D-030",
+    "theme": "D",
+    "q": "Un radar « tronçon » mesure :",
+    "a": ["ma vitesse moyenne entre deux points de passage", "ma vitesse instantanée en un seul point précis", "le franchissement des feux rouges et des stops", "la distance avec le véhicule qui me précède"],
+    "ok": [0],
+    "exp": "Le radar tronçon calcule la vitesse moyenne entre deux points en relevant les heures de passage. Freiner juste devant l'un des points ne sert à rien si la moyenne dépasse la limite."
+  },
+  {
+    "id": "D-031",
+    "theme": "D",
+    "q": "Un radar de feu rouge me photographie alors que je franchis la ligne d'arrêt au feu rouge. J'encours :",
+    "a": ["une amende de 35 € et un retrait de 1 point", "une amende de 90 € et un retrait de 2 points", "une amende de 135 € et un retrait de 4 points", "une amende de 135 € sans retrait de points"],
+    "ok": [2],
+    "exp": "Brûler un feu rouge coûte 135 € (amende forfaitaire) et 4 points, qu'il y ait ou non d'autres usagers. Le radar de feu rouge flashe le véhicule qui franchit la ligne alors que le feu est rouge."
+  },
+  {
+    "id": "D-032",
+    "theme": "D",
+    "q": "Un éthylotest antidémarrage (EAD) :",
+    "a": ["empêche le moteur de démarrer si le conducteur a trop d'alcool", "peut être imposé par le préfet ou le juge pour alcool au volant", "permet de conduire avec un taux d'alcool supérieur à la limite", "est obligatoire dans tous les autocars de transport de personnes"],
+    "ok": [0, 1, 3],
+    "exp": "L'EAD est un éthylotest relié au démarreur : si le taux d'alcool dépasse le seuil, le moteur ne démarre pas. Le préfet (à la place d'une suspension) ou le juge peut obliger un conducteur sanctionné pour alcool à ne conduire qu'un véhicule équipé. Il est obligatoire dans tous les autocars depuis septembre 2015."
+  },
+  {
+    "id": "D-033",
+    "theme": "D",
+    "q": "Un gendarme me fait clairement signe de m'arrêter pour un contrôle. Je ne m'arrête pas volontairement :",
+    "a": ["je ne commets aucune infraction si mes papiers sont valides", "je commets un refus d'obtempérer, qui est un délit", "je commets une simple contravention de 1re classe", "je commets une infraction si j'ai dépassé la vitesse autorisée"],
+    "ok": [1],
+    "exp": "Ne pas s'arrêter à la sommation des forces de l'ordre est un refus d'obtempérer : un délit puni de 2 ans d'emprisonnement, 15 000 € d'amende et 6 points retirés, avec des peines plus lourdes si d'autres personnes ont été mises en danger."
+  },
+  {
+    "id": "D-034",
+    "theme": "D",
+    "q": "Les forces de l'ordre décident l'immobilisation de mon véhicule. Cela signifie :",
+    "a": ["que mon véhicule est emmené dans un parc de fourrière", "que mon véhicule est confisqué puis vendu aux enchères", "que mon véhicule reste sur place, sans pouvoir rouler", "que mon permis est retiré le temps de la réparation"],
+    "ok": [2],
+    "exp": "L'immobilisation interdit de déplacer le véhicule tant que le problème n'est pas réglé (par exemple jusqu'à l'arrivée d'un conducteur apte). La mise en fourrière est différente : le véhicule est emmené dans un lieu désigné, et les frais sont à la charge du propriétaire."
+  },
+  {
+    "id": "D-035",
+    "theme": "D",
+    "q": "Sur autoroute limitée à 130 km/h, je suis contrôlé avec une vitesse retenue de 182 km/h. Depuis le 29 décembre 2025, cet excès de vitesse :",
+    "a": ["est un délit inscrit au casier judiciaire", "entraîne un retrait de 6 points sur le permis", "reste une contravention de 5e classe la 1re fois", "peut entraîner l'annulation du permis par le juge"],
+    "ok": [0, 1, 3],
+    "exp": "Dépasser de 50 km/h ou plus la vitesse autorisée est un délit dès la première fois depuis le 29 décembre 2025 : jusqu'à 3 mois d'emprisonnement et 3 750 € d'amende, inscription au casier judiciaire, 6 points retirés. Le juge peut aussi suspendre ou annuler le permis et confisquer le véhicule.",
+    "scene": { "road": "autoroute", "time": "jour", "weather": "sec", "signs": ["B14-130"] }
+  }
+]

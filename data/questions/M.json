@@ -1,0 +1,233 @@
+[
+  {
+    "id": "M-001",
+    "theme": "M",
+    "q": "En examinant mes pneus, je constate que la bande de roulement arrive au niveau des petits bossages situés au fond des rainures (témoins d'usure). La profondeur des sculptures est alors d'environ :",
+    "a": ["0,5 mm", "1,6 mm", "3 mm", "5 mm"],
+    "ok": [1],
+    "exp": "Les témoins d'usure sont placés à 1,6 mm, profondeur minimale légale des sculptures. Quand la bande de roulement les affleure, le pneu doit être remplacé."
+  },
+  {
+    "id": "M-002",
+    "theme": "M",
+    "q": "Rouler avec des pneus usés entraîne :",
+    "a": ["un allongement de la distance de freinage", "un risque d'aquaplanage limité aux très hautes vitesses", "un risque accru d'aquaplanage sur sol mouillé", "une perte d'adhérence sur la neige, mais pas sous la pluie"],
+    "ok": [0, 2],
+    "exp": "Les rainures servent à évacuer l'eau : plus elles sont faibles, plus le pneu perd d'adhérence sur sol mouillé, plus la distance de freinage s'allonge et plus le risque d'aquaplanage augmente."
+  },
+  {
+    "id": "M-003",
+    "theme": "M",
+    "q": "Je veux contrôler la pression de mes pneus. Pour obtenir une mesure fiable, je la contrôle :",
+    "a": ["une fois par an, au contrôle technique", "quand un pneu semble dégonflé à l'œil", "après un long trajet, pneus bien chauds", "à froid, après quelques kilomètres au plus"],
+    "ok": [3],
+    "exp": "La pression se contrôle à froid, environ une fois par mois et avant un long trajet. Un pneu peut perdre une pression importante sans que cela se voie à l'œil."
+  },
+  {
+    "id": "M-004",
+    "theme": "M",
+    "q": "Après 200 km d'autoroute, je mesure la pression de mes pneus dans une station-service. Elle est un peu supérieure à la valeur préconisée par le constructeur.",
+    "sub": ["Je dégonfle les pneus pour revenir à la valeur préconisée :", "Cette hausse est normale car l'air chauffé par le roulage se dilate :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [1, 2],
+    "exp": "À chaud, la pression augmente naturellement. Il ne faut jamais dégonfler un pneu chaud : une fois refroidi, il serait sous-gonflé. La mesure de référence se fait à froid."
+  },
+  {
+    "id": "M-005",
+    "theme": "M",
+    "q": "Rouler avec des pneus nettement sous-gonflés :",
+    "a": ["diminue la consommation de carburant", "améliore l'adhérence sur route mouillée", "augmente le risque d'éclatement", "n'a de conséquence que sur le confort"],
+    "ok": [2],
+    "exp": "Un pneu sous-gonflé s'écrase et chauffe : il s'use plus vite sur les bords, augmente la consommation, dégrade la tenue de route et peut éclater, surtout à vitesse élevée."
+  },
+  {
+    "id": "M-006",
+    "theme": "M",
+    "q": "Je circule sur autoroute à 130 km/h lorsqu'un pneu avant éclate. Je dois :",
+    "a": ["freiner à fond tout de suite pour m'arrêter", "tenir le volant et ralentir en douceur", "braquer vite vers la bande d'arrêt d'urgence", "maintenir ma vitesse pour garder la stabilité"],
+    "ok": [1],
+    "scene": {"road": "autoroute", "time": "jour", "weather": "sec"},
+    "exp": "Lors d'un éclatement, le véhicule tire du côté du pneu endommagé : on tient fermement le volant, on lève le pied et on freine en douceur, puis on se range sur la bande d'arrêt d'urgence, feux de détresse allumés."
+  },
+  {
+    "id": "M-007",
+    "theme": "M",
+    "q": "Après une crevaison :",
+    "a": ["une roue « galette » impose une vitesse limitée", "un kit anti-crevaison répare définitivement le pneu", "je fais réparer ou remplacer le pneu crevé", "la roue de secours est obligatoire dans tout véhicule"],
+    "ok": [0, 2],
+    "exp": "La « galette » et le kit anti-crevaison sont des solutions provisoires pour rejoindre un garage : la galette impose une vitesse limitée (souvent 80 km/h), le kit ne répare pas une coupure du flanc. La roue de secours n'est pas obligatoire."
+  },
+  {
+    "id": "M-008",
+    "theme": "M",
+    "q": "Les pneus hiver portant le marquage 3PMSF (montagne à trois pics et flocon) :",
+    "a": ["adhèrent mieux que des pneus été sous 7 °C environ", "permettent de rouler sur la neige sans ralentir", "dispensent d'avoir des chaînes en zone loi Montagne", "se montent de préférence sur le seul essieu moteur"],
+    "ok": [0, 2],
+    "exp": "Les pneus hiver 3PMSF adhèrent mieux que des pneus été sous 7 °C environ. En zone « loi Montagne », du 1er novembre au 31 mars, il faut des pneus hiver ou 4 saisons 3PMSF, ou des chaînes (ou chaussettes) dans le coffre. Les pneus hiver se montent sur les 4 roues ; le panneau « chaînes obligatoires » impose quand même les chaînes."
+  },
+  {
+    "id": "M-009",
+    "theme": "M",
+    "q": "Le niveau de liquide de frein a nettement baissé en quelques jours. Je dois :",
+    "a": ["compléter le niveau et continuer à rouler normalement", "attendre la prochaine révision du véhicule", "faire vérifier le circuit de freinage", "ne rien faire : il baisse avec l'usure des plaquettes"],
+    "ok": [2],
+    "exp": "Le niveau baisse très lentement à mesure que les plaquettes s'usent ; une baisse nette en quelques jours signale une fuite, danger pour le freinage : compléter ne règle pas le problème. Le liquide de frein se remplace aussi périodiquement (souvent tous les 2 ans) car il absorbe l'humidité."
+  },
+  {
+    "id": "M-010",
+    "theme": "M",
+    "q": "Je m'engage dans une longue descente de montagne.",
+    "sub": ["J'utilise le frein moteur en engageant un rapport inférieur :", "Je garde le pied posé en permanence sur la pédale de frein :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [0, 3],
+    "scene": {"road": "route", "time": "jour", "weather": "sec", "signs": ["A16"]},
+    "exp": "Un freinage prolongé échauffe les freins, qui perdent leur efficacité. En descente, on engage un rapport inférieur (en général celui qu'on utiliserait à la montée) pour profiter du frein moteur, et on freine par intermittence."
+  },
+  {
+    "id": "M-011",
+    "theme": "M",
+    "q": "En roulant, le voyant rouge en forme de burette d'huile s'allume. Il signale :",
+    "a": ["un niveau de liquide lave-glace insuffisant", "une pression des pneus insuffisante", "une vidange à prévoir dans 1 000 km", "une pression d'huile moteur insuffisante"],
+    "ok": [3],
+    "exp": "Le voyant burette rouge indique un défaut de pression d'huile : le moteur risque de casser rapidement. Il faut s'arrêter dès que possible en sécurité, couper le moteur et vérifier le niveau d'huile."
+  },
+  {
+    "id": "M-012",
+    "theme": "M",
+    "q": "Le voyant rouge de température du liquide de refroidissement s'allume. Je m'arrête en sécurité et je coupe le moteur. Pour vérifier le niveau du liquide, j'ouvre le bouchon du réservoir :",
+    "a": ["tout de suite, pour gagner du temps", "après avoir laissé refroidir le moteur", "en laissant le moteur tourner au ralenti", "après avoir roulé encore quelques kilomètres"],
+    "ok": [1],
+    "exp": "Moteur chaud, le liquide de refroidissement est brûlant et sous pression : ouvrir le bouchon peut provoquer de graves brûlures. On attend que le moteur refroidisse, puis on vérifie que le niveau est entre les repères mini et maxi."
+  },
+  {
+    "id": "M-013",
+    "theme": "M",
+    "q": "Moteur tournant, le voyant rouge en forme de batterie reste allumé. Cela signifie le plus souvent :",
+    "a": ["que la batterie n'est plus rechargée en roulant", "que la batterie est complètement rechargée", "que les feux de position sont restés allumés", "que le niveau d'huile moteur est trop bas"],
+    "ok": [0],
+    "exp": "Ce voyant signale un défaut de charge (alternateur ou courroie) : le véhicule fonctionne sur la réserve de la batterie, qui va se vider. Comme tout voyant rouge, il impose de s'arrêter dès que possible et de faire vérifier."
+  },
+  {
+    "id": "M-014",
+    "theme": "M",
+    "q": "Le voyant orange « ABS » reste allumé pendant que je roule.",
+    "a": ["Je n'ai plus de freins et je m'arrête immédiatement", "C'est normal par temps froid : je continue de rouler", "Les freins fonctionnent sans ABS : je fais vérifier", "Je dois désormais freiner en pompant sur la pédale"],
+    "ok": [2],
+    "exp": "Un voyant orange signale une anomalie à faire vérifier. Ici, le freinage classique fonctionne toujours, mais les roues peuvent se bloquer lors d'un freinage d'urgence : prudence et passage au garage."
+  },
+  {
+    "id": "M-015",
+    "theme": "M",
+    "q": "Le voyant rouge des freins (point d'exclamation dans un cercle) s'allume pendant que je roule. Il peut indiquer :",
+    "a": ["que le frein de stationnement est resté serré", "un niveau de liquide de frein insuffisant", "que l'ABS est désactivé pour la conduite sur neige", "que les plaquettes de frein viennent d'être changées"],
+    "ok": [0, 1],
+    "exp": "Ce voyant rouge signale un frein de stationnement serré ou un défaut du circuit de freinage (niveau de liquide trop bas). Si le frein à main est desserré, il faut s'arrêter dès que possible et faire vérifier."
+  },
+  {
+    "id": "M-016",
+    "theme": "M",
+    "q": "Le voyant orange représentant un moteur s'allume et reste allumé. Il signale :",
+    "a": ["une surchauffe du moteur, à stopper immédiatement", "un niveau de carburant bas, à compléter vite", "une anomalie moteur ou antipollution, à contrôler", "un fonctionnement normal du système stop and start"],
+    "ok": [2],
+    "exp": "Ce voyant orange (moteur/antipollution) indique un défaut de la gestion moteur ou de la dépollution : le véhicule peut souvent rouler, mais il pollue et consomme davantage. Il faut le faire contrôler rapidement."
+  },
+  {
+    "id": "M-017",
+    "theme": "M",
+    "q": "Après le démarrage, le voyant d'airbag reste allumé au tableau de bord. Cela signifie :",
+    "a": ["que les airbags fonctionnent normalement", "que le système d'airbags présente une anomalie", "que la ceinture du passager n'est pas bouclée", "que les airbags se déclencheront plus vite"],
+    "ok": [1],
+    "exp": "Au démarrage, le voyant s'allume quelques secondes puis s'éteint (autotest). S'il reste allumé, les airbags risquent de ne pas se déclencher : il faut faire vérifier le système rapidement."
+  },
+  {
+    "id": "M-018",
+    "theme": "M",
+    "q": "Au tableau de bord, quels voyants indiquent simplement qu'un équipement est en fonctionnement ?",
+    "a": ["Le voyant rouge de pression d'huile", "Le voyant vert des feux de croisement", "Le voyant bleu des feux de route", "Le voyant orange de défaut moteur"],
+    "ok": [1, 2],
+    "exp": "Code couleur des voyants : vert ou bleu = un équipement fonctionne (bleu = feux de route) ; orange = anomalie à faire vérifier ; rouge = anomalie grave, s'arrêter dès que possible."
+  },
+  {
+    "id": "M-019",
+    "theme": "M",
+    "q": "De nuit, mon coffre est très chargé et j'ai quatre passagers. Un véhicule arrive en face. Pour ne pas l'éblouir avec mes feux de croisement, je dois :",
+    "a": ["allumer les feux de brouillard avant à la place", "abaisser la portée des phares avec le correcteur", "rouler en feux de position pour ne pas éblouir", "ne rien faire, le réglage se fait tout seul"],
+    "ok": [1],
+    "scene": {"road": "route", "time": "nuit", "weather": "sec", "oncoming": "voiture"},
+    "exp": "Une charge importante à l'arrière lève l'avant du véhicule : les faisceaux montent et éblouissent. Le correcteur de portée (molette au tableau de bord, ou réglage automatique sur certains véhicules) permet d'abaisser les feux."
+  },
+  {
+    "id": "M-020",
+    "theme": "M",
+    "q": "De nuit, je m'aperçois que l'un de mes feux de croisement ne fonctionne plus.",
+    "a": ["Je continue de rouler, l'autre phare suffit", "J'allume les feux de brouillard pour compenser", "J'utilise les feux de route, même en croisant", "Je fais remplacer l'ampoule : c'est une infraction"],
+    "ok": [3],
+    "exp": "Tous les feux doivent fonctionner. Avec un seul phare, on peut être confondu avec un deux-roues. Il faut aussi garder les optiques propres. La boîte d'ampoules de rechange n'est pas obligatoire en France, mais elle est conseillée."
+  },
+  {
+    "id": "M-021",
+    "theme": "M",
+    "q": "Pour bien voir et être vu, je pense à :",
+    "a": ["nettoyer régulièrement les optiques des phares", "remplacer les balais d'essuie-glace abîmés", "utiliser un liquide lave-glace antigel en hiver", "dégager un pare-brise givré avec les essuie-glaces"],
+    "ok": [0, 1, 2],
+    "exp": "Des phares sales éclairent moins loin, des balais usés laissent des traînées et le lave-glace peut geler en hiver. Actionner les essuie-glaces sur du givre abîme les balais et le moteur d'essuie-glace : il faut d'abord dégivrer."
+  },
+  {
+    "id": "M-022",
+    "theme": "M",
+    "q": "Je contrôle le niveau d'huile moteur avec la jauge. Je le fais :",
+    "a": ["moteur tournant, pour que l'huile circule", "véhicule en pente, l'avant vers le haut", "sur sol plat, moteur arrêté quelques minutes", "moteur chaud, dès l'arrivée après avoir roulé"],
+    "ok": [2],
+    "exp": "Sur sol plat et moteur arrêté depuis quelques minutes, le niveau doit se situer entre les repères mini et maxi ; on complète avec l'huile préconisée sans dépasser le maxi. La vidange se fait selon la périodicité indiquée par le constructeur."
+  },
+  {
+    "id": "M-023",
+    "theme": "M",
+    "q": "Mon véhicule est équipé de l'ABS. Lors d'un freinage d'urgence :",
+    "a": ["j'appuie à fond et je maintiens la pression", "je peux encore diriger pour éviter un obstacle", "je suis sûr de m'arrêter plus court sur toute chaussée", "je pompe sur la pédale pour éviter le blocage"],
+    "ok": [0, 1],
+    "exp": "L'ABS empêche les roues de se bloquer : le véhicule reste dirigeable. Il ne raccourcit pas toujours la distance de freinage (sur neige ou gravillons, elle peut même s'allonger). On freine fort et on maintient la pression : les vibrations de la pédale sont normales."
+  },
+  {
+    "id": "M-024",
+    "theme": "M",
+    "q": "Concernant les aides à la conduite :",
+    "a": ["grâce à l'ESP, je prends les virages plus vite sans risque", "l'ESP corrige un début de dérapage en freinant des roues", "l'AFU renforce le freinage lors d'un freinage d'urgence", "l'AFU freine à ma place dès qu'un véhicule me précède"],
+    "ok": [1, 2],
+    "exp": "L'ESP est le correcteur électronique de trajectoire, l'AFU l'aide au freinage d'urgence. L'ESP agit roue par roue pour limiter les dérapages et l'AFU renforce un freinage d'urgence que le conducteur a commencé. Ces aides ne peuvent pas dépasser les limites de l'adhérence : elles ne dispensent jamais d'adapter sa vitesse."
+  },
+  {
+    "id": "M-025",
+    "theme": "M",
+    "q": "Sur autoroute, sous une pluie battante, la chaussée est détrempée.",
+    "sub": ["Le limiteur de vitesse m'empêche de dépasser la vitesse que j'ai programmée :", "J'utilise le régulateur de vitesse sur cette chaussée détrempée :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [0, 3],
+    "scene": {"road": "autoroute", "time": "jour", "weather": "pluie"},
+    "exp": "Le limiteur fixe une vitesse à ne pas dépasser ; le régulateur maintient une vitesse constante. Sur chaussée glissante (forte pluie, neige, verglas), le régulateur est déconseillé : en cas d'aquaplanage, il peut maintenir l'accélération."
+  },
+  {
+    "id": "M-026",
+    "theme": "M",
+    "q": "Mon véhicule dispose d'une aide au maintien dans la voie.",
+    "a": ["Le système corrige la trajectoire, mais je reste responsable", "Je peux lâcher le volant, le système conduit à ma place", "Le système fonctionne parfaitement même sans marquage", "Il me dispense de faire des pauses lors des longs trajets"],
+    "ok": [0],
+    "exp": "Les aides à la conduite assistent le conducteur sans le remplacer : il garde les mains sur le volant et reste responsable. Elles s'appuient sur des caméras et des marquages, et peuvent être mises en défaut (marquage effacé, neige, pluie)."
+  },
+  {
+    "id": "M-027",
+    "theme": "M",
+    "q": "Je pars en vacances avec un coffre bien rempli. Je place les bagages les plus lourds :",
+    "a": ["sur la plage arrière, pour les surveiller", "sur le siège passager avant, sans les attacher", "dans un coffre de toit, pour gagner de la place", "au fond du coffre, contre la banquette arrière"],
+    "ok": [3],
+    "exp": "Les charges lourdes se placent le plus bas possible, contre le dossier arrière, pour préserver la stabilité et éviter qu'elles soient projetées. Je respecte le poids maximal autorisé et j'adapte la pression des pneus et la portée des phares à la charge."
+  },
+  {
+    "id": "M-028",
+    "theme": "M",
+    "q": "Je tracte une remorque chargée.",
+    "a": ["Je place les objets lourds en bas, au-dessus de l'essieu", "J'adapte la pression des pneus de la voiture à la charge", "Je place les objets lourds à l'arrière de la remorque", "Mes distances de freinage restent les mêmes qu'à vide"],
+    "ok": [0, 1],
+    "exp": "Une charge mal répartie (trop à l'arrière) rend l'attelage instable et peut provoquer un louvoiement. Avec une remorque, le poids total augmente : la distance de freinage s'allonge et les pneus doivent être gonflés selon la préconisation « en charge »."
+  }
+]

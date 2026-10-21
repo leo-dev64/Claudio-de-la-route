@@ -1,0 +1,233 @@
+[
+  {
+    "id": "P-001",
+    "theme": "P",
+    "q": "Je suis témoin d'un accident de la route. Dans l'ordre, je dois :",
+    "a": ["Alerter, Protéger, Secourir", "Secourir, Alerter, Protéger", "Protéger, Alerter, Secourir", "Protéger, Secourir, Alerter"],
+    "ok": [2],
+    "exp": "On retient PAS : Protéger (éviter un suraccident), Alerter les secours, puis Secourir les victimes en attendant leur arrivée. Se précipiter vers les blessés sans protéger la zone expose à un deuxième accident."
+  },
+  {
+    "id": "P-002",
+    "theme": "P",
+    "q": "Sur une route hors agglomération, je m'arrête sur les lieux d'un accident. Pour prévenir les autres usagers, la zone doit être balisée de chaque côté de l'accident à environ :",
+    "a": ["10 à 20 m", "30 à 50 m", "150 à 200 m", "500 m à 1 km"],
+    "ok": [2],
+    "exp": "Hors agglomération, on balise à environ 150 à 200 m de part et d'autre de l'accident (triangles, personnes équipées de gilets) : les usagers qui arrivent ont alors le temps de ralentir et de s'arrêter.",
+    "scene": { "road": "route", "time": "jour", "weather": "sec" }
+  },
+  {
+    "id": "P-003",
+    "theme": "P",
+    "q": "Hors agglomération, j'arrive le premier sur un accident qui vient de se produire. Pour protéger les lieux :",
+    "a": ["j'allume mes feux de détresse en m'arrêtant", "je laisse mes passagers au bord de la chaussée", "j'enfile mon gilet jaune avant de descendre", "je me gare après l'accident, hors de la chaussée"],
+    "ok": [0, 2, 3],
+    "exp": "Je signale ma présence avec les feux de détresse, j'enfile mon gilet avant de sortir et je me gare après l'accident, hors de la chaussée si possible. Les passagers s'éloignent de la circulation, en sécurité.",
+    "scene": { "road": "route", "time": "jour", "weather": "sec" }
+  },
+  {
+    "id": "P-004",
+    "theme": "P",
+    "q": "De nuit, sur une route hors agglomération, j'arrive sur un accident qui vient de se produire. Le conducteur, blessé, est resté dans sa voiture, moteur en marche. Aucun incendie ne s'est déclaré.",
+    "sub": ["Je coupe le contact de son véhicule :", "Je le sors de la voiture pour l'allonger sur la chaussée :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [0, 3],
+    "exp": "Couper le contact (et interdire de fumer) limite le risque d'incendie. Un blessé ne se déplace qu'en cas de danger réel, immédiat et non contrôlable : ici, il reste dans le véhicule en attendant les secours.",
+    "scene": { "road": "route", "time": "nuit" }
+  },
+  {
+    "id": "P-005",
+    "theme": "P",
+    "q": "Sur autoroute, je m'arrête sur la bande d'arrêt d'urgence, après le lieu d'un accident. Mes passagers doivent :",
+    "a": ["rester assis dans le véhicule, ceinture attachée", "attendre debout sur la bande d'arrêt d'urgence", "se mettre derrière la glissière de sécurité", "traverser pour rejoindre le terre-plein central"],
+    "ok": [2],
+    "exp": "Sur autoroute, rester dans le véhicule ou sur la bande d'arrêt d'urgence expose à un suraccident. Tout le monde sort par le côté droit, gilet enfilé, et se met à l'abri derrière la glissière.",
+    "scene": { "road": "autoroute", "time": "jour" }
+  },
+  {
+    "id": "P-006",
+    "theme": "P",
+    "q": "Pour alerter les secours après un accident avec des blessés, je peux composer :",
+    "a": ["le 15 (SAMU)", "le 115 (SAMU social)", "le 18 (pompiers)", "le 112 (numéro européen)"],
+    "ok": [0, 2, 3],
+    "exp": "Les numéros d'urgence sont le 15 (SAMU), le 17 (police ou gendarmerie), le 18 (pompiers) et le 112 (numéro européen). Ils sont gratuits. Le 115 est le numéro du SAMU social, pour l'hébergement d'urgence."
+  },
+  {
+    "id": "P-007",
+    "theme": "P",
+    "q": "Le 114 est un numéro d'urgence :",
+    "a": ["pour joindre la police municipale du secteur", "pour joindre un dépanneur agréé sur autoroute", "pour joindre un centre antipoison régional", "pour les personnes sourdes ou malentendantes"],
+    "ok": [3],
+    "exp": "Le 114 permet aux personnes sourdes, malentendantes ou ayant des difficultés à parler d'alerter les secours par écrit (SMS, tchat) ou par visio. Il transmet ensuite l'alerte au service d'urgence compétent."
+  },
+  {
+    "id": "P-008",
+    "theme": "P",
+    "q": "Dans mon message d'alerte aux secours, je dois indiquer :",
+    "a": ["le lieu précis et le sens de circulation", "la marque et la couleur de ma propre voiture", "le nombre de victimes et leur état apparent", "les risques éventuels, comme un incendie"],
+    "ok": [0, 2, 3],
+    "exp": "Un bon message d'alerte donne : le numéro d'où j'appelle, la nature de l'accident, la localisation précise (route, sens de circulation, point de repère), le nombre de victimes et leur état (conscience, respiration, saignement), les risques particuliers et les gestes déjà faits. Ma propre voiture n'aide pas les secours."
+  },
+  {
+    "id": "P-009",
+    "theme": "P",
+    "q": "Je suis au téléphone avec les secours. Je raccroche :",
+    "a": ["après avoir donné le lieu de l'accident", "quand mon interlocuteur me le demande", "quand j'entends arriver les sirènes", "au bout d'une minute pour libérer la ligne"],
+    "ok": [1],
+    "exp": "Je ne raccroche jamais le premier : l'opérateur peut avoir besoin de précisions ou me guider dans les gestes à faire en attendant les secours."
+  },
+  {
+    "id": "P-010",
+    "theme": "P",
+    "q": "Sur autoroute, les bornes d'appel d'urgence orange, placées environ tous les 2 km :",
+    "a": ["localisent immédiatement l'appelant", "ne fonctionnent qu'en cas d'accident corporel", "sont payantes avec une carte bancaire", "nécessitent de décrire sa position exacte"],
+    "ok": [0],
+    "exp": "La borne d'appel d'urgence met directement en relation avec un service qui sait exactement d'où vient l'appel : inutile de chercher à décrire le lieu. On peut aussi appeler le 112."
+  },
+  {
+    "id": "P-011",
+    "theme": "P",
+    "q": "Un camion portant une plaque orange (transport de matières dangereuses) est accidenté et un liquide s'en échappe. Je :",
+    "a": ["m'approche pour identifier le produit à son odeur", "reste à l'écart et fais éloigner les curieux", "monte dans la cabine pour couper le contact", "relève de loin les numéros de la plaque orange"],
+    "ok": [1, 3],
+    "exp": "Avec des matières dangereuses, il ne faut pas s'approcher : je m'éloigne, je fais éloigner les témoins et je donne aux secours les numéros de la plaque orange (en haut le code danger, en bas le numéro de la matière)."
+  },
+  {
+    "id": "P-012",
+    "theme": "P",
+    "q": "Je peux déplacer un blessé :",
+    "a": ["pour l'installer confortablement sur le bas-côté", "s'il me le demande pour être plus à l'aise", "pour l'amener moi-même à l'hôpital le plus proche", "face à un danger réel, immédiat et non contrôlable"],
+    "ok": [3],
+    "exp": "Déplacer un blessé peut aggraver ses lésions, notamment à la colonne vertébrale. On ne le fait qu'en cas de danger réel, immédiat et non contrôlable ; sinon, on le laisse dans la position où on l'a trouvé en attendant les secours."
+  },
+  {
+    "id": "P-013",
+    "theme": "P",
+    "q": "Un motard accidenté, conscient, est allongé sur la chaussée avec son casque intégral sur la tête.",
+    "sub": ["Je lui retire son casque pour l'aider à respirer :", "Je lui parle et je surveille sa respiration en attendant les secours :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [1, 2],
+    "exp": "On ne retire jamais le casque d'un motard blessé : le geste peut aggraver une lésion du cou ou de la colonne. Je lui demande de ne pas bouger, je le rassure et je surveille sa respiration jusqu'à l'arrivée des secours."
+  },
+  {
+    "id": "P-014",
+    "theme": "P",
+    "q": "Après un accident, une victime consciente, qui ne saigne pas, se plaint de douleurs dans le dos. Je :",
+    "a": ["lui demande de ne pas bouger et la rassure", "l'aide à se relever pour marcher un peu", "la place en position latérale de sécurité", "lui masse doucement le dos pour la soulager"],
+    "ok": [0],
+    "exp": "Une douleur au dos ou au cou après un choc peut révéler une lésion de la colonne vertébrale. La victime ne doit pas bouger : je la rassure, je la couvre et j'alerte. La PLS est réservée aux victimes inconscientes qui respirent."
+  },
+  {
+    "id": "P-015",
+    "theme": "P",
+    "q": "Pour savoir si une victime inconsciente respire :",
+    "a": ["je regarde si son ventre et sa poitrine se soulèvent", "je lui demande de serrer ma main et d'ouvrir les yeux", "j'écoute si elle respire et je sens son souffle", "je cherche son pouls au poignet pendant une minute"],
+    "ok": [0, 2],
+    "exp": "Je regarde si le ventre et la poitrine se soulèvent, j'écoute et je sens le souffle, pendant 10 secondes au plus. Lui demander de serrer la main sert à vérifier la conscience, pas la respiration ; la prise du pouls n'est pas le geste enseigné et fait perdre du temps."
+  },
+  {
+    "id": "P-016",
+    "theme": "P",
+    "q": "Une victime ne répond pas et ne réagit pas, mais elle respire. En attendant les secours, je la place :",
+    "a": ["sur le dos, les jambes surélevées", "assise, adossée à son véhicule", "à plat ventre, la tête tournée", "en position latérale de sécurité"],
+    "ok": [3],
+    "exp": "Une victime inconsciente qui respire est mise en PLS : sur le côté, la bouche orientée vers le sol, pour que sa langue ou des vomissements ne bloquent pas sa respiration. Je surveille ensuite sa respiration jusqu'à l'arrivée des secours."
+  },
+  {
+    "id": "P-017",
+    "theme": "P",
+    "q": "Une victime est inconsciente et ne respire pas. Je :",
+    "a": ["fais alerter les secours (15, 18 ou 112)", "la place en PLS et j'attends les secours", "pratique des compressions thoraciques", "fais chercher un défibrillateur (DAE)"],
+    "ok": [0, 2, 3],
+    "exp": "Une victime inconsciente qui ne respire pas est en arrêt cardiaque. Il faut alerter, commencer immédiatement les compressions thoraciques et utiliser un défibrillateur dès que possible. La PLS ne convient qu'à une victime qui respire."
+  },
+  {
+    "id": "P-018",
+    "theme": "P",
+    "q": "Pour un massage cardiaque sur un adulte, je comprime la poitrine à un rythme de :",
+    "a": ["30 à 50 compressions par minute", "60 à 80 compressions par minute", "100 à 120 compressions par minute", "150 à 180 compressions par minute"],
+    "ok": [2],
+    "exp": "Les compressions se font à un rythme de 100 à 120 par minute, en laissant la poitrine remonter complètement entre deux compressions. Plus lent, le sang circule mal ; plus rapide, les compressions deviennent trop peu profondes."
+  },
+  {
+    "id": "P-019",
+    "theme": "P",
+    "q": "Pour pratiquer des compressions thoraciques sur un adulte allongé sur le dos, j'appuie :",
+    "a": ["sous les côtes, en enfonçant de 5 à 6 cm", "au centre de la poitrine, en enfonçant de 5 à 6 cm", "au centre de la poitrine, en enfonçant de 1 à 2 cm", "sur le côté gauche, en enfonçant de 5 à 6 cm"],
+    "ok": [1],
+    "exp": "Les mains sont placées l'une sur l'autre au centre de la poitrine, bras tendus, et l'on enfonce le thorax de 5 à 6 cm. La victime doit être allongée sur le dos, sur une surface dure."
+  },
+  {
+    "id": "P-020",
+    "theme": "P",
+    "q": "Je ne suis pas formé au bouche-à-bouche. Face à une victime adulte en arrêt cardiaque, après avoir alerté :",
+    "a": ["je pratique des compressions thoraciques sans m'arrêter", "je ne commence que si un médecin me guide au téléphone", "je la place en PLS en attendant les secours", "je vérifie son pouls toutes les 30 secondes avant de reprendre"],
+    "ok": [0],
+    "exp": "Les compressions seules sont efficaces et valent bien mieux que rien : on les commence sans attendre et sans s'interrompre pour vérifier le pouls. Si l'on est formé, on peut alterner 30 compressions et 2 insufflations. Dans tous les cas, on utilise un défibrillateur dès qu'il arrive."
+  },
+  {
+    "id": "P-021",
+    "theme": "P",
+    "q": "Un défibrillateur automatisé externe (DAE) peut être utilisé :",
+    "a": ["par un secouriste titulaire d'une formation aux premiers secours", "par les pompiers et ambulanciers, à leur arrivée", "par toute personne, même sans formation", "sur une victime consciente qui respire"],
+    "ok": [2],
+    "exp": "Tout le monde peut utiliser un DAE : l'appareil guide l'utilisateur à la voix, analyse le cœur de la victime et ne délivre un choc que s'il est nécessaire. Il s'utilise sur une victime inconsciente qui ne respire pas."
+  },
+  {
+    "id": "P-022",
+    "theme": "P",
+    "q": "Une victime saigne abondamment au bras. Je :",
+    "a": ["pose un garrot avec ma ceinture pour arrêter le sang", "appuie fortement et directement sur la plaie", "nettoie la plaie et attends l'arrêt du saignement", "lui donne à boire pour compenser le sang perdu"],
+    "ok": [1],
+    "exp": "Face à une hémorragie, le premier geste est la compression directe (si possible avec la main protégée par un gant ou un tissu propre) et forte de la plaie, maintenue jusqu'à l'arrivée des secours. Je fais alerter, j'allonge la victime et je ne lui donne pas à boire."
+  },
+  {
+    "id": "P-023",
+    "theme": "P",
+    "q": "Un morceau de verre est planté dans la jambe d'un blessé. Je :",
+    "a": ["le retire pour pouvoir comprimer la plaie", "demande au blessé de le retirer lui-même", "le laisse en place et alerte les secours", "le retire puis je désinfecte la plaie"],
+    "ok": [2],
+    "exp": "Un objet planté dans une plaie ne doit pas être retiré : il peut limiter le saignement, et le retirer peut aggraver la blessure. Je le laisse en place, j'installe le blessé confortablement et j'alerte."
+  },
+  {
+    "id": "P-024",
+    "theme": "P",
+    "q": "Une victime s'est brûlé la main dans un accident. Je :",
+    "a": ["applique de la glace directement sur la peau", "refroidis la brûlure avec de l'eau tempérée", "perce les cloques avec une aiguille stérilisée", "ne retire pas les vêtements collés à la peau"],
+    "ok": [1, 3],
+    "exp": "Une brûlure se refroidit au plus vite sous de l'eau tempérée, pas avec de la glace qui abîme la peau. Je ne perce pas les cloques et je ne retire pas les vêtements collés à la peau. J'alerte si la brûlure est étendue ou grave."
+  },
+  {
+    "id": "P-025",
+    "theme": "P",
+    "q": "Un blessé conscient attend les secours, assis sur le bas-côté. Il a soif et frissonne.",
+    "sub": ["Je lui donne à boire :", "Je le couvre avec une couverture ou un vêtement :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [1, 2],
+    "exp": "On ne donne jamais à boire à un blessé : il peut avoir besoin d'une intervention, et boire peut provoquer des vomissements. On le couvre (couverture de survie, vêtement) car un blessé se refroidit vite."
+  },
+  {
+    "id": "P-026",
+    "theme": "P",
+    "q": "En attendant l'arrivée des secours, auprès d'une victime consciente :",
+    "a": ["je lui parle calmement pour la rassurer", "je lui décris la gravité de ses blessures", "je lui donne un médicament contre la douleur", "je surveille son état jusqu'à leur arrivée"],
+    "ok": [0, 3],
+    "exp": "Je reste auprès de la victime, je lui parle calmement sans l'inquiéter et je surveille son état (conscience, respiration). S'il évolue, je rappelle les secours. Je ne donne ni médicament, ni boisson, ni nourriture."
+  },
+  {
+    "id": "P-027",
+    "theme": "P",
+    "q": "Je suis témoin d'un accident avec des blessés, mais je n'ai jamais suivi de formation aux premiers secours :",
+    "a": ["je n'ai aucune obligation car je ne suis pas formé", "je dois au moins alerter les secours, sinon c'est un délit", "je dois transporter moi-même les blessés à l'hôpital", "je dois attendre la police avant de faire quoi que ce soit"],
+    "ok": [1],
+    "exp": "Chacun doit porter assistance, sans se mettre en danger, au moins en alertant les secours. La non-assistance à personne en danger est punie de 5 ans d'emprisonnement et 75 000 € d'amende."
+  },
+  {
+    "id": "P-028",
+    "theme": "P",
+    "q": "Pour apprendre les gestes de premiers secours, je peux suivre :",
+    "a": ["un stage de sensibilisation à la sécurité routière", "la formation « Premiers secours citoyen » (PSC)", "une initiation aux « gestes qui sauvent »", "la visite médicale du permis de conduire"],
+    "ok": [1, 2],
+    "exp": "La formation PSC (ex-PSC1, renommée en 2024) et l'initiation courte aux « gestes qui sauvent » apprennent à protéger, alerter, faire une PLS, masser, utiliser un DAE et arrêter une hémorragie. Elles sont ouvertes à tous et recommandées à chaque conducteur."
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "R-001",
+    "theme": "R",
+    "q": "Ce panneau signale :",
+    "a": ["Une interdiction précisée par panonceau", "Un danger sans panneau spécifique", "Une obligation précisée par panonceau", "La fin d'une zone dangereuse signalée"],
+    "ok": [1],
+    "img": "signs/A14.svg",
+    "exp": "Triangle à bordure rouge, pointe en haut = panneau de danger. Le point d'exclamation (« autres dangers ») annonce un danger qui n'a pas de panneau spécifique ; un panonceau en précise souvent la nature."
+  },
+  {
+    "id": "R-002",
+    "theme": "R",
+    "q": "Hors agglomération, ce panneau est implanté environ :",
+    "a": ["À 50 m du danger", "Au niveau du danger", "À 300 m du danger", "À 150 m du danger"],
+    "ok": [3],
+    "img": "signs/A15b.svg",
+    "exp": "Les panneaux de danger sont placés à environ 150 m du danger hors agglomération (environ 50 m en agglomération). Celui-ci annonce un passage d'animaux sauvages : je ralentis et je redouble d'attention, surtout à l'aube et au crépuscule."
+  },
+  {
+    "id": "R-003",
+    "theme": "R",
+    "q": "En présence de ce panneau :",
+    "a": ["Je réduis nettement ma vitesse", "J'évite les freinages brusques", "Je passe au point mort pour éviter de patiner", "J'augmente ma distance de sécurité"],
+    "ok": [0, 1, 3],
+    "img": "signs/A4.svg",
+    "exp": "Panneau « chaussée particulièrement glissante » : je ralentis, je garde de la marge et j'agis en douceur. Rouler au point mort supprime le frein moteur et réduit le contrôle du véhicule ; un rétrogradage brutal peut, lui, bloquer les roues motrices. La chaussée est aussi très glissante aux premières pluies après une période sèche, ou avec des feuilles mortes ou de la boue."
+  },
+  {
+    "id": "R-004",
+    "theme": "R",
+    "q": "Ce panneau annonce :",
+    "a": ["Un débouché sur une berge", "Un tunnel à gabarit réduit", "Un pont levant ou tournant", "Une chaussée très rétrécie"],
+    "ok": [2],
+    "img": "signs/A6.svg",
+    "exp": "C'est le panneau « pont mobile » (pont levant ou tournant). Lorsque les feux rouges clignotants qui le protègent fonctionnent, l'arrêt est absolu."
+  },
+  {
+    "id": "R-005",
+    "theme": "R",
+    "q": "À l'approche du passage annoncé par ce panneau :",
+    "a": ["Je passe tant que les barrières ne sont pas baissées", "Je ne m'engage que si la sortie des voies est libre", "Je m'arrête dès que les feux rouges clignotent", "Je passe dès que les barrières remontent, même feux allumés"],
+    "ok": [1, 2],
+    "img": "signs/A7.svg",
+    "exp": "Panneau « passage à niveau avec barrières ». Le feu rouge clignotant impose l'arrêt absolu, avant même la descente des barrières, et tant qu'il clignote, même si les barrières se relèvent (un second train peut arriver). Je ne m'engage jamais si la sortie n'est pas libre : on ne s'arrête jamais sur les voies ferrées."
+  },
+  {
+    "id": "R-006",
+    "theme": "R",
+    "q": "En présence de ce panneau :",
+    "a": ["J'utilise le frein moteur en rétrogradant", "Je roule au point mort dans la descente", "Je freine en continu dans la descente", "Je garde le rapport le plus élevé possible"],
+    "ok": [0],
+    "img": "signs/A16.svg",
+    "exp": "Panneau « descente dangereuse » (le pourcentage indique la pente). J'engage un rapport inférieur, en général celui que j'utiliserais pour monter, afin de profiter du frein moteur : un rapport élevé ou le point mort ne retiennent pas le véhicule, et freiner en continu fait chauffer les freins, qui perdent de leur efficacité."
+  },
+  {
+    "id": "R-007",
+    "theme": "R",
+    "q": "La couleur jaune de ce panneau signifie qu'il s'agit d'une signalisation :",
+    "a": ["Indicative", "Temporaire", "Permanente", "Facultative"],
+    "ok": [1],
+    "img": "signs/AK5.svg",
+    "exp": "Fond jaune = signalisation temporaire (ici, des travaux). En cas de contradiction, la signalisation temporaire l'emporte sur la signalisation permanente : je ralentis et je fais attention aux ouvriers et aux engins."
+  },
+  {
+    "id": "R-008",
+    "theme": "R",
+    "q": "Ce panneau interdit l'accès :",
+    "a": ["Aux motocyclettes", "Aux bicyclettes", "Aux automobiles", "Aux cyclomoteurs"],
+    "ok": [0, 2, 3],
+    "img": "signs/B7b.svg",
+    "exp": "Rond à bordure rouge = interdiction. Celui-ci interdit l'accès à tous les véhicules à moteur (voitures, motos, cyclomoteurs…). Les cyclistes et les piétons peuvent passer."
+  },
+  {
+    "id": "R-009",
+    "theme": "R",
+    "q": "Ce panneau m'impose :",
+    "a": ["Une vitesse minimale de 30 km/h", "Une vitesse maximale de 30 km/h", "Une vitesse conseillée de 30 km/h", "L'entrée dans une zone 30 km/h"],
+    "ok": [0],
+    "img": "signs/B25-30.svg",
+    "exp": "Rond bleu = obligation : c'est une vitesse minimale obligatoire, à respecter si les conditions de circulation le permettent. Ne pas confondre avec la vitesse maximale (rond blanc à bordure rouge) ni avec la vitesse conseillée (carré bleu)."
+  },
+  {
+    "id": "R-010",
+    "theme": "R",
+    "q": "Ce panneau, placé avant un passage étroit, m'indique que :",
+    "a": ["Je suis prioritaire sur les véhicules d'en face", "La circulation est à double sens après le panneau", "Je dois céder le passage aux véhicules d'en face", "Le dépassement est interdit sur ce passage étroit"],
+    "ok": [2],
+    "img": "signs/B15.svg",
+    "exp": "Ce panneau rond (prescription) m'oblige à céder le passage aux véhicules venant en sens inverse, en m'arrêtant si nécessaire. Le panneau carré bleu C18 m'indique au contraire que je suis prioritaire sur eux."
+  },
+  {
+    "id": "R-011",
+    "theme": "R",
+    "q": "Ce panneau signifie :",
+    "a": ["Équipements spéciaux obligatoires", "Équipements spéciaux conseillés", "Fin d'obligation des équipements", "Route enneigée : passage interdit"],
+    "ok": [0],
+    "img": "signs/B26.svg",
+    "exp": "Rond bleu = obligation : sur la route enneigée qui suit, il faut être équipé (chaînes ; les pneus hiver marqués 3PMSF sont admis, sauf si un panonceau impose explicitement les chaînes). Sa fin est signalée par un rond bleu barré de rouge."
+  },
+  {
+    "id": "R-012",
+    "theme": "R",
+    "q": "Je circule sur une route à 2 × 2 voies séparées par un terre-plein central, par temps sec. Mon permis n'est plus probatoire. Après ce panneau, en l'absence d'autre indication, ma vitesse maximale est de :",
+    "a": ["80 km/h", "90 km/h", "110 km/h", "130 km/h"],
+    "ok": [2],
+    "img": "signs/B33-90.svg",
+    "exp": "Ce panneau marque la fin de la limitation à 90 km/h : la vitesse redevient celle prévue pour ce type de route, soit 110 km/h sur une 2 × 2 voies avec terre-plein central (100 km/h sous la pluie ou en permis probatoire)."
+  },
+  {
+    "id": "R-013",
+    "theme": "R",
+    "q": "Ce panneau indique :",
+    "a": ["La fin de la route prioritaire", "La fin de la zone agglomérée", "La fin d'une zone de stationnement", "La fin de toutes les interdictions"],
+    "ok": [3],
+    "img": "signs/B31.svg",
+    "exp": "Rond blanc barré, sans chiffre ni symbole = fin de toutes les interdictions signalées par panneaux aux véhicules en mouvement (vitesse, dépassement…). Les règles générales s'appliquent de nouveau, par exemple 80 km/h sur une route à double sens sans séparateur central."
+  },
+  {
+    "id": "R-014",
+    "theme": "R",
+    "q": "Après ce panneau :",
+    "a": ["Les piétons sont prioritaires sur la chaussée", "La vitesse est limitée à 30 km/h dans la zone", "Le stationnement est interdit dans la zone", "Les cyclistes peuvent circuler à double sens"],
+    "ok": [1, 3],
+    "img": "signs/B30-30.svg",
+    "exp": "Entrée de zone 30 : 30 km/h maximum dans toute la zone, et double sens cyclable généralisé sauf décision contraire signalée. La priorité des piétons sur toute la chaussée est propre à la zone de rencontre et à l'aire piétonne."
+  },
+  {
+    "id": "R-015",
+    "theme": "R",
+    "q": "Je franchis ce panneau.",
+    "sub": ["Les piétons peuvent circuler sur la chaussée et y sont prioritaires :", "La vitesse y est limitée à 30 km/h :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [0, 3],
+    "img": "signs/B52.svg",
+    "exp": "Zone de rencontre : vitesse limitée à 20 km/h, piétons autorisés sur la chaussée et prioritaires sur tous les véhicules (sauf les tramways). Les cyclistes peuvent y circuler dans les deux sens, sauf indication contraire."
+  },
+  {
+    "id": "R-016",
+    "theme": "R",
+    "q": "Dans la zone qui commence à ce panneau :",
+    "a": ["La vitesse est limitée à 20 km/h pour tous", "Seuls les véhicules autorisés circulent au pas", "Tous les véhicules circulent au pas, piétons prioritaires", "La vitesse est limitée à 30 km/h, double sens cyclable"],
+    "ok": [1],
+    "img": "signs/B54.svg",
+    "exp": "Aire piétonne : réservée aux piétons ; seuls les véhicules autorisés (desserte de la zone) y circulent, à l'allure du pas, et les piétons sont prioritaires sur eux. Ne pas confondre avec la zone de rencontre (20 km/h, ouverte à tous) ni avec la zone 30."
+  },
+  {
+    "id": "R-017",
+    "theme": "R",
+    "q": "Cette voie est réservée :",
+    "a": ["Aux tracteurs et aux véhicules lents", "Aux bus, aux taxis et aux ambulances", "Aux cyclistes et aux cyclomoteurs", "Aux piétons, cyclistes et cavaliers"],
+    "ok": [3],
+    "img": "signs/C115.svg",
+    "exp": "Voie verte : réservée aux véhicules non motorisés, aux piétons et aux cavaliers. Les cyclomoteurs, les motos et les voitures n'y ont pas accès."
+  },
+  {
+    "id": "R-018",
+    "theme": "R",
+    "q": "Sur la route qui commence à ce panneau :",
+    "a": ["Les piétons et les cyclistes sont interdits", "Les motos de forte cylindrée sont interdites", "Les cyclomoteurs et les cycles sont interdits", "Le stationnement est autorisé sur l'accotement"],
+    "ok": [0, 2],
+    "img": "signs/C107.svg",
+    "exp": "Route à accès réglementé (route express) : on n'y accède que par des points aménagés, et elle est interdite notamment aux piétons, aux cycles et aux cyclomoteurs. Le stationnement y est interdit, sauf nécessité absolue ; les motos y sont autorisées."
+  },
+  {
+    "id": "R-019",
+    "theme": "R",
+    "q": "À partir de ce panneau :",
+    "a": ["Les cyclomoteurs sont autorisés sur la voie de droite", "La marche arrière et le demi-tour sont interdits", "La vitesse est limitée à 110 km/h par temps sec", "Je peux me reposer sur la bande d'arrêt d'urgence"],
+    "ok": [1],
+    "img": "signs/C207.svg",
+    "exp": "Début d'autoroute : 130 km/h maximum par temps sec (110 sous la pluie et en permis probatoire), marche arrière et demi-tour interdits, piétons, cycles et cyclomoteurs interdits. La bande d'arrêt d'urgence est réservée aux urgences : pour se reposer, on utilise les aires."
+  },
+  {
+    "id": "R-020",
+    "theme": "R",
+    "q": "Après ce panneau, sauf indication contraire :",
+    "a": ["Les feux de croisement sont obligatoires", "La vitesse maximale autorisée est de 50 km/h", "Je deviens prioritaire aux intersections", "Le klaxon est réservé aux dangers immédiats"],
+    "ok": [1, 3],
+    "img": "signs/EB10.svg",
+    "exp": "Panneau d'entrée d'agglomération (nom de la commune, bordure rouge) : 50 km/h sauf indication contraire, et klaxon uniquement en cas de danger immédiat. Les règles de priorité ne changent pas : priorité à droite, sauf signalisation contraire."
+  },
+  {
+    "id": "R-021",
+    "theme": "R",
+    "q": "Après ce panneau, je circule sur une route à double sens sans séparateur central, par temps sec, sans autre panneau. J'ai mon permis depuis 10 ans. Ma vitesse maximale est de :",
+    "a": ["50 km/h", "70 km/h", "80 km/h", "90 km/h"],
+    "ok": [2],
+    "img": "signs/EB20.svg",
+    "exp": "Sortie d'agglomération (nom barré de rouge) : la limitation à 50 km/h prend fin. Sur une route à double sens sans séparateur central, la vitesse maximale est de 80 km/h, sauf panneau autorisant 90 km/h."
+  },
+  {
+    "id": "R-022",
+    "theme": "R",
+    "q": "Ce panneau m'indique :",
+    "a": ["Une vitesse maximale de 50 km/h", "Une vitesse minimale de 50 km/h", "La fin d'une limitation à 50 km/h", "Une vitesse conseillée de 50 km/h"],
+    "ok": [3],
+    "img": "signs/C4a-50.svg",
+    "exp": "Carré bleu = indication : c'est une vitesse conseillée, pas une obligation. Elle invite à adopter cette allure sur la section concernée, sans changer la vitesse maximale autorisée."
+  },
+  {
+    "id": "R-023",
+    "theme": "R",
+    "q": "Ce panneau signale une voie destinée :",
+    "a": ["Aux véhicules aux freins défaillants", "Aux véhicules lents dans une montée", "À la pose des chaînes avant la montée", "Au stationnement des poids lourds"],
+    "ok": [0],
+    "img": "signs/C26a.svg",
+    "exp": "Voie de détresse : dans une longue descente, elle permet d'immobiliser, souvent dans un lit de gravier, un véhicule dont les freins sont défaillants. Elle doit toujours rester libre."
+  },
+  {
+    "id": "R-024",
+    "theme": "R",
+    "q": "Cette balise m'indique :",
+    "a": ["Un obstacle à contourner par la droite", "Une séparation de voies de même sens", "Un virage dangereux à prendre lentement", "Une sortie vers une aire de repos"],
+    "ok": [1],
+    "img": "signs/J14a.svg",
+    "exp": "Balise de musoir : elle marque le point où se séparent deux courants de circulation de même sens (bifurcation, bretelle de sortie). Je choisis ma voie à l'avance et je ne change pas de direction au dernier moment."
+  },
+  {
+    "id": "R-025",
+    "theme": "R",
+    "q": "Sous une forte pluie, sur autoroute, je sens soudain la direction devenir légère : la voiture semble flotter sur l'eau.",
+    "a": ["Je lève progressivement le pied", "Je freine fortement pour ralentir", "Je maintiens fermement le volant", "Je braque pour rejoindre la bande d'arrêt d'urgence"],
+    "ok": [0, 2],
+    "scene": { "road": "autoroute", "weather": "pluie" },
+    "exp": "C'est l'aquaplaning : les pneus ne touchent plus la route. Je lâche progressivement l'accélérateur et je garde les roues droites jusqu'au retour de l'adhérence, sans freiner brutalement ni braquer. Pour le prévenir : réduire sa vitesse et avoir des pneus bien gonflés et peu usés."
+  },
+  {
+    "id": "R-026",
+    "theme": "R",
+    "q": "Hors agglomération, dans un brouillard épais, la visibilité est inférieure à 50 m.",
+    "sub": ["Je me rapproche du véhicule qui me précède pour suivre ses feux arrière :", "Ma vitesse ne doit pas dépasser 50 km/h :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [1, 2],
+    "scene": { "road": "route", "weather": "brouillard", "ahead": "voiture" },
+    "exp": "Visibilité inférieure à 50 m : vitesse limitée à 50 km/h sur toutes les routes, autoroute comprise. Je garde une grande distance de sécurité et je me guide plutôt sur la ligne de rive."
+  },
+  {
+    "id": "R-027",
+    "theme": "R",
+    "q": "De nuit, hors agglomération, le conducteur qui arrive en face ne passe pas en feux de croisement et m'éblouit.",
+    "a": ["Je regarde vers le bord droit de la chaussée", "Je lui réponds en restant en feux de route", "Je réduis ma vitesse, voire je m'arrête", "Je fixe ses phares pour évaluer sa distance"],
+    "ok": [0, 2],
+    "scene": { "road": "route", "time": "nuit", "oncoming": "voiture" },
+    "exp": "En cas d'éblouissement, je regarde le bord droit de la chaussée pour garder ma trajectoire et je ralentis, jusqu'à l'arrêt si nécessaire. Rester en feux de route aveuglerait l'autre conducteur à son tour."
+  },
+  {
+    "id": "R-028",
+    "theme": "R",
+    "q": "Je circule sur une route enneigée.",
+    "a": ["Je choisis un rapport plus élevé qu'à l'ordinaire", "J'augmente nettement mes distances de sécurité", "Je suis de près les traces du véhicule qui me précède", "Je me méfie des ponts et des zones à l'ombre"],
+    "ok": [0, 1, 3],
+    "scene": { "road": "route", "weather": "neige" },
+    "exp": "Sur la neige, tout se fait en douceur : un rapport plus élevé limite le patinage des roues, et les distances de sécurité doivent être fortement augmentées ; suivre de près un autre véhicule ne laisse pas le temps de s'arrêter. Les ponts, les sous-bois et les zones à l'ombre gèlent en premier et restent verglacés plus longtemps."
+  },
+  {
+    "id": "R-029",
+    "theme": "R",
+    "q": "De nuit, hors agglomération, sur une route non éclairée, aucun véhicule ne me précède et personne n'arrive en face.",
+    "a": ["J'utilise les feux de position", "J'utilise les feux de croisement", "J'utilise les feux de route", "J'utilise les feux de brouillard"],
+    "ok": [2],
+    "scene": { "road": "route", "time": "nuit" },
+    "exp": "Les feux de route éclairent à au moins 100 m (au moins 30 m pour les feux de croisement). Je les utilise quand je ne risque d'éblouir personne et je passe en feux de croisement dès que je croise ou que je suis un autre usager."
+  },
+  {
+    "id": "R-030",
+    "theme": "R",
+    "q": "Hors agglomération, un panneau annonce un passage à niveau sans barrière ni demi-barrière. Un tracteur me précède et la ligne axiale est discontinue. Je peux le dépasser avant le passage à niveau :",
+    "a": ["Oui", "Non"],
+    "ok": [1],
+    "scene": { "road": "route", "signs": ["A8"], "ahead": "tracteur", "line": "discontinue" },
+    "exp": "Le dépassement est interdit à l'approche d'un passage à niveau sans barrière ni demi-barrière, même si la ligne est discontinue. Je reste derrière le tracteur et je m'assure qu'aucun train n'arrive avant de traverser."
+  },
+  {
+    "id": "R-031",
+    "theme": "R",
+    "q": "Je descends une route de montagne étroite. Une voiture monte en face et le croisement s'annonce difficile.",
+    "sub": ["Je dois m'arrêter à temps le premier :", "Si l'un de nous deux doit faire marche arrière, c'est en principe à moi :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [0, 2],
+    "scene": { "road": "route", "oncoming": "voiture", "signs": ["A16"] },
+    "exp": "En montagne, lorsque le croisement est difficile, le véhicule qui descend s'arrête à temps le premier. Entre deux véhicules de même catégorie, c'est aussi à lui de reculer, sauf si c'est nettement plus facile pour celui qui monte (place d'évitement proche) ; entre véhicules différents, c'est en principe le plus léger qui recule."
+  },
+  {
+    "id": "R-032",
+    "theme": "R",
+    "q": "De nuit, sur autoroute, j'entre dans un brouillard épais. Pour bien voir et être vu, j'utilise :",
+    "a": ["Les feux de route en permanence", "Les feux de croisement allumés", "Les feux de brouillard avant", "Le feu de brouillard arrière"],
+    "ok": [1, 2, 3],
+    "scene": { "road": "autoroute", "time": "nuit", "weather": "brouillard" },
+    "exp": "Par brouillard : feux de croisement, complétés par les feux de brouillard avant et le feu de brouillard arrière (ce dernier uniquement par brouillard ou neige). Les feux de route se réfléchissent dans le brouillard et réduisent la visibilité."
+  },
+  {
+    "id": "R-033",
+    "theme": "R",
+    "q": "Une voiture me précède. En présence de ce panneau :",
+    "a": ["Je me rapproche d'elle pour rester dans ses traces", "Je la dépasse pour ne plus recevoir ses projections", "Je freine fortement pour ralentir au plus vite", "Je ralentis et j'augmente la distance entre nous"],
+    "ok": [3],
+    "img": "signs/AK22.svg",
+    "exp": "Panneau temporaire « projection de gravillons » : les gravillons peuvent briser un pare-brise et réduisent l'adhérence. Je ralentis en douceur, j'augmente les distances et je renonce à dépasser."
+  },
+  {
+    "id": "R-034",
+    "theme": "R",
+    "q": "Sur une 2 × 2 voies, un panneau signale du vent latéral. Je m'apprête à dépasser le camion qui me précède.",
+    "a": ["Je tiens le volant à deux mains, fermement", "Je me colle au camion pour profiter de son abri", "Je m'attends à être déporté en fin de dépassement", "Je reste vigilant aux ponts et sorties de tunnel"],
+    "ok": [0, 2, 3],
+    "scene": { "road": "2x2", "signs": ["A24"], "ahead": "camion" },
+    "exp": "Par vent latéral, dépasser un poids lourd expose à une rafale soudaine quand on sort de son abri. Je tiens le volant à deux mains, je garde un écart latéral suffisant et je me méfie des endroits exposés : ponts, viaducs, sorties de tunnel, trouées dans une haie ou une forêt."
+  },
+  {
+    "id": "R-035",
+    "theme": "R",
+    "q": "Hors agglomération, la ligne axiale discontinue est formée de traits longs séparés par des intervalles courts. Une voiture me précède.",
+    "sub": ["Je peux commencer le dépassement de cette voiture :", "Ce marquage annonce l'approche d'une ligne continue :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [1, 2],
+    "scene": { "road": "route", "line": "discontinue", "ahead": "voiture" },
+    "exp": "Des traits longs avec des intervalles courts forment une ligne d'annonce : elle prévient qu'une ligne continue approche. Je ne commence pas de dépassement ; des flèches de rabattement peuvent aussi inviter à regagner sa voie."
+  },
+  {
+    "id": "R-036",
+    "theme": "R",
+    "q": "Sous une forte pluie, je suis un camion qui soulève un nuage d'eau.",
+    "a": ["J'augmente nettement ma distance de sécurité", "Je me rapproche pour éviter ses projections", "J'allume mon feu de brouillard pour être vu", "Je le dépasse pour retrouver de la visibilité"],
+    "ok": [0],
+    "scene": { "road": "route", "weather": "pluie", "ahead": "camion" },
+    "exp": "Sous la pluie, les distances d'arrêt s'allongent (environ × 1,5) et les projections réduisent la visibilité : j'augmente nettement la distance de sécurité. Le feu de brouillard arrière est interdit par simple pluie."
+  },
+  {
+    "id": "R-037",
+    "theme": "R",
+    "q": "Panneaux de direction : quelles associations entre la couleur du fond et sa signification sont exactes ?",
+    "a": ["Fond bleu : direction d'une autoroute", "Fond vert : direction d'une autoroute", "Fond jaune : itinéraire temporaire", "Fond blanc : itinéraire secondaire"],
+    "ok": [0, 2, 3],
+    "exp": "Bleu = autoroute ; vert = itinéraire principal (grandes routes hors autoroute) ; blanc = itinéraire local ou secondaire ; jaune = signalisation temporaire (déviation, travaux)."
+  },
+  {
+    "id": "R-038",
+    "theme": "R",
+    "q": "Je m'apprête à entrer dans un long tunnel éclairé.",
+    "a": ["J'allume mes feux de croisement", "Je peux faire demi-tour si c'est bloqué", "Je retire mes lunettes de soleil", "Je peux m'arrêter si je suis fatigué"],
+    "ok": [0, 2],
+    "exp": "Dans un tunnel, même éclairé, j'allume mes feux de croisement et je retire mes lunettes de soleil pour que mes yeux s'adaptent. Demi-tour, marche arrière et arrêt (hors urgence) y sont interdits ; je respecte les distances de sécurité, même dans un bouchon."
+  },
+  {
+    "id": "R-039",
+    "theme": "R",
+    "q": "Sur une portion en travaux, des lignes jaunes ont été peintes alors que les lignes blanches habituelles restent visibles. Je respecte :",
+    "a": ["Les lignes blanches d'origine", "La plus favorable à ma manœuvre", "La plus contraignante des deux", "Les lignes jaunes du chantier"],
+    "ok": [3],
+    "exp": "Le marquage jaune est temporaire (chantier) et prime sur le marquage blanc permanent, comme toute signalisation temporaire l'emporte sur la signalisation permanente."
+  },
+  {
+    "id": "R-040",
+    "theme": "R",
+    "q": "Sous un panneau annonçant une succession de virages, un panonceau indique « sur 3 km ». Cela signifie :",
+    "a": ["La zone dangereuse s'étend sur 3 km", "Le premier virage se trouve à 3 km", "La vitesse est limitée sur 3 km", "Le danger a pris fin depuis 3 km"],
+    "ok": [0],
+    "exp": "Un panonceau complète le panneau qu'il accompagne. « Sur 3 km » indique l'étendue de la zone dangereuse ; un simple « 3 km » ou « 500 m » indiquerait la distance jusqu'au début du danger."
+  }
+]

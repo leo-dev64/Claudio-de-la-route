@@ -1,0 +1,301 @@
+[
+  {
+    "id": "U-001",
+    "theme": "U",
+    "q": "En ville, un piéton est engagé sur le passage pour piétons devant moi.",
+    "sub": ["Je klaxonne pour lui signaler ma présence :", "Je m'arrête pour le laisser traverser :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [1, 2],
+    "scene": { "road": "agglo", "crosswalk": true, "pedestrian": true },
+    "exp": "Un piéton engagé sur la chaussée, ou qui manifeste clairement l'intention de traverser, est prioritaire : je m'arrête. En ville, le klaxon est réservé au danger immédiat et ne doit jamais servir à presser un piéton."
+  },
+  {
+    "id": "U-002",
+    "theme": "U",
+    "q": "En ville, un piéton attend au bord du trottoir, devant un passage pour piétons, et regarde vers moi pour traverser. Je dois :",
+    "a": ["Passer avant lui : il n'est pas engagé", "M'arrêter pour le laisser traverser", "M'arrêter seulement si le feu piéton est vert"],
+    "ok": [1],
+    "exp": "Le piéton est prioritaire dès qu'il manifeste clairement son intention de traverser, même s'il n'a pas encore posé le pied sur la chaussée, et que le passage soit équipé d'un feu ou non (hors feu rouge pour lui). Ne pas lui céder le passage coûte 6 points."
+  },
+  {
+    "id": "U-003",
+    "theme": "U",
+    "q": "Ne pas céder le passage à un piéton qui s'engage pour traverser est sanctionné d'un retrait de :",
+    "a": ["2 points", "3 points", "4 points", "6 points"],
+    "ok": [3],
+    "exp": "Le refus de priorité à un piéton est puni d'une amende de 135 € et d'un retrait de 6 points (contre 4 points pour un refus de priorité à un véhicule)."
+  },
+  {
+    "id": "U-004",
+    "theme": "U",
+    "q": "En ville, sur une chaussée à deux voies dans mon sens, la voiture de la voie de droite s'arrête juste avant un passage pour piétons. Je suis dans la voie de gauche :",
+    "a": ["Je la dépasse sans ralentir, ma voie est libre", "Je continue : elle s'arrête peut-être pour stationner", "Je ralentis : un piéton est peut-être masqué"],
+    "ok": [2],
+    "exp": "Un véhicule qui s'arrête avant un passage pour piétons laisse souvent traverser quelqu'un que je ne vois pas. Je ralentis et je cède le passage : le piéton, caché par la voiture, ne me voit pas non plus."
+  },
+  {
+    "id": "U-005",
+    "theme": "U",
+    "q": "Je suis piéton. Je veux traverser la rue et un passage pour piétons se trouve à 30 mètres. Je dois :",
+    "a": ["Utiliser le passage pour piétons à 30 m", "Traverser ici en regardant à gauche puis à droite", "Traverser ici, car le passage est à plus de 20 m"],
+    "ok": [0],
+    "exp": "Un piéton doit emprunter le passage prévu à son intention s'il en existe un à moins de 50 mètres : à 30 m, il doit l'utiliser. Avant de s'engager, il tient compte de la visibilité, de la distance et de la vitesse des véhicules."
+  },
+  {
+    "id": "U-006",
+    "theme": "U",
+    "q": "Je suis piéton et je marche seul hors agglomération, sur une route sans trottoir ni accotement praticable. Je marche :",
+    "a": ["Sur le bord droit, dos aux véhicules", "Sur le bord droit, sauf la nuit où je passe à gauche", "Sur le bord gauche, face aux véhicules"],
+    "ok": [2],
+    "exp": "Hors agglomération, sauf danger, le piéton se tient près du bord gauche de la chaussée dans le sens de sa marche, face à la circulation : il voit arriver les véhicules et peut s'écarter. La nuit, des vêtements clairs ou réfléchissants l'aident à être vu."
+  },
+  {
+    "id": "U-007",
+    "theme": "U",
+    "q": "En ville, près d'une école, un ballon traverse soudain la chaussée devant moi, entre deux voitures en stationnement.",
+    "a": ["Je freine : un enfant risque de surgir", "Je repars dès que le ballon est passé", "Je surveille les espaces entre les voitures", "Je me déporte à gauche pour éviter le ballon"],
+    "ok": [0, 2],
+    "scene": { "road": "agglo", "signs": ["A13a"] },
+    "exp": "Les enfants sont imprévisibles et peu visibles : un ballon est souvent suivi d'un enfant qui ne regarde pas la circulation, même après le passage du ballon. Près des écoles, je ralentis et je surveille les abords, surtout entre les véhicules en stationnement."
+  },
+  {
+    "id": "U-008",
+    "theme": "U",
+    "q": "En ville, une personne âgée traverse lentement sur le passage pour piétons. Le feu passe au vert pour moi alors qu'elle n'a pas fini de traverser :",
+    "a": ["Je démarre lentement, car le feu vert me donne la priorité", "Je démarre en la contournant par l'arrière, au pas", "J'attends qu'elle ait fini de traverser"],
+    "ok": [2],
+    "scene": { "road": "agglo", "crosswalk": true, "pedestrian": true },
+    "exp": "Un piéton déjà engagé doit pouvoir terminer sa traversée, même si le feu est passé au vert pour les véhicules. Les personnes âgées marchent plus lentement et perçoivent parfois moins bien les dangers : patience."
+  },
+  {
+    "id": "U-009",
+    "theme": "U",
+    "q": "En ville, un piéton qui tient une canne blanche s'apprête à traverser devant moi :",
+    "a": ["Je ralentis et je passe avant qu'il ne s'engage", "Je m'arrête et j'attends qu'il traverse", "Je le contourne lentement par l'arrière", "Je lui fais signe de la main de passer"],
+    "ok": [1],
+    "exp": "La canne blanche signale une personne aveugle ou malvoyante. Je m'arrête sans klaxonner (le bruit peut la désorienter) et sans la presser ; un geste de la main est inutile puisqu'elle ne peut pas le voir."
+  },
+  {
+    "id": "U-010",
+    "theme": "U",
+    "q": "Après ce panneau :",
+    "a": ["Les piétons peuvent circuler sur la chaussée", "Les piétons sont prioritaires sur les véhicules", "La vitesse maximale autorisée est de 30 km/h", "Les piétons doivent rester sur les trottoirs"],
+    "ok": [0, 1],
+    "img": "signs/B52.svg",
+    "exp": "Ce panneau annonce une zone de rencontre : les piétons peuvent circuler sur la chaussée (sans y stationner) et y sont prioritaires sur les véhicules. La vitesse est limitée à 20 km/h."
+  },
+  {
+    "id": "U-011",
+    "theme": "U",
+    "q": "Hors agglomération, je vais dépasser ce cycliste. Je laisse un écart latéral d'au moins :",
+    "a": ["0,50 m", "1,00 m", "1,50 m", "2,00 m"],
+    "ok": [2],
+    "scene": { "road": "route", "ahead": "cycliste", "line": "discontinue" },
+    "exp": "Pour dépasser un cycliste, un piéton, un cavalier ou un deux-roues, l'écart latéral minimal est de 1 m en agglomération et de 1,50 m hors agglomération. S'il n'y a pas la place, je reste derrière."
+  },
+  {
+    "id": "U-012",
+    "theme": "U",
+    "q": "Je suis à vélo avec une amie sur une route de campagne.",
+    "sub": ["De jour, sans véhicule qui veut nous dépasser, nous pouvons rouler à deux de front :", "Dès la chute du jour, nous pouvons continuer à rouler côte à côte :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [0, 3],
+    "exp": "Les cyclistes peuvent rouler au maximum à deux de front, mais doivent se mettre en file simple dès la chute du jour et chaque fois que la circulation l'exige, notamment quand un véhicule annonce qu'il veut les dépasser."
+  },
+  {
+    "id": "U-013",
+    "theme": "U",
+    "q": "En ville, le feu est rouge. Après la ligne d'arrêt, un espace marqué d'un vélo au sol s'étend jusqu'à une seconde ligne, au pied du feu. Je suis en voiture et je m'arrête :",
+    "a": ["Avant la première ligne, espace laissé libre", "Dans cet espace, juste avant la seconde ligne", "Dans cet espace s'il n'y a aucun cycliste"],
+    "ok": [0],
+    "exp": "Cet espace, le « sas vélo », est réservé aux cyclistes et aux trottinettes électriques et engins similaires : ils s'y placent devant les voitures pour être vus et démarrer en sécurité. Les autres véhicules s'arrêtent à la première ligne."
+  },
+  {
+    "id": "U-014",
+    "theme": "U",
+    "q": "Je suis à vélo et le feu est rouge. Sous le feu, un petit panneau triangulaire montre un vélo et une flèche vers la droite. Je veux tourner à droite :",
+    "a": ["Je dois attendre le feu vert comme les voitures", "Je peux tourner après un arrêt complet, comme à un stop", "Je peux tourner en cédant le passage aux autres"],
+    "ok": [2],
+    "exp": "Ce panonceau « cédez-le-passage cycliste au feu » autorise les cyclistes à franchir le feu rouge dans la direction indiquée, à condition de céder le passage à tous les autres usagers, en particulier aux piétons. Il vaut cédez-le-passage, pas stop : l'arrêt n'est obligatoire que si c'est nécessaire."
+  },
+  {
+    "id": "U-015",
+    "theme": "U",
+    "q": "En ville, dans une zone 30, je circule dans une rue à sens unique. Un cycliste arrive en face de moi :",
+    "a": ["Il est en infraction : un sens unique vaut pour tous", "C'est autorisé : je ralentis pour le croiser", "C'est autorisé, mais il doit me céder le passage en s'arrêtant"],
+    "ok": [1],
+    "scene": { "road": "agglo", "signs": ["B30-30"], "oncoming": "cycliste" },
+    "exp": "En zone 30 (comme en zone de rencontre), les rues à sens unique sont en principe ouvertes aux cyclistes dans les deux sens (double sens cyclable), sauf décision contraire de l'autorité locale signalée par panneau. Je ralentis, je me serre à droite et je lui laisse la place."
+  },
+  {
+    "id": "U-016",
+    "theme": "U",
+    "q": "Je suis garé en ville le long du trottoir et je veux descendre côté chaussée. Avant d'ouvrir ma portière :",
+    "a": ["Je contrôle mon rétroviseur et mon angle mort", "Je l'entrouvre d'abord pour prévenir les cyclistes", "J'allume mes feux de détresse avant d'ouvrir"],
+    "ok": [0],
+    "exp": "Une portière ouverte sans regarder peut faire chuter un cycliste ou un motard. Je contrôle le rétroviseur et l'angle mort, puis j'ouvre lentement ; ouvrir avec la main opposée (la droite pour le conducteur) oblige à pivoter et à regarder derrière."
+  },
+  {
+    "id": "U-017",
+    "theme": "U",
+    "q": "Hors agglomération, le cycliste qui me précède tend le bras gauche à l'approche d'une intersection :",
+    "a": ["Il va tourner à gauche : je reste derrière lui", "Il m'invite à le dépasser : je passe à gauche", "Il ralentit : je le dépasse en laissant 1,50 m"],
+    "ok": [0],
+    "scene": { "road": "route", "ahead": "cycliste", "intersection": "gauche" },
+    "exp": "Le bras tendu à gauche annonce un changement de direction vers la gauche. Je ralentis et je le laisse tourner : le dépasser à ce moment le mettrait en grand danger."
+  },
+  {
+    "id": "U-018",
+    "theme": "U",
+    "q": "Je suis adulte et je circule à vélo :",
+    "a": ["Le gilet est obligatoire la nuit hors agglomération", "Le casque est obligatoire de jour comme de nuit", "Les écouteurs sont interdits pour les cyclistes", "Les feux avant et arrière sont obligatoires la nuit"],
+    "ok": [0, 2, 3],
+    "exp": "Hors agglomération, la nuit ou par visibilité insuffisante, le gilet de haute visibilité est obligatoire. La nuit, les feux avant et arrière doivent être allumés, et les écouteurs sont interdits à tous les conducteurs, cyclistes compris. Le casque n'est obligatoire qu'avant 12 ans (mais conseillé à tous)."
+  },
+  {
+    "id": "U-019",
+    "theme": "U",
+    "q": "Sur autoroute, la circulation est dense et forme des files ininterrompues. Un motard circule lentement entre la voie de gauche et la voie du milieu :",
+    "a": ["Je reste bien dans ma file, sans me déporter", "Il est en infraction : l'inter-files est interdite", "Je contrôle mon rétroviseur et mon angle mort", "Je change de voie vite pour gagner une place"],
+    "ok": [0, 2],
+    "exp": "Depuis janvier 2025, la circulation inter-files des deux-roues motorisés est autorisée sous conditions (voies rapides à au moins deux voies par sens, circulation en files ininterrompues, vitesse réduite). Je ne gêne pas le motard et je vérifie avant tout changement de voie qu'aucun deux-roues n'arrive."
+  },
+  {
+    "id": "U-020",
+    "theme": "U",
+    "q": "Par rapport à une voiture, une moto :",
+    "a": ["A une vitesse difficile à évaluer pour les autres", "Est moins visible à cause de sa silhouette étroite", "Est aussi visible qu'une voiture dans la circulation", "Peut facilement se trouver dans mes angles morts"],
+    "ok": [0, 1, 3],
+    "exp": "Silhouette étroite, vitesse difficile à évaluer, présence dans les angles morts : les motards sont souvent « pas vus ». Sans carrosserie, ils sont très vulnérables : je les cherche du regard aux intersections et avant chaque changement de direction."
+  },
+  {
+    "id": "U-021",
+    "theme": "U",
+    "q": "Hors agglomération, sous la pluie, je roule derrière une moto qui avance à allure modérée.",
+    "sub": ["J'augmente ma distance de sécurité :", "Je la dépasse en franchissant la ligne continue :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [0, 3],
+    "scene": { "road": "route", "weather": "pluie", "ahead": "moto", "line": "continue" },
+    "exp": "Sous la pluie, un deux-roues peut glisser sur un marquage, une plaque d'égout ou des feuilles et chuter : j'augmente ma distance. Le franchissement d'une ligne continue est interdit (retrait de 3 points)."
+  },
+  {
+    "id": "U-022",
+    "theme": "U",
+    "q": "Je circule en trottinette électrique :",
+    "a": ["Je peux transporter un passager de 14 ans", "Je dois avoir au moins 14 ans pour rouler", "Je n'ai pas le droit de porter d'écouteurs", "Je peux rouler sur le trottoir à 25 km/h"],
+    "ok": [1, 2],
+    "exp": "La conduite d'une trottinette électrique est interdite avant 14 ans. Le passager est interdit, les écouteurs aussi, et le trottoir est interdit (sauf autorisation locale, à l'allure du pas). En ville, on emprunte les pistes et bandes cyclables quand elles existent ; la vitesse maximale est de 25 km/h."
+  },
+  {
+    "id": "U-023",
+    "theme": "U",
+    "q": "Le poids lourd devant moi porte des autocollants signalant ses angles morts. Son conducteur risque de ne pas me voir lorsque je suis :",
+    "a": ["Tout près, juste devant sa cabine", "Tout près, le long de son côté droit", "Tout près, derrière sa remorque", "À distance, dans ses rétroviseurs"],
+    "ok": [0, 1, 2],
+    "exp": "Un poids lourd a de grands angles morts : devant la cabine, sur les côtés (surtout à droite) et juste derrière. Si je ne vois pas ses rétroviseurs, son conducteur ne me voit pas. Depuis 2021, les véhicules de plus de 3,5 t doivent signaler ces zones par des autocollants."
+  },
+  {
+    "id": "U-024",
+    "theme": "U",
+    "q": "En ville, le camion devant moi met son clignotant à droite et se décale vers la gauche avant de tourner :",
+    "a": ["Je le dépasse par la droite, la place est libre", "Je reste derrière lui et je lui laisse la place", "Je le dépasse par la gauche, puisqu'il va à droite"],
+    "ok": [1],
+    "scene": { "road": "agglo", "ahead": "camion", "intersection": "droite" },
+    "exp": "Pour tourner, un véhicule long a besoin de place et se déporte souvent du côté opposé : c'est la giration. Je ne m'engage ni à sa droite, où je serais dans son angle mort et risquerais d'être écrasé, ni à sa gauche, où il se déporte : je reste derrière."
+  },
+  {
+    "id": "U-025",
+    "theme": "U",
+    "q": "Sur autoroute, je termine le dépassement d'un poids lourd. Je me rabats :",
+    "a": ["Juste devant lui, pour libérer la voie de gauche", "Dès que l'arrière de ma voiture dépasse sa cabine", "Quand je vois son avant dans mon rétroviseur"],
+    "ok": [2],
+    "exp": "Un poids lourd a besoin d'une distance de freinage bien plus longue qu'une voiture. Je ne me rabats que lorsque je vois l'avant du véhicule dépassé dans mon rétroviseur intérieur, pour lui laisser un intervalle suffisant."
+  },
+  {
+    "id": "U-026",
+    "theme": "U",
+    "q": "En ville, le bus arrêté à son arrêt, devant moi à droite, met son clignotant gauche pour repartir.",
+    "sub": ["J'accélère pour passer avant lui :", "Je ralentis et je le laisse repartir :"],
+    "a": ["Oui", "Non", "Oui", "Non"],
+    "ok": [1, 2],
+    "scene": { "road": "agglo", "ahead": "bus", "signs": ["C6"] },
+    "exp": "En agglomération, je dois céder le passage à un bus qui signale son intention de quitter son arrêt : je ralentis et, si besoin, je m'arrête."
+  },
+  {
+    "id": "U-027",
+    "theme": "U",
+    "q": "Hors agglomération, un car scolaire est arrêté de l'autre côté de la route, feux de détresse allumés ; des enfants en descendent :",
+    "a": ["Je ralentis fortement à l'approche du car", "Je me tiens prêt à m'arrêter pour les enfants", "Je m'arrête seulement si un enfant est sur la chaussée", "Je garde ma vitesse : le car est de l'autre côté"],
+    "ok": [0, 1],
+    "scene": { "road": "route", "oncoming": "bus" },
+    "exp": "À la descente d'un car scolaire, les enfants traversent souvent sans regarder, en surgissant de derrière le car qui les masque. Je ralentis fortement et je suis prêt à m'arrêter ; un coup de klaxon risque de les surprendre."
+  },
+  {
+    "id": "U-028",
+    "theme": "U",
+    "q": "En ville, je dois traverser des voies de tramway à une intersection sans feu ni panneau de priorité. Un tramway arrive :",
+    "a": ["Je le laisse passer : il est prioritaire", "J'applique la règle de priorité à droite", "Je passe avant lui s'il vient de ma gauche"],
+    "ok": [0],
+    "scene": { "road": "agglo", "signs": ["A9"] },
+    "exp": "Sauf signalisation contraire, les tramways, véhicules guidés sur rails, ont la priorité sur les autres usagers. Je ne m'engage jamais sur les voies si je risque d'y rester bloqué."
+  },
+  {
+    "id": "U-029",
+    "theme": "U",
+    "q": "Un tramway :",
+    "a": ["Ne peut pas se déporter pour m'éviter", "A une distance de freinage très longue", "Peut être très silencieux à son approche", "Peut s'arrêter en moins de dix mètres"],
+    "ok": [0, 1, 2],
+    "exp": "Guidé par ses rails, le tramway ne peut pas faire d'écart ; lourd et freinant roues en acier sur rails, il lui faut une longue distance pour s'arrêter. Il est aussi silencieux : je redouble d'attention près de ses voies."
+  },
+  {
+    "id": "U-030",
+    "theme": "U",
+    "q": "Sur une route, un véhicule de pompiers arrive derrière moi, feux bleus clignotants et avertisseur deux-tons en marche :",
+    "a": ["Je m'arrête aussitôt sur place, au milieu de ma voie", "J'accélère pour dégager la voie devant lui", "Je continue ma route : il doit me dépasser", "Je ralentis et je me range sur la droite"],
+    "ok": [3],
+    "exp": "Je dois céder le passage aux véhicules d'intérêt général prioritaires (police, gendarmerie, pompiers, SAMU…) qui annoncent leur approche par leurs feux bleus et leur avertisseur spécial : je me serre à droite, je ralentis et je m'arrête si nécessaire, sans manœuvre brusque."
+  },
+  {
+    "id": "U-031",
+    "theme": "U",
+    "q": "Hors agglomération, je roule derrière un tracteur agricole qui avance lentement, gyrophare orange allumé :",
+    "a": ["Il peut être plus large que sa propre voie", "Il peut tourner brusquement vers un champ", "La chaussée peut être salie par de la boue", "Je peux le dépasser sans bonne visibilité"],
+    "ok": [0, 1, 2],
+    "scene": { "road": "route", "ahead": "tracteur", "line": "discontinue" },
+    "exp": "Les véhicules agricoles sont lents, parfois très larges, et entrent ou sortent des champs avec peu de visibilité ; ils peuvent laisser de la boue glissante. Je ne les dépasse que si la visibilité et la place le permettent."
+  },
+  {
+    "id": "U-032",
+    "theme": "U",
+    "q": "Hors agglomération, un troupeau de vaches conduit par un éleveur traverse la route devant moi :",
+    "a": ["J'avance au pas au milieu du troupeau", "Je ralentis, je m'arrête et j'attends calmement", "Je contourne le troupeau par le bas-côté"],
+    "ok": [1],
+    "exp": "Un animal peut avoir des réactions imprévisibles : le bruit d'un klaxon ou d'un moteur peut l'effrayer. Je m'arrête, j'attends et je suis les indications de la personne qui conduit le troupeau."
+  },
+  {
+    "id": "U-033",
+    "theme": "U",
+    "q": "Ce panneau m'invite à être particulièrement vigilant :",
+    "a": ["À l'aube, au crépuscule et la nuit", "Par temps de neige, en plein hiver", "En plein midi, par forte chaleur"],
+    "ok": [0],
+    "img": "signs/A15b.svg",
+    "exp": "Ce panneau annonce un passage d'animaux sauvages, plus fréquent à l'aube, au crépuscule et la nuit. Un animal est souvent suivi d'autres : après un premier passage, je reste prudent."
+  },
+  {
+    "id": "U-034",
+    "theme": "U",
+    "q": "Hors agglomération, je vais dépasser un cavalier :",
+    "a": ["Je ralentis nettement avant de passer", "Je laisse un écart latéral de 1,50 m", "Je laisse un écart latéral de 1 m", "J'accélère pour passer le plus vite"],
+    "ok": [0, 1],
+    "exp": "Un cheval peut s'effrayer et faire un écart. Je ralentis, j'évite tout bruit brusque (klaxon, accélération) et je laisse au moins 1,50 m hors agglomération ; 1 m est l'écart minimal en agglomération seulement."
+  },
+  {
+    "id": "U-035",
+    "theme": "U",
+    "q": "Hors agglomération, je croise un véhicule portant un panneau « convoi exceptionnel », gyrophare orange allumé, suivi d'un camion transportant une charge très large :",
+    "a": ["Je ralentis et je me serre bien à droite", "Je garde ma vitesse : il reste dans sa voie", "Je le croise à vitesse normale, serré à droite"],
+    "ok": [0],
+    "scene": { "road": "route", "oncoming": "camion" },
+    "exp": "Un convoi exceptionnel peut déborder sur ma voie. Je ralentis, je me serre à droite et je suis les indications des véhicules d'accompagnement ; si la place manque, je m'arrête pour le laisser passer."
+  }
+]
