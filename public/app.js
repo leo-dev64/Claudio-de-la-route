@@ -510,16 +510,48 @@ function viewErrors() {
   countUp();
 }
 
+// ---------- Contact ----------
+function viewContact() {
+  app.innerHTML = `<div class="page legal"><section class="card">
+    <p class="eyebrow">${icon('book')} Contact</p>
+    <h1 class="h-display">Une question, une erreur dans une question ?</h1>
+    <p class="muted">Ton message arrive directement dans ma boîte mail. Je te réponds à l'adresse que tu indiques.</p>
+    <form id="contact" class="form-narrow" novalidate>
+      <label class="field"><span class="lab">Nom</span><input name="name" autocomplete="name" required maxlength="80" value="${me ? esc(me.username) : ''}"></label>
+      <label class="field"><span class="lab">Adresse e-mail</span><input name="email" type="email" autocomplete="email" required maxlength="120"></label>
+      <label class="field"><span class="lab">Message</span><textarea name="message" required minlength="10" maxlength="4000" rows="6"></textarea></label>
+      <input name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <p class="error" role="alert"></p>
+      <button class="btn primary">${icon('arrow')}Envoyer</button>
+    </form>
+  </section></div>`;
+  const form = app.querySelector('#contact');
+  form.onsubmit = async e => {
+    e.preventDefault();
+    const err = form.querySelector('.error'), btn = form.querySelector('.btn');
+    btn.disabled = true;
+    err.className = 'error';
+    try {
+      await api('/api/contact', { ...Object.fromEntries(new FormData(form)), site: 'claudio.leodev.fr' });
+      form.reset();
+      err.className = 'error ok';
+      err.textContent = 'Message envoyé, merci ! Je te réponds vite.';
+    } catch (x) { err.textContent = x.message; }
+    btn.disabled = false;
+  };
+  enter();
+}
+
 // ---------- Pages légales ----------
-// À COMPLÉTER avant la mise en ligne : identité de l'éditeur et de l'hébergeur (obligatoire, art. 6 III de la LCEN).
+// Identité de l'éditeur et de l'hébergeur (obligatoire, art. 6 III de la LCEN).
 const LEGAL = {
-  editor: '[Nom et prénom, ou raison sociale]',
-  status: '[Particulier / entreprise individuelle (SIREN) / société (forme, capital, RCS)]',
-  address: '[Adresse postale]',
-  contact: '[Adresse e-mail de contact]',
-  director: '[Nom du directeur de la publication]',
-  host: '[Nom de l\'hébergeur]',
-  hostAddress: '[Adresse et téléphone de l\'hébergeur]',
+  editor: 'Léo Liénard',
+  status: 'Particulier — site personnel, gratuit et sans publicité',
+  address: '1 rue des Prés, 67230 Westhouse, France',
+  contact: '<a href="mailto:lienardleo09@gmail.com">lienardleo09@gmail.com</a>',
+  director: 'Léo Liénard',
+  host: 'OVH SAS',
+  hostAddress: '2 rue Kellermann, 59100 Roubaix, France — 1007 (depuis la France) — <a href="https://www.ovhcloud.com" target="_blank" rel="noopener">ovhcloud.com</a>',
   updated: '22 octobre 2026',
 };
 
@@ -545,6 +577,7 @@ function viewLegal(page) {
         <li><b>Progression</b> : tes réponses (juste ou fausse, date de la dernière erreur) et tes scores d'examens blancs.</li>
         <li><b>Session</b> : un cookie technique <code>sid</code> qui te garde connecté pendant ${SESSION_DAYS_LABEL}.</li>
         <li><b>Séries en cours</b> : enregistrées uniquement dans ton navigateur (stockage local), jamais envoyées au serveur.</li>
+        <li><b>Formulaire de contact</b> : ton nom, ton adresse e-mail et ton message me sont transmis par e-mail pour te répondre. Ils ne sont pas conservés sur le site.</li>
       </ul>
       <h2>Finalité et base légale</h2>
       <p>Ces données servent uniquement à fournir le service : te connecter, enregistrer ta progression et te proposer tes erreurs. La base légale est l'exécution du service que tu demandes en créant un compte (article 6.1.b du RGPD).</p>
@@ -924,6 +957,7 @@ function route() {
   window.scrollTo(0, 0);
   if (h === '/credits') return viewCredits();
   if (['/mentions-legales', '/confidentialite', '/conditions'].includes(h)) return viewLegal(h.slice(1));
+  if (h === '/contact') return viewContact();
   if (!me) {
     if (h === '/connexion') return viewAuth('login');
     if (h === '/inscription') return viewAuth('register');

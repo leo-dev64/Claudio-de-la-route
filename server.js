@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { promisify } from 'node:util';
+import { spawn } from 'node:child_process';
 import { DatabaseSync } from 'node:sqlite';
 
 const ROOT = import.meta.dirname;
@@ -81,11 +82,27 @@ function fail(key) {
 // shortcut: en mémoire, par processus ; derrière un proxy, définir TRUST_PROXY=1 pour lire X-Forwarded-For.
 const hits = new Map();
 const clientIp = req => (process.env.TRUST_PROXY && req.headers['x-forwarded-for']?.split(',').at(-1).trim()) || req.socket.remoteAddress;
-function rateLimit(req, max = 20, windowMs = 60e3) {
-  const ip = clientIp(req), now = Date.now();
-  const h = hits.get(ip);
-  if (!h || h.reset < now) return void hits.set(ip, { n: 1, reset: now + windowMs });
-  if (++h.n > max) throw new HttpError(429, 'Trop de requêtes, réessayez dans une minute');
+function rateLimit(req, max = 20, windowMs = 60e3, bucket = 'auth') {
+  const key = bucket + ' ' + clientIp(req), now = Date.now();
+  const h = hits.get(key);
+  if (!h || h.reset < now) return void hits.set(key, { n: 1, reset: now + windowMs });
+  if (++h.n > max) throw new HttpError(429, 'Trop de requêtes, réessayez plus tard');
+}
+
+// --- Formulaire de contact : envoi par msmtp (configuré dans /etc/msmtprc sur le serveur) ---
+const CONTACT_TO = process.env.CONTACT_TO;
+const oneLine = s => String(s).replace(/[\r\n\t]+/g, ' ').trim();
+function sendMail({ replyTo, subject, text }) {
+  return new Promise((resolve, reject) => {
+    const p = spawn(process.env.MSMTP || '/usr/bin/msmtp', ['-t'], { stdio: ['pipe', 'ignore', 'pipe'] });
+    let err = '';
+    p.stderr.on('data', d => { err += d; });
+    p.on('error', reject);
+    p.on('close', code => (code === 0 ? resolve() : reject(new Error('msmtp ' + code + ' ' + err))));
+    const b64 = s => `=?UTF-8?B?${Buffer.from(s).toString('base64')}?=`;
+    p.stdin.end(`To: ${CONTACT_TO}\r\nReply-To: ${replyTo}\r\nSubject: ${b64(subject)}\r\nMIME-Version: 1.0\r\n` +
+      `Content-Type: text/plain; charset=UTF-8\r\nContent-Transfer-Encoding: 8bit\r\n\r\n${text.replace(/\r?\n/g, '\r\n')}\r\n`);
+  });
 }
 setInterval(() => {
   const now = Date.now();
@@ -207,6 +224,21 @@ const api = {
       db.exec('COMMIT');
     } catch (e) { db.exec('ROLLBACK'); throw e; }
     return userStats(u.id);
+  },
+  // Formulaire de contact des deux sites (leodev.fr passe par le même serveur via Caddy).
+  'POST /api/contact': async req => {
+    rateLimit(req, 5, 60 * 60e3, 'contact');
+    const { name, email, message, site, website } = await readJson(req);
+    if (website) return { ok: true }; // champ piège invisible rempli : robot, on ignore sans le dire
+    if (typeof name !== 'string' || !oneLine(name) || name.length > 80) throw new HttpError(400, 'Indique ton nom (80 caractères max).');
+    if (typeof email !== 'string' || email.length > 120 || !/^[^\s@<>,;]+@[^\s@<>,;]+\.[^\s@<>,;]+$/.test(email)) throw new HttpError(400, 'Adresse e-mail invalide.');
+    if (typeof message !== 'string' || message.trim().length < 10 || message.length > 4000) throw new HttpError(400, 'Message : entre 10 et 4 000 caractères.');
+    const from = site === 'leodev.fr' ? 'leodev.fr' : 'claudio.leodev.fr';
+    if (!CONTACT_TO) throw new HttpError(503, "Le formulaire n'est pas encore configuré.");
+    try {
+      await sendMail({ replyTo: email, subject: `[${from}] Message de ${oneLine(name)}`, text: `De : ${oneLine(name)} <${email}>\nSite : ${from}\n\n${message.trim()}` });
+    } catch (e) { console.error(e); throw new HttpError(502, "L'envoi a échoué, réessaie plus tard."); }
+    return { ok: true };
   },
   // Score d'un examen blanc terminé ; les réponses elles-mêmes sont envoyées une par une via /api/results.
   'POST /api/attempt': async req => {

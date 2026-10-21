@@ -103,6 +103,12 @@ try {
   assert.equal((await call('/api/login', { username: 'Leo', password: 'nouveaumdp1' })).status, 200);
   assert.equal((await call('/api/me')).data.stats.seen, 2);
 
+  // contact : validation puis 503 tant que l'envoi n'est pas configuré
+  assert.equal((await call('/api/contact', { name: 'A', email: 'pas-un-mail', message: 'bonjour à toi' })).status, 400);
+  assert.equal((await call('/api/contact', { name: 'A', email: 'a@b.fr\r\nBcc: x@y.fr', message: 'bonjour à toi' })).status, 400, "injection d'en-tête refusée");
+  assert.equal((await call('/api/contact', { name: 'A', email: 'a@b.fr', message: 'bonjour à toi', website: 'spam' })).status, 200, 'robot ignoré');
+  assert.equal((await call('/api/contact', { name: 'A', email: 'a@b.fr', message: 'bonjour à toi' })).status, 503);
+
   // fichiers statiques et traversée de répertoire
   assert.equal((await fetch(base + '/')).status, 200);
   assert.equal((await fetch(base + '/..%2fserver.js')).status, 403);

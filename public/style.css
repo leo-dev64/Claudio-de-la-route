@@ -530,3 +530,7 @@ kbd { font: 600 11px var(--font); padding: 3px 7px; border-radius: 6px; border: 
 .legal ul { padding-left: 20px; }
 .legal li { margin-bottom: 8px; }
 .legal code { font-size: .9em; padding: 1px 6px; border-radius: 6px; background: var(--surface-2); }
+textarea { display: block; width: 100%; padding: 14px 16px; border-radius: 13px; border: 1px solid var(--line-2); background: var(--bg-2); color: var(--text);
+  font: 500 16px/1.5 var(--font); resize: vertical; min-height: 140px; transition: border-color .2s, box-shadow .2s; }
+textarea:focus { outline: none; border-color: var(--amber); box-shadow: 0 0 0 4px rgba(255, 197, 61, .14); }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }

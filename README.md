@@ -26,7 +26,7 @@ Vérifier la banque de questions et l'API : `npm test`.
 
 ## Mise en ligne
 
-1. **Compléter les mentions légales** (obligatoire, LCEN art. 6 III) : objet `LEGAL` en haut de la section « Pages légales » de `public/app.js` (éditeur, adresse, contact, directeur de publication, hébergeur).
+1. Mentions légales : objet `LEGAL` dans `public/app.js` (éditeur, contact, hébergeur) — à tenir à jour.
 2. Le serveur écoute sur `PORT` (défaut 3000). Le placer derrière un proxy HTTPS (nginx, Caddy…) :
    - le cookie de session passe en `Secure` grâce à l'en-tête `X-Forwarded-Proto` ;
    - définir `TRUST_PROXY=1` pour que la limite de débit par IP lise `X-Forwarded-For` ;
